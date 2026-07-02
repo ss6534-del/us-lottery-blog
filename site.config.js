@@ -19,6 +19,7 @@ export const SITE = {
   playBadge:
     "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png",
   analysisWindow: 50, // 최근 N회차 기준 통계
+  googleSiteVerification: "txgWs2HdR-deK6dHPXJVIDFQpzbF7UOkdkukzRLJzuM",
 };
 
 // ── Game registry ─────────────────────────────────────────────────────────────
