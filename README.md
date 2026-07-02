@@ -1,6 +1,6 @@
 # AI Lottery Hub — Lottery Analysis Blog
 
-Source for [ss6534-del.github.io/us-lottery-blog](https://ss6534-del.github.io/us-lottery-blog/),
+Source for [ssgpost.org](https://ssgpost.org/),
 a static blog covering six New York–drawn lottery games: Powerball, Mega Millions,
 NY Lotto, Take 5 (midday & evening) and Millionaire for Life.
 

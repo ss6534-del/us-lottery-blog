@@ -11,7 +11,7 @@ export const SITE = {
     "Free AI-driven analysis for Powerball, Mega Millions, NY Lotto, Take 5 and " +
     "Millionaire for Life. Hot & cold numbers, pattern stats and predicted sets, " +
     "updated automatically after every draw.",
-  baseUrl: "https://ss6534-del.github.io/us-lottery-blog",
+  baseUrl: "https://ssgpost.org",
   language: "en",
   appName: "AI Lottery Hub",
   appUrl:
