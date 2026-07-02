@@ -1,0 +1,60 @@
+# 매시간 새 회차를 확인하고, 새 글이 생기면 커밋 + 사이트 재빌드 + Pages 배포.
+# (앱 서버의 Cloud Functions 스케줄 감지와 같은 패턴을 GitHub Actions로 옮긴 것)
+name: Auto-publish lottery analysis
+
+on:
+  schedule:
+    # 매시간 20분 — NY 오픈데이터 반영 지연을 흡수하며 하루 24회 확인.
+    # 새 회차가 없으면 1분 내로 끝나므로 비용 부담 없음(공개 저장소는 무료).
+    - cron: "20 * * * *"
+  workflow_dispatch: {} # 수동 실행 (첫 배포/디버깅용)
+
+permissions:
+  contents: write # data/ 커밋용
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check for new draws & generate posts
+        id: update
+        run: node scripts/update.js
+
+      - name: Commit new posts
+        if: steps.update.outputs.changed == 'true'
+        run: |
+          git config user.name "lottery-blog-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "post: auto-update $(date -u +'%Y-%m-%d %H:%M UTC')" || echo "nothing to commit"
+          git push
+
+      - name: Build site
+        if: steps.update.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        run: node scripts/build.js
+
+      - name: Upload Pages artifact
+        if: steps.update.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        if: steps.update.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        id: deployment
+        uses: actions/deploy-pages@v4
