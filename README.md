@@ -1,61 +1,49 @@
-# US Lottery Blog — AI Lottery Hub 홍보용 자동 분석 블로그
+# AI Lottery Hub — Lottery Analysis Blog
 
-매 회차 추첨 직후 **자동으로** 영어 분석 글(핫/콜드 번호, 패턴 통계, AI 예상 조합)을
-발행하는 정적 블로그. 모든 글 하단에 [AI Lottery Hub 앱](https://play.google.com/store/apps/details?id=appfactory.US.lottery.usailottery)
-설치 CTA가 붙는다.
+Source for [ss6534-del.github.io/us-lottery-blog](https://ss6534-del.github.io/us-lottery-blog/),
+a static blog covering six New York–drawn lottery games: Powerball, Mega Millions,
+NY Lotto, Take 5 (midday & evening) and Millionaire for Life.
 
-## 구조
+Articles are generated automatically after each drawing from the official results
+datasets on the [NY Open Data portal](https://data.ny.gov). Each post includes the
+latest winning numbers, frequency charts, hot / cold / overdue numbers, pattern
+breakdowns (odd–even and low–high splits, sum ranges, consecutive pairs, repeats)
+and a handful of algorithmically generated number sets for the upcoming draw.
 
-| 대상 | 발행 방식 |
-|---|---|
-| Powerball / Mega Millions / NY Lotto | 회차마다 개별 분석 글 |
-| Take 5 (Mid/Eve) + Millionaire for Life | 하루 1건 "NY Daily Digest" |
+## How it works
 
-- 데이터: NY Open Data (앱과 동일한 SODA 데이터셋, 무료·키 불필요)
-- 글 생성: 템플릿 + 시드 고정 문장 로테이션 (LLM 미사용, 비용 0)
-- 예상 조합: 시드 고정(게임+대상 회차) → 재빌드해도 번호 안 바뀜
-- 자동화: GitHub Actions가 매시간 새 회차 확인 → 새 글 커밋 → Pages 재배포
+A scheduled GitHub Actions workflow checks the official datasets every hour.
+When a new drawing shows up, `scripts/update.js` runs the statistics, writes the
+article data as JSON under `data/`, and commits it. `scripts/build.js` then renders
+the whole site as plain HTML into `dist/`, which is deployed to GitHub Pages.
+
+Everything is plain Node.js with zero dependencies — no framework, no build tools.
+Charts are generated as inline SVG at build time, and the generated number sets are
+seeded per draw, so rebuilding the site never changes a published article.
 
 ```
-site.config.js      사이트/게임 설정 (단일 진실 원천)
-lib/soda.js         SODA fetch·파싱·날짜 유틸
-lib/stats.js        최근 50회차 통계 분석
-lib/predict.js      전략별 예상 조합 (시드 RNG)
-lib/prose.js        영어 문장 로테이션 풀
-lib/charts.js       SVG 차트·히어로 배너
-lib/html.js         페이지 템플릿
-content/pages.js    About/Methodology/Privacy/Disclaimer
-scripts/update.js   새 회차 감지 → data/에 글 JSON 생성
-scripts/build.js    data/ → dist/ 정적 사이트 렌더링
-data/               생성된 글 JSON + state.json (커밋됨 = 글 아카이브)
+site.config.js      site + game configuration
+lib/                data fetching, statistics, set generation, templates
+scripts/update.js   detect new draws, generate article data
+scripts/build.js    render data/ into dist/
+scripts/serve.js    local preview server
+data/               generated articles (the archive lives in git)
 ```
 
-## 배포 절차 (1회만)
-
-1. GitHub에 **공개** 저장소 생성 (예: `us-lottery-blog`) 후 이 폴더를 푸시.
-2. [site.config.js](site.config.js)의 `baseUrl`을 실제 주소로 변경:
-   `https://<유저명>.github.io/<저장소명>` (뒤 슬래시 없이)
-3. 저장소 **Settings → Pages → Source**를 **"GitHub Actions"** 로 설정.
-4. **Actions 탭 → "Auto-publish lottery analysis" → Run workflow** 로 1회 수동 실행
-   → 부트스트랩(전 게임 최신 회차 글 생성) + 첫 배포.
-5. 이후는 매시간 cron이 알아서 발행. 손댈 것 없음.
-
-## 로컬 테스트
+## Development
 
 ```bash
-node scripts/update.js   # 새 회차 확인 + 글 생성 (data/)
-node scripts/build.js    # dist/ 렌더링
-node scripts/serve.js    # 미리보기 서버 → http://localhost:8080
+node scripts/update.js   # fetch results and generate article data
+node scripts/build.js    # render the site into dist/
+node scripts/serve.js    # preview at http://localhost:8080
 ```
 
-> ⚠️ `dist/index.html`을 파일로 직접 열면(file://) 폴더 링크에서 index.html을
-> 자동으로 못 찾아 디렉터리 색인이 뜬다. 반드시 serve.js로 확인할 것.
-> (GitHub Pages 배포에서는 당연히 정상 동작)
+Note: open the preview through `serve.js` rather than the files directly —
+directory-style URLs need a server to resolve `index.html`.
 
-## 이후 확장 아이디어
+## Disclaimer
 
-- 게임별 히어로 PNG(og:image)를 Recraft/Replicate로 생성해 `assets/`에 추가
-- Google Search Console 등록 + `sitemap.xml` 제출 (SEO 필수)
-- 커스텀 도메인 연결 (`baseUrl`만 바꾸면 됨)
-- 서두/총평 문단만 LLM(Claude API) 생성으로 업그레이드 (하이브리드)
-- AdSense 승인 신청 (Privacy/Disclaimer 페이지는 이미 준비됨)
+Lottery drawings are random. Nothing on the site or in this repository predicts
+winning numbers or improves your odds; the analysis is published for entertainment.
+This project is not affiliated with the New York Lottery, MUSL, or any lottery
+operator. Please play responsibly (18+, 21+ in some jurisdictions).
