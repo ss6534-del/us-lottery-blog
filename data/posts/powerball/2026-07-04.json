@@ -1,0 +1,340 @@
+{
+  "gameId": "powerball",
+  "title": "Powerball Predictions for July 4, 2026 — Hot & Cold Numbers, AI Picks",
+  "resultDate": "2026-07-01",
+  "targetDate": "2026-07-04",
+  "publishedDate": "2026-07-01",
+  "prose": {
+    "intro": "Our AI engine has re-run its full analysis after the latest Powerball results. Here is what the data says heading into July 4, 2026.",
+    "recap": "First, a quick look back at the most recent winning line:",
+    "hot": "Over the last 50 draws, these numbers have shown up more often than any others. Streaks never last forever, but hot numbers are where frequency players start:",
+    "cold": "At the other end of the chart, these numbers have gone quiet. Due-number players watch this list closely:",
+    "patterns": "Structure matters as much as individual numbers. Here is how recent draws have been shaped:",
+    "predictionsLead": "Here are this draw's AI-generated lines. Five sets, five different logics — hot chasing, balance, overdue hunting, pattern mirroring and one pure wildcard:",
+    "outro": "These picks update after every single draw. To get them instantly — plus automatic ticket checking and win alerts — grab the free AI Lottery Hub app below."
+  },
+  "stats": {
+    "window": 50,
+    "latest": {
+      "date": "2026-07-01",
+      "white": [
+        2,
+        6,
+        26,
+        39,
+        68
+      ],
+      "special": 6
+    },
+    "previous": {
+      "date": "2026-06-29",
+      "white": [
+        10,
+        14,
+        41,
+        53,
+        59
+      ],
+      "special": 3
+    },
+    "freq": [
+      1,
+      2,
+      8,
+      4,
+      1,
+      4,
+      4,
+      1,
+      2,
+      4,
+      3,
+      3,
+      5,
+      5,
+      1,
+      7,
+      4,
+      4,
+      3,
+      2,
+      6,
+      2,
+      1,
+      5,
+      3,
+      2,
+      3,
+      4,
+      1,
+      6,
+      5,
+      3,
+      1,
+      2,
+      2,
+      6,
+      4,
+      4,
+      2,
+      1,
+      6,
+      7,
+      4,
+      4,
+      2,
+      3,
+      6,
+      4,
+      4,
+      3,
+      3,
+      8,
+      4,
+      1,
+      5,
+      5,
+      6,
+      2,
+      6,
+      5,
+      4,
+      2,
+      5,
+      8,
+      5,
+      2,
+      2,
+      2,
+      1
+    ],
+    "maxFreq": 8,
+    "hot": [
+      {
+        "num": 3,
+        "count": 8
+      },
+      {
+        "num": 52,
+        "count": 8
+      },
+      {
+        "num": 64,
+        "count": 8
+      },
+      {
+        "num": 16,
+        "count": 7
+      },
+      {
+        "num": 42,
+        "count": 7
+      },
+      {
+        "num": 21,
+        "count": 6
+      },
+      {
+        "num": 30,
+        "count": 6
+      }
+    ],
+    "cold": [
+      {
+        "num": 1,
+        "count": 1
+      },
+      {
+        "num": 5,
+        "count": 1
+      },
+      {
+        "num": 8,
+        "count": 1
+      },
+      {
+        "num": 15,
+        "count": 1
+      },
+      {
+        "num": 23,
+        "count": 1
+      },
+      {
+        "num": 29,
+        "count": 1
+      },
+      {
+        "num": 33,
+        "count": 1
+      }
+    ],
+    "overdue": [
+      {
+        "num": 23,
+        "gap": 49
+      },
+      {
+        "num": 54,
+        "gap": 49
+      },
+      {
+        "num": 69,
+        "gap": 45
+      },
+      {
+        "num": 11,
+        "gap": 39
+      },
+      {
+        "num": 7,
+        "gap": 37
+      },
+      {
+        "num": 9,
+        "gap": 31
+      },
+      {
+        "num": 29,
+        "gap": 30
+      }
+    ],
+    "oddSplit": {
+      "best": 3,
+      "pct": 36,
+      "avgOdd": 2.5
+    },
+    "lowSplit": {
+      "best": 2,
+      "pct": 46,
+      "lowMax": 34
+    },
+    "sum": {
+      "avg": 181,
+      "min": 102,
+      "max": 267,
+      "p25": 153,
+      "p75": 206
+    },
+    "consecutivePct": 22,
+    "repeatPct": 37,
+    "specialHot": [
+      {
+        "num": 12,
+        "count": 5
+      },
+      {
+        "num": 1,
+        "count": 4
+      },
+      {
+        "num": 3,
+        "count": 4
+      }
+    ]
+  },
+  "hot10": [
+    {
+      "num": 3,
+      "count": 8
+    },
+    {
+      "num": 52,
+      "count": 8
+    },
+    {
+      "num": 64,
+      "count": 8
+    },
+    {
+      "num": 16,
+      "count": 7
+    },
+    {
+      "num": 42,
+      "count": 7
+    },
+    {
+      "num": 21,
+      "count": 6
+    },
+    {
+      "num": 30,
+      "count": 6
+    },
+    {
+      "num": 36,
+      "count": 6
+    },
+    {
+      "num": 41,
+      "count": 6
+    },
+    {
+      "num": 47,
+      "count": 6
+    }
+  ],
+  "sets": [
+    {
+      "label": "Hot Streak",
+      "description": "Weighted toward the most frequent numbers of the last 50 draws.",
+      "white": [
+        6,
+        37,
+        42,
+        61,
+        67
+      ],
+      "special": 19
+    },
+    {
+      "label": "Balanced Mix",
+      "description": "Follows the dominant odd/even and low/high pattern with a typical sum range.",
+      "white": [
+        17,
+        28,
+        43,
+        46,
+        59
+      ],
+      "special": 3
+    },
+    {
+      "label": "Overdue Watch",
+      "description": "Blends the longest-absent numbers with a hot-number core.",
+      "white": [
+        11,
+        23,
+        31,
+        36,
+        47
+      ],
+      "special": 1
+    },
+    {
+      "label": "Pattern Play",
+      "description": "Mirrors recent structural trends (consecutive pairs, repeats).",
+      "white": [
+        36,
+        42,
+        51,
+        52,
+        62
+      ],
+      "special": 18
+    },
+    {
+      "label": "Wildcard",
+      "description": "A pure random spread across the full number pool.",
+      "white": [
+        9,
+        10,
+        28,
+        38,
+        58
+      ],
+      "special": 14
+    }
+  ]
+}
