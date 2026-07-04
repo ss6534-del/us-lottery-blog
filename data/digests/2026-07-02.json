@@ -220,7 +220,54 @@
           ],
           "special": null
         }
-      ]
+      ],
+      "scorecard": {
+        "forDate": "2026-07-02",
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 2,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 1,
+            "specialHit": false
+          }
+        ]
+      },
+      "outcome": {
+        "white": [
+          1,
+          4,
+          23,
+          24,
+          33
+        ],
+        "special": null,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 1,
+            "specialHit": false
+          }
+        ]
+      }
     },
     "take5_eve": {
       "resultDate": "2026-07-02",
@@ -439,7 +486,54 @@
           ],
           "special": null
         }
-      ]
+      ],
+      "scorecard": {
+        "forDate": "2026-07-02",
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 2,
+            "specialHit": false
+          }
+        ]
+      },
+      "outcome": {
+        "white": [
+          12,
+          14,
+          22,
+          29,
+          39
+        ],
+        "special": null,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 1,
+            "specialHit": false
+          }
+        ]
+      }
     },
     "millionaire": {
       "resultDate": "2026-07-02",
@@ -690,7 +784,54 @@
           ],
           "special": 4
         }
-      ]
+      ],
+      "scorecard": {
+        "forDate": "2026-07-02",
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 1,
+            "specialHit": true
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
+            "specialHit": false
+          }
+        ]
+      },
+      "outcome": {
+        "white": [
+          7,
+          8,
+          24,
+          42,
+          47
+        ],
+        "special": 3,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 2,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
+            "specialHit": false
+          }
+        ]
+      }
     }
   }
 }
