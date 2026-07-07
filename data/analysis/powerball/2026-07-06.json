@@ -1,0 +1,469 @@
+{
+  "gameId": "powerball",
+  "weekStart": "2026-07-06",
+  "publishedDate": "2026-07-06",
+  "targetDate": "2026-07-08",
+  "title": "Powerball Deep Analysis — Week of July 6, 2026 (Build Your Own Numbers)",
+  "prose": {
+    "intro": "This is our weekly deep-dive for Powerball — no ready-made picks here, just the raw analysis so you can build your own line. We break down the number pools, the play-slip pattern, the trend curve and the neighbor effect below.",
+    "pools": "A solid starting recipe from the data: take two numbers from the hot pool, two from the middle pool, and one overdue swing pick — then sanity-check the line against the checklist at the end.",
+    "outro": "Everything above updates weekly as draws come in. Build your line, check it twice — or let the app's AI do the assembling while you just play."
+  },
+  "stats": {
+    "window": 50,
+    "latest": {
+      "date": "2026-07-06",
+      "white": [
+        17,
+        44,
+        63,
+        66,
+        67
+      ],
+      "special": 4
+    },
+    "previous": {
+      "date": "2026-07-04",
+      "white": [
+        17,
+        38,
+        46,
+        50,
+        69
+      ],
+      "special": 20
+    },
+    "freq": [
+      1,
+      2,
+      7,
+      4,
+      1,
+      3,
+      4,
+      1,
+      2,
+      4,
+      3,
+      3,
+      5,
+      5,
+      1,
+      7,
+      6,
+      4,
+      3,
+      2,
+      6,
+      1,
+      0,
+      5,
+      3,
+      2,
+      3,
+      3,
+      1,
+      6,
+      5,
+      3,
+      1,
+      2,
+      2,
+      5,
+      4,
+      5,
+      2,
+      1,
+      6,
+      7,
+      4,
+      5,
+      2,
+      4,
+      6,
+      4,
+      4,
+      4,
+      3,
+      8,
+      4,
+      0,
+      4,
+      5,
+      6,
+      1,
+      6,
+      5,
+      4,
+      2,
+      5,
+      8,
+      5,
+      3,
+      3,
+      2,
+      2
+    ],
+    "maxFreq": 8,
+    "hot": [
+      {
+        "num": 52,
+        "count": 8
+      },
+      {
+        "num": 64,
+        "count": 8
+      },
+      {
+        "num": 3,
+        "count": 7
+      },
+      {
+        "num": 16,
+        "count": 7
+      },
+      {
+        "num": 42,
+        "count": 7
+      },
+      {
+        "num": 17,
+        "count": 6
+      },
+      {
+        "num": 21,
+        "count": 6
+      }
+    ],
+    "cold": [
+      {
+        "num": 23,
+        "count": 0
+      },
+      {
+        "num": 54,
+        "count": 0
+      },
+      {
+        "num": 1,
+        "count": 1
+      },
+      {
+        "num": 5,
+        "count": 1
+      },
+      {
+        "num": 8,
+        "count": 1
+      },
+      {
+        "num": 15,
+        "count": 1
+      },
+      {
+        "num": 22,
+        "count": 1
+      }
+    ],
+    "overdue": [
+      {
+        "num": 23,
+        "gap": 50
+      },
+      {
+        "num": 54,
+        "gap": 50
+      },
+      {
+        "num": 11,
+        "gap": 41
+      },
+      {
+        "num": 7,
+        "gap": 39
+      },
+      {
+        "num": 9,
+        "gap": 33
+      },
+      {
+        "num": 29,
+        "gap": 32
+      },
+      {
+        "num": 33,
+        "gap": 30
+      }
+    ],
+    "oddSplit": {
+      "best": 3,
+      "pct": 36,
+      "avgOdd": 2.5
+    },
+    "lowSplit": {
+      "best": 2,
+      "pct": 44,
+      "lowMax": 34
+    },
+    "sum": {
+      "avg": 184,
+      "min": 102,
+      "max": 267,
+      "p25": 153,
+      "p75": 211
+    },
+    "consecutivePct": 22,
+    "repeatPct": 39,
+    "specialHot": [
+      {
+        "num": 1,
+        "count": 4
+      },
+      {
+        "num": 3,
+        "count": 4
+      },
+      {
+        "num": 12,
+        "count": 4
+      }
+    ]
+  },
+  "deep": {
+    "window": 50,
+    "digits": [
+      22,
+      28,
+      26,
+      26,
+      29,
+      18,
+      29,
+      32,
+      20,
+      20
+    ],
+    "decades": [
+      29,
+      39,
+      30,
+      30,
+      46,
+      42,
+      34
+    ],
+    "decadeLabels": [
+      "1–10",
+      "11–20",
+      "21–30",
+      "31–40",
+      "41–50",
+      "51–60",
+      "61–69"
+    ],
+    "neighborRate": 57,
+    "neighborPool": [
+      16,
+      18,
+      43,
+      45,
+      62,
+      64,
+      65,
+      68
+    ],
+    "sumTrend": {
+      "slope": 0.1,
+      "direction": "flat",
+      "series": [
+        175,
+        221,
+        122,
+        159,
+        206,
+        187,
+        226,
+        153,
+        207,
+        163,
+        259,
+        192,
+        178,
+        150,
+        102,
+        136,
+        177,
+        141,
+        220,
+        257
+      ],
+      "avg": 182
+    },
+    "risers": [
+      {
+        "num": 17,
+        "r": 0.18,
+        "c10": 3,
+        "cAll": 6
+      },
+      {
+        "num": 26,
+        "r": 0.16,
+        "c10": 2,
+        "cAll": 2
+      },
+      {
+        "num": 16,
+        "r": 0.15999999999999998,
+        "c10": 3,
+        "cAll": 7
+      },
+      {
+        "num": 48,
+        "r": 0.12000000000000001,
+        "c10": 2,
+        "cAll": 4
+      },
+      {
+        "num": 50,
+        "r": 0.12000000000000001,
+        "c10": 2,
+        "cAll": 4
+      }
+    ],
+    "fallers": [
+      {
+        "num": 52,
+        "r": -0.16,
+        "c10": 0,
+        "cAll": 8
+      },
+      {
+        "num": 64,
+        "r": -0.16,
+        "c10": 0,
+        "cAll": 8
+      },
+      {
+        "num": 42,
+        "r": -0.14,
+        "c10": 0,
+        "cAll": 7
+      },
+      {
+        "num": 47,
+        "r": -0.12,
+        "c10": 0,
+        "cAll": 6
+      },
+      {
+        "num": 24,
+        "r": -0.1,
+        "c10": 0,
+        "cAll": 5
+      }
+    ],
+    "pools": {
+      "hot": [
+        {
+          "num": 52,
+          "count": 8
+        },
+        {
+          "num": 64,
+          "count": 8
+        },
+        {
+          "num": 3,
+          "count": 7
+        },
+        {
+          "num": 16,
+          "count": 7
+        },
+        {
+          "num": 42,
+          "count": 7
+        },
+        {
+          "num": 17,
+          "count": 6
+        },
+        {
+          "num": 21,
+          "count": 6
+        },
+        {
+          "num": 30,
+          "count": 6
+        }
+      ],
+      "mid": [
+        {
+          "num": 6,
+          "count": 3
+        },
+        {
+          "num": 11,
+          "count": 3
+        },
+        {
+          "num": 48,
+          "count": 4
+        },
+        {
+          "num": 49,
+          "count": 4
+        },
+        {
+          "num": 50,
+          "count": 4
+        },
+        {
+          "num": 53,
+          "count": 4
+        },
+        {
+          "num": 55,
+          "count": 4
+        },
+        {
+          "num": 61,
+          "count": 4
+        }
+      ],
+      "overdue": [
+        {
+          "num": 23,
+          "gap": 50
+        },
+        {
+          "num": 54,
+          "gap": 50
+        },
+        {
+          "num": 11,
+          "gap": 41
+        },
+        {
+          "num": 7,
+          "gap": 39
+        },
+        {
+          "num": 9,
+          "gap": 33
+        },
+        {
+          "num": 29,
+          "gap": 32
+        }
+      ]
+    }
+  },
+  "proof": {
+    "label": "Balanced Mix",
+    "matches": 2,
+    "whiteCount": 5,
+    "date": "2026-07-04"
+  }
+}
