@@ -6,7 +6,10 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { SITE, GAMES, DIGEST } from "../site.config.js";
 import { fetchDraws, nextDrawDate, longDate, weekdayOf, addDays } from "../lib/soda.js";
-import { analyze, analyzeDeep } from "../lib/stats.js";
+import {
+  analyze, analyzeDeep,
+  analyzeRecurrence, analyzeBands, backtestSignals, analyzePopularity,
+} from "../lib/stats.js";
 import { predictSets } from "../lib/predict.js";
 import { prosePicker, POOLS } from "../lib/prose.js";
 
@@ -145,6 +148,13 @@ function maybeBuildAnalysis(game, draws, state) {
   const pick = prosePicker(`${game.id}:analysis:${weekStart}`);
   const vars = { g: game.name, n: stats.window, date: longDate(targetDate), app: SITE.appName };
 
+  // 고급 분석 (회귀·밴드/미출·백테스트·비인기). draws는 인터랙티브 위젯용(윈도 화이트만).
+  const recurrence = analyzeRecurrence(game, draws, Math.min(draws.length, 60));
+  const bands = analyzeBands(game, draws, SITE.analysisWindow);
+  const backtest = backtestSignals(game, draws, SITE.analysisWindow);
+  const popularity = analyzePopularity(game);
+  const winDraws = draws.slice(0, SITE.analysisWindow).map((d) => d.white);
+
   const analysis = {
     gameId: game.id,
     weekStart,
@@ -158,6 +168,11 @@ function maybeBuildAnalysis(game, draws, state) {
     },
     stats,
     deep,
+    recurrence,
+    bands,
+    backtest,
+    popularity,
+    winDraws,
     proof: latestProof(game),
   };
   writeJson(path.join(DATA, "analysis", game.slug, `${weekStart}.json`), analysis);
@@ -243,7 +258,8 @@ function maybeBuildRecap(game, draws, state) {
 }
 
 async function processGame(game, state) {
-  const draws = await fetchDraws(game, SITE.analysisWindow + 10);
+  // +110: 롤링 백테스트(리프트·신호)에 충분한 과거 회차 확보 (윈도 밖은 슬라이스로 무시됨)
+  const draws = await fetchDraws(game, SITE.analysisWindow + 110);
   if (draws.length === 0) {
     console.warn(`[${game.id}] no draws returned — skipping`);
     return false;
