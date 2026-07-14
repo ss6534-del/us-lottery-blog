@@ -10,5 +10,23 @@
   "recap_nylotto": "2026-06",
   "analysis_powerball": "2026-07-13",
   "analysis_mega": "2026-07-06",
-  "analysis_nylotto": "2026-07-06"
+  "analysis_nylotto": "2026-07-06",
+  "_social": {
+    "date": null,
+    "count": 0,
+    "lastGameId": null,
+    "postedSlugs": [],
+    "queue": [
+      {
+        "kind": "post",
+        "slug": "/powerball/2026-07-15/",
+        "gameId": "powerball",
+        "gameSlug": "powerball",
+        "gameName": "Powerball",
+        "date": "2026-07-15",
+        "publishedDate": "2026-07-13",
+        "rank": 0
+      }
+    ]
+  }
 }
