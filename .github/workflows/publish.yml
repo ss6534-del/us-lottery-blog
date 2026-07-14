@@ -7,7 +7,16 @@ on:
     # 매시간 20분 — NY 오픈데이터 반영 지연을 흡수하며 하루 24회 확인.
     # 새 회차가 없으면 1분 내로 끝나므로 비용 부담 없음(공개 저장소는 무료).
     - cron: "20 * * * *"
-  workflow_dispatch: {} # 수동 실행 (첫 배포/디버깅용)
+  workflow_dispatch: # 수동 실행 (첫 배포/디버깅용)
+    inputs:
+      social_dry_run:
+        description: "트윗하지 않고 선택될 글·문구만 로그로 출력"
+        type: boolean
+        default: false
+      social_media_test:
+        description: "트윗 없이 이미지 업로드만 1회 시도 (글 생성도 건너뜀)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write # data/ 커밋용
@@ -30,9 +39,35 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
+      # sharp(썸네일 합성)가 유일한 의존성. update/build 양쪽이 쓴다.
+      - name: Install dependencies
+        run: npm ci
+
+      # 합성 썸네일 캐시 — 소스(풀 이미지 + 오버레이 문구)가 그대로면 재합성하지 않는다.
+      # 롤링 키(run_id) + restore-keys 접두사: 매 실행마다 "직전 캐시를 복원하고 새 글이
+      # 추가된 캐시를 다시 저장"한다. 고정 키를 쓰면 캐시가 영영 갱신되지 않아 그 뒤에
+      # 생긴 글이 매 빌드 재합성된다(글이 쌓일수록 느려짐).
+      # 캐시가 비어도 전량 합성이 수 초라 빌드가 막히지는 않는다.
+      - name: Restore og image cache
+        uses: actions/cache@v4
+        with:
+          path: .og-cache
+          key: og-cache-${{ hashFiles('assets/og-images/**', 'lib/og.js') }}-${{ github.run_id }}
+          restore-keys: og-cache-${{ hashFiles('assets/og-images/**', 'lib/og.js') }}-
+
+      # 새 글 생성 + 트윗 발사(ET 9시/19시, 하루 2건)가 이 단계에서 일어난다.
+      # 트윗 상태(state._social)는 아래 커밋 단계에서 저장돼야 재트윗이 막힌다.
       - name: Check for new draws & generate posts
         id: update
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          SOCIAL_DRY_RUN: ${{ inputs.social_dry_run && '1' || '' }}
+          SOCIAL_MEDIA_TEST: ${{ inputs.social_media_test && '1' || '' }}
         run: node scripts/update.js
 
       - name: Commit new posts

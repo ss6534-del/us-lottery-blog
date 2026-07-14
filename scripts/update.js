@@ -12,6 +12,7 @@ import {
 } from "../lib/stats.js";
 import { predictSets } from "../lib/predict.js";
 import { prosePicker, POOLS } from "../lib/prose.js";
+import { runSocial, runMediaTest } from "../lib/social.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = path.join(ROOT, "data");
@@ -135,7 +136,7 @@ function latestProof(game) {
 }
 
 /** 주간 심층 분석 글 (빅3, 주 1회 — 그 주 첫 회차 처리 시 생성) */
-function maybeBuildAnalysis(game, draws, state) {
+function maybeBuildAnalysis(game, draws, state, newItems) {
   const latest = draws[0];
   const weekStart = addDays(latest.date, -(weekdayOf(latest.date) - 1)); // 그 주 월요일
   const key = `analysis_${game.id}`;
@@ -176,6 +177,10 @@ function maybeBuildAnalysis(game, draws, state) {
     proof: latestProof(game),
   };
   writeJson(path.join(DATA, "analysis", game.slug, `${weekStart}.json`), analysis);
+  newItems.push({
+    kind: "analysis", gameId: game.id, gameSlug: game.slug, gameName: game.name,
+    date: weekStart, publishedDate: latest.date,
+  });
   state[key] = weekStart;
   console.log(`[${game.id}] weekly analysis → week of ${weekStart}`);
   return true;
@@ -201,7 +206,7 @@ function monthBefore(ym) {
 }
 
 /** 월간 리캡 생성 (빅3 전용, 전월 회차가 데이터에 있을 때) */
-function maybeBuildRecap(game, draws, state) {
+function maybeBuildRecap(game, draws, state, newItems) {
   const latest = draws[0];
   const prevMonth = monthBefore(latest.date.slice(0, 7));
   const recKey = `recap_${game.id}`;
@@ -252,12 +257,16 @@ function maybeBuildRecap(game, draws, state) {
     ai,
   };
   writeJson(path.join(DATA, "recaps", game.slug, `${prevMonth}.json`), recap);
+  newItems.push({
+    kind: "recap", gameId: game.id, gameSlug: game.slug, gameName: game.name,
+    date: prevMonth, publishedDate: latest.date,
+  });
   state[recKey] = prevMonth;
   console.log(`[${game.id}] monthly recap → ${prevMonth} (${monthDraws.length} draws)`);
   return true;
 }
 
-async function processGame(game, state) {
+async function processGame(game, state, newItems) {
   // +110: 롤링 백테스트(리프트·신호)에 충분한 과거 회차 확보 (윈도 밖은 슬라이스로 무시됨)
   const draws = await fetchDraws(game, SITE.analysisWindow + 110);
   if (draws.length === 0) {
@@ -269,8 +278,8 @@ async function processGame(game, state) {
 
   // 월간 리캡 + 주간 심층 분석 (빅3만; 새 회차 여부와 무관하게 주기가 넘어가면 생성)
   if (game.mode === "post") {
-    if (maybeBuildRecap(game, draws, state)) changed = true;
-    if (maybeBuildAnalysis(game, draws, state)) changed = true;
+    if (maybeBuildRecap(game, draws, state, newItems)) changed = true;
+    if (maybeBuildAnalysis(game, draws, state, newItems)) changed = true;
   }
 
   if (state[game.id] === latest.date) {
@@ -306,6 +315,10 @@ async function processGame(game, state) {
       scorecard,
     };
     writeJson(path.join(DATA, "posts", game.slug, `${targetDate}.json`), post);
+    newItems.push({
+      kind: "post", gameId: game.id, gameSlug: game.slug, gameName: game.name,
+      date: targetDate, publishedDate: latest.date,
+    });
     console.log(`[${game.id}] new post → ${game.slug}/${targetDate}`);
   } else {
     // 다이제스트: 직전 날짜 다이제스트의 이 게임 섹션 채점
@@ -341,6 +354,8 @@ async function processGame(game, state) {
       scorecard,
     };
     writeJson(file, digest);
+    // 같은 날짜 다이제스트는 게임 3종이 각각 밀어넣지만 enqueue가 중복을 걸러낸다
+    newItems.push({ kind: "digest", date: latest.date, publishedDate: latest.date });
     console.log(`[${game.id}] digest section → ${latest.date}`);
   }
 
@@ -353,13 +368,28 @@ async function main() {
   const state = readJson(STATE_FILE, {});
   let changed = false;
 
+  // 이미지 업로드 단독 검증 — 트윗도 글 생성도 하지 않고 여기서 끝낸다
+  if (process.env.SOCIAL_MEDIA_TEST === "1") {
+    await runMediaTest(DATA);
+    return;
+  }
+
+  const newItems = []; // 이번 실행에서 생긴 글 — 트윗 큐에 적립된다
   for (const game of GAMES) {
     try {
-      if (await processGame(game, state)) changed = true;
+      if (await processGame(game, state, newItems)) changed = true;
     } catch (err) {
       // 한 게임 실패가 나머지를 막지 않게 한다
       console.error(`[${game.id}] FAILED: ${err.message}`);
     }
+  }
+
+  // 자동 트윗 — 큐 적립 + 스케줄 발사. 절대 throw 하지 않지만 한 겹 더 감싼다:
+  // 소셜이 무슨 일이 있어도 글 발행(state 저장·CHANGED 출력)을 막으면 안 된다.
+  try {
+    if (await runSocial(newItems, state)) changed = true;
+  } catch (err) {
+    console.error(`[social] unexpected failure (ignored): ${err.message}`);
   }
 
   if (changed) writeJson(STATE_FILE, state);

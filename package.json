@@ -11,5 +11,8 @@
     "update": "node scripts/update.js",
     "build": "node scripts/build.js",
     "publish-local": "node scripts/update.js && node scripts/build.js"
+  },
+  "dependencies": {
+    "sharp": "^0.35.3"
   }
 }

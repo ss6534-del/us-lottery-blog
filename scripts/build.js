@@ -10,10 +10,32 @@ import {
   sectionHead, ctaButton, playBadge, generatorWidget, ticketChecker, setNavCounts,
 } from "../lib/html.js";
 import { STATIC_PAGES } from "../content/pages.js";
+import { renderOgImage, renderIndexImage, saveManifest, loadOgPool, OG_INDEX_FILE } from "../lib/og.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = path.join(ROOT, "data");
 const DIST = path.join(ROOT, "dist");
+const OG_DIR = path.join(DIST, "og");
+
+// 이미지 풀 + 합성 통계 (main에서 초기화)
+let OG_POOL = [];
+const ogStats = { composed: 0, cached: 0, fallback: 0 };
+
+/**
+ * 글 1건의 대표 이미지를 dist/og/ 에 합성하고 파일명을 돌려준다.
+ * 풀이 없거나 합성이 실패해도 렌더는 계속된다(이미지 메타만 빠진다).
+ */
+async function ogFor(item) {
+  if (OG_POOL.length === 0) return null;
+  try {
+    const r = await renderOgImage(item, OG_DIR, OG_POOL);
+    if (r) ogStats[r.status] = (ogStats[r.status] || 0) + 1;
+    return r ? r.file : null;
+  } catch (e) {
+    console.warn(`[og] failed for ${item.kind}/${item.gameSlug}/${item.date}: ${e.message}`);
+    return null;
+  }
+}
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -50,9 +72,16 @@ function countJson(dir) {
     : 0;
 }
 
-function main() {
+async function main() {
+  const t0 = Date.now();
   fs.rmSync(DIST, { recursive: true, force: true });
   fs.mkdirSync(DIST, { recursive: true });
+  OG_POOL = loadOgPool();
+  if (OG_POOL.length === 0) {
+    console.warn("[og] image pool empty (assets/og-images) — rendering without images");
+  } else {
+    fs.mkdirSync(OG_DIR, { recursive: true });
+  }
 
   // 드로어 메뉴의 카테고리별 글 수 (렌더링 전에 주입)
   const navCounts = { games: {}, digests: countJson(path.join(DATA, "digests")), recaps: 0, analysis: 0 };
@@ -81,13 +110,17 @@ function main() {
       const description =
         `${game.name} analysis for the ${longDate(post.targetDate)} drawing: latest results, ` +
         `hot & cold numbers, pattern stats and 5 AI-generated sets.`;
+      const ogImageFile = await ogFor({
+        kind: "post", gameSlug: game.slug, gameName: game.name, date: post.targetDate,
+      });
       writePage(urlPath, layout({
         title: post.title,
         description,
         path: urlPath,
         ogType: "article",
+        ogImageFile,
         jsonLd: articleJsonLd(post.title, description, urlPath, post.publishedDate),
-        content: renderPostBody(post),
+        content: renderPostBody(post, ogImageFile),
       }));
       urls.push({ path: urlPath, date: post.publishedDate });
       cards.push({
@@ -114,13 +147,15 @@ function main() {
     const description =
       `NY Take 5 (midday & evening) and Millionaire for Life results for ${longDate(digest.date)}, ` +
       `plus hot numbers and AI picks for the next drawings.`;
+    const ogImageFile = await ogFor({ kind: "digest", date: digest.date });
     writePage(urlPath, layout({
       title: digest.title,
       description,
       path: urlPath,
       ogType: "article",
+      ogImageFile,
       jsonLd: articleJsonLd(digest.title, description, urlPath, digest.date),
-      content: renderDigestBody(digest),
+      content: renderDigestBody(digest, ogImageFile),
     }));
     urls.push({ path: urlPath, date: digest.date });
     const lead =
@@ -150,13 +185,17 @@ function main() {
       const description =
         `${game.name} monthly recap for ${recap.monthName}: every drawing, ` +
         `the month's hottest numbers, pattern breakdown and AI scorecard.`;
+      const ogImageFile = await ogFor({
+        kind: "recap", gameSlug: game.slug, gameName: game.name, date: recap.month,
+      });
       writePage(urlPath, layout({
         title: `${recap.title} — ${SITE.title}`,
         description,
         path: urlPath,
         ogType: "article",
+        ogImageFile,
         jsonLd: articleJsonLd(recap.title, description, urlPath, recap.draws[0]?.date),
-        content: renderRecapBody(recap),
+        content: renderRecapBody(recap, ogImageFile),
       }));
       urls.push({ path: urlPath, date: recap.draws[0]?.date });
       cards.push({
@@ -186,13 +225,17 @@ function main() {
       const description =
         `${game.name} deep analysis for the week of ${longDate(analysis.weekStart)}: number pools, ` +
         `play-slip patterns, sum regression, momentum and neighbor stats — build your own line.`;
+      const ogImageFile = await ogFor({
+        kind: "analysis", gameSlug: game.slug, gameName: game.name, date: analysis.weekStart,
+      });
       writePage(urlPath, layout({
         title: `${analysis.title} — ${SITE.title}`,
         description,
         path: urlPath,
         ogType: "article",
+        ogImageFile,
         jsonLd: articleJsonLd(analysis.title, description, urlPath, analysis.publishedDate),
-        content: renderAnalysisBody(analysis),
+        content: renderAnalysisBody(analysis, ogImageFile),
       }));
       urls.push({ path: urlPath, date: analysis.publishedDate });
       cards.push({
@@ -266,6 +309,16 @@ function main() {
 
   // ── 홈 ──
   {
+    // 홈/인덱스는 풀 1번으로 만든 _index.jpg 를 공유한다 (글이 아니므로 시드 선택 없음)
+    let indexOg = null;
+    if (OG_POOL.length > 0) {
+      try {
+        const r = await renderIndexImage(OG_DIR, OG_POOL);
+        if (r) { indexOg = r.file; ogStats[r.status] = (ogStats[r.status] || 0) + 1; }
+      } catch (e) {
+        console.warn(`[og] index image failed: ${e.message}`);
+      }
+    }
     const latest = cards.slice(0, 12).map(postCard).join("");
     const pb = gameById("powerball");
     const stripTiles = ["mega", "nylotto", "take5_eve", "millionaire"]
@@ -275,6 +328,7 @@ function main() {
       title: `${SITE.title} — ${SITE.tagline}`,
       description: SITE.description,
       path: "/",
+      ogImageFile: indexOg,
       content: `
 <section class="hero">
   <div class="hero-copy">
@@ -481,7 +535,17 @@ ${rssItems}
     "utf8"
   );
 
-  console.log(`Built ${urls.length} pages → dist/`);
+  saveManifest();
+  const ogTotal = ogStats.composed + ogStats.cached + ogStats.fallback;
+  console.log(
+    `Built ${urls.length} pages → dist/ in ${Date.now() - t0}ms` +
+      (ogTotal
+        ? ` (og images: ${ogStats.composed} composed, ${ogStats.cached} cached, ${ogStats.fallback} fallback)`
+        : "")
+  );
 }
 
-main();
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
