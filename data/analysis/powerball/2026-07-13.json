@@ -1,0 +1,2320 @@
+{
+  "gameId": "powerball",
+  "weekStart": "2026-07-13",
+  "publishedDate": "2026-07-13",
+  "targetDate": "2026-07-15",
+  "title": "Powerball Deep Analysis — Week of July 13, 2026 (Build Your Own Numbers)",
+  "prose": {
+    "intro": "This is our weekly deep-dive for Powerball — no ready-made picks here, just the raw analysis so you can build your own line. We break down the number pools, the play-slip pattern, the trend curve and the neighbor effect below.",
+    "pools": "A solid starting recipe from the data: take two numbers from the hot pool, two from the middle pool, and one overdue swing pick — then sanity-check the line against the checklist at the end.",
+    "outro": "Everything above updates weekly as draws come in. Build your line, check it twice — or let the app's AI do the assembling while you just play."
+  },
+  "stats": {
+    "window": 50,
+    "latest": {
+      "date": "2026-07-13",
+      "white": [
+        5,
+        25,
+        36,
+        40,
+        48
+      ],
+      "special": 3
+    },
+    "previous": {
+      "date": "2026-07-11",
+      "white": [
+        8,
+        10,
+        14,
+        45,
+        59
+      ],
+      "special": 5
+    },
+    "freq": [
+      1,
+      2,
+      7,
+      4,
+      2,
+      3,
+      3,
+      2,
+      1,
+      4,
+      3,
+      4,
+      5,
+      5,
+      1,
+      7,
+      6,
+      3,
+      2,
+      1,
+      5,
+      1,
+      0,
+      5,
+      4,
+      2,
+      3,
+      3,
+      2,
+      5,
+      5,
+      3,
+      1,
+      2,
+      2,
+      6,
+      5,
+      5,
+      2,
+      2,
+      6,
+      6,
+      5,
+      5,
+      3,
+      4,
+      5,
+      5,
+      4,
+      3,
+      3,
+      6,
+      4,
+      0,
+      5,
+      5,
+      6,
+      1,
+      7,
+      5,
+      4,
+      2,
+      5,
+      8,
+      5,
+      3,
+      3,
+      2,
+      1
+    ],
+    "maxFreq": 8,
+    "hot": [
+      {
+        "num": 64,
+        "count": 8
+      },
+      {
+        "num": 3,
+        "count": 7
+      },
+      {
+        "num": 16,
+        "count": 7
+      },
+      {
+        "num": 59,
+        "count": 7
+      },
+      {
+        "num": 17,
+        "count": 6
+      },
+      {
+        "num": 36,
+        "count": 6
+      },
+      {
+        "num": 41,
+        "count": 6
+      }
+    ],
+    "cold": [
+      {
+        "num": 23,
+        "count": 0
+      },
+      {
+        "num": 54,
+        "count": 0
+      },
+      {
+        "num": 1,
+        "count": 1
+      },
+      {
+        "num": 9,
+        "count": 1
+      },
+      {
+        "num": 15,
+        "count": 1
+      },
+      {
+        "num": 20,
+        "count": 1
+      },
+      {
+        "num": 22,
+        "count": 1
+      }
+    ],
+    "overdue": [
+      {
+        "num": 23,
+        "gap": 50
+      },
+      {
+        "num": 54,
+        "gap": 50
+      },
+      {
+        "num": 11,
+        "gap": 44
+      },
+      {
+        "num": 7,
+        "gap": 42
+      },
+      {
+        "num": 9,
+        "gap": 36
+      },
+      {
+        "num": 33,
+        "gap": 33
+      },
+      {
+        "num": 18,
+        "gap": 29
+      }
+    ],
+    "oddSplit": {
+      "best": 3,
+      "pct": 34,
+      "avgOdd": 2.5
+    },
+    "lowSplit": {
+      "best": 2,
+      "pct": 46,
+      "lowMax": 34
+    },
+    "sum": {
+      "avg": 184,
+      "min": 102,
+      "max": 267,
+      "p25": 154,
+      "p75": 211
+    },
+    "consecutivePct": 20,
+    "repeatPct": 37,
+    "specialHot": [
+      {
+        "num": 3,
+        "count": 5
+      },
+      {
+        "num": 12,
+        "count": 4
+      },
+      {
+        "num": 14,
+        "count": 4
+      }
+    ]
+  },
+  "deep": {
+    "window": 50,
+    "digits": [
+      20,
+      27,
+      24,
+      27,
+      29,
+      22,
+      30,
+      31,
+      21,
+      19
+    ],
+    "decades": [
+      29,
+      37,
+      30,
+      33,
+      46,
+      42,
+      33
+    ],
+    "decadeLabels": [
+      "1–10",
+      "11–20",
+      "21–30",
+      "31–40",
+      "41–50",
+      "51–60",
+      "61–69"
+    ],
+    "neighborRate": 55,
+    "neighborPool": [
+      4,
+      6,
+      24,
+      26,
+      35,
+      37,
+      39,
+      41,
+      47,
+      49
+    ],
+    "sumTrend": {
+      "slope": -1.3,
+      "direction": "falling",
+      "series": [
+        159,
+        206,
+        187,
+        226,
+        153,
+        207,
+        163,
+        259,
+        192,
+        178,
+        150,
+        102,
+        136,
+        177,
+        141,
+        220,
+        257,
+        176,
+        136,
+        154
+      ],
+      "avg": 179
+    },
+    "risers": [
+      {
+        "num": 14,
+        "r": 0.19999999999999998,
+        "c10": 3,
+        "cAll": 5
+      },
+      {
+        "num": 17,
+        "r": 0.18,
+        "c10": 3,
+        "cAll": 6
+      },
+      {
+        "num": 59,
+        "r": 0.15999999999999998,
+        "c10": 3,
+        "cAll": 7
+      },
+      {
+        "num": 45,
+        "r": 0.14,
+        "c10": 2,
+        "cAll": 3
+      },
+      {
+        "num": 10,
+        "r": 0.12000000000000001,
+        "c10": 2,
+        "cAll": 4
+      }
+    ],
+    "fallers": [
+      {
+        "num": 64,
+        "r": -0.16,
+        "c10": 0,
+        "cAll": 8
+      },
+      {
+        "num": 42,
+        "r": -0.12,
+        "c10": 0,
+        "cAll": 6
+      },
+      {
+        "num": 52,
+        "r": -0.12,
+        "c10": 0,
+        "cAll": 6
+      },
+      {
+        "num": 57,
+        "r": -0.12,
+        "c10": 0,
+        "cAll": 6
+      },
+      {
+        "num": 24,
+        "r": -0.1,
+        "c10": 0,
+        "cAll": 5
+      }
+    ],
+    "pools": {
+      "hot": [
+        {
+          "num": 64,
+          "count": 8
+        },
+        {
+          "num": 3,
+          "count": 7
+        },
+        {
+          "num": 16,
+          "count": 7
+        },
+        {
+          "num": 59,
+          "count": 7
+        },
+        {
+          "num": 17,
+          "count": 6
+        },
+        {
+          "num": 36,
+          "count": 6
+        },
+        {
+          "num": 41,
+          "count": 6
+        },
+        {
+          "num": 42,
+          "count": 6
+        }
+      ],
+      "mid": [
+        {
+          "num": 6,
+          "count": 3
+        },
+        {
+          "num": 7,
+          "count": 3
+        },
+        {
+          "num": 11,
+          "count": 3
+        },
+        {
+          "num": 25,
+          "count": 4
+        },
+        {
+          "num": 46,
+          "count": 4
+        },
+        {
+          "num": 49,
+          "count": 4
+        },
+        {
+          "num": 53,
+          "count": 4
+        },
+        {
+          "num": 61,
+          "count": 4
+        }
+      ],
+      "overdue": [
+        {
+          "num": 23,
+          "gap": 50
+        },
+        {
+          "num": 54,
+          "gap": 50
+        },
+        {
+          "num": 11,
+          "gap": 44
+        },
+        {
+          "num": 7,
+          "gap": 42
+        },
+        {
+          "num": 9,
+          "gap": 36
+        },
+        {
+          "num": 33,
+          "gap": 33
+        }
+      ]
+    }
+  },
+  "recurrence": {
+    "window": 60,
+    "maxStep": 40,
+    "steps": [
+      {
+        "s": 1,
+        "current": 3,
+        "max": 6,
+        "diff": -3,
+        "lastHit": 3
+      },
+      {
+        "s": 2,
+        "current": 6,
+        "max": 8,
+        "diff": -2,
+        "lastHit": 6
+      },
+      {
+        "s": 3,
+        "current": 7,
+        "max": 9,
+        "diff": -2,
+        "lastHit": 7
+      },
+      {
+        "s": 4,
+        "current": 4,
+        "max": 5,
+        "diff": -1,
+        "lastHit": 4
+      },
+      {
+        "s": 5,
+        "current": 1,
+        "max": 5,
+        "diff": -4,
+        "lastHit": 1
+      },
+      {
+        "s": 6,
+        "current": 1,
+        "max": 11,
+        "diff": -10,
+        "lastHit": 1
+      },
+      {
+        "s": 7,
+        "current": 1,
+        "max": 6,
+        "diff": -5,
+        "lastHit": 1
+      },
+      {
+        "s": 8,
+        "current": 1,
+        "max": 11,
+        "diff": -10,
+        "lastHit": 1
+      },
+      {
+        "s": 9,
+        "current": 0,
+        "max": 5,
+        "diff": -5,
+        "lastHit": 0
+      },
+      {
+        "s": 10,
+        "current": 0,
+        "max": 9,
+        "diff": -9,
+        "lastHit": 0
+      },
+      {
+        "s": 11,
+        "current": 3,
+        "max": 6,
+        "diff": -3,
+        "lastHit": 3
+      },
+      {
+        "s": 12,
+        "current": 0,
+        "max": 5,
+        "diff": -5,
+        "lastHit": 0
+      },
+      {
+        "s": 13,
+        "current": 2,
+        "max": 6,
+        "diff": -4,
+        "lastHit": 2
+      },
+      {
+        "s": 14,
+        "current": 2,
+        "max": 12,
+        "diff": -10,
+        "lastHit": 2
+      },
+      {
+        "s": 15,
+        "current": 1,
+        "max": 8,
+        "diff": -7,
+        "lastHit": 1
+      },
+      {
+        "s": 16,
+        "current": 1,
+        "max": 11,
+        "diff": -10,
+        "lastHit": 1
+      },
+      {
+        "s": 17,
+        "current": 4,
+        "max": 9,
+        "diff": -5,
+        "lastHit": 4
+      },
+      {
+        "s": 18,
+        "current": 3,
+        "max": 8,
+        "diff": -5,
+        "lastHit": 3
+      },
+      {
+        "s": 19,
+        "current": 1,
+        "max": 7,
+        "diff": -6,
+        "lastHit": 1
+      },
+      {
+        "s": 20,
+        "current": 0,
+        "max": 7,
+        "diff": -7,
+        "lastHit": 0
+      },
+      {
+        "s": 21,
+        "current": 0,
+        "max": 10,
+        "diff": -10,
+        "lastHit": 0
+      },
+      {
+        "s": 22,
+        "current": 0,
+        "max": 5,
+        "diff": -5,
+        "lastHit": 0
+      },
+      {
+        "s": 23,
+        "current": 2,
+        "max": 5,
+        "diff": -3,
+        "lastHit": 2
+      },
+      {
+        "s": 24,
+        "current": 1,
+        "max": 11,
+        "diff": -10,
+        "lastHit": 1
+      },
+      {
+        "s": 25,
+        "current": 0,
+        "max": 5,
+        "diff": -5,
+        "lastHit": 0
+      },
+      {
+        "s": 26,
+        "current": 11,
+        "max": 11,
+        "diff": 0,
+        "lastHit": 11
+      },
+      {
+        "s": 27,
+        "current": 3,
+        "max": 8,
+        "diff": -5,
+        "lastHit": 3
+      },
+      {
+        "s": 28,
+        "current": 12,
+        "max": 12,
+        "diff": 0,
+        "lastHit": 12
+      },
+      {
+        "s": 29,
+        "current": 2,
+        "max": 11,
+        "diff": -9,
+        "lastHit": 2
+      },
+      {
+        "s": 30,
+        "current": 0,
+        "max": 7,
+        "diff": -7,
+        "lastHit": 0
+      },
+      {
+        "s": 31,
+        "current": 0,
+        "max": 7,
+        "diff": -7,
+        "lastHit": 0
+      },
+      {
+        "s": 32,
+        "current": 3,
+        "max": 7,
+        "diff": -4,
+        "lastHit": 3
+      },
+      {
+        "s": 33,
+        "current": 0,
+        "max": 5,
+        "diff": -5,
+        "lastHit": 0
+      },
+      {
+        "s": 34,
+        "current": 0,
+        "max": 6,
+        "diff": -6,
+        "lastHit": 0
+      },
+      {
+        "s": 35,
+        "current": 4,
+        "max": 6,
+        "diff": -2,
+        "lastHit": 4
+      },
+      {
+        "s": 36,
+        "current": 0,
+        "max": 9,
+        "diff": -9,
+        "lastHit": 0
+      },
+      {
+        "s": 37,
+        "current": 0,
+        "max": 9,
+        "diff": -9,
+        "lastHit": 0
+      },
+      {
+        "s": 38,
+        "current": 1,
+        "max": 5,
+        "diff": -4,
+        "lastHit": 1
+      },
+      {
+        "s": 39,
+        "current": 6,
+        "max": 6,
+        "diff": 0,
+        "lastHit": 6
+      },
+      {
+        "s": 40,
+        "current": 2,
+        "max": 6,
+        "diff": -4,
+        "lastHit": 2
+      }
+    ],
+    "hot": [
+      {
+        "s": 28,
+        "current": 12,
+        "max": 12,
+        "diff": 0,
+        "lastHit": 12
+      },
+      {
+        "s": 26,
+        "current": 11,
+        "max": 11,
+        "diff": 0,
+        "lastHit": 11
+      },
+      {
+        "s": 39,
+        "current": 6,
+        "max": 6,
+        "diff": 0,
+        "lastHit": 6
+      }
+    ],
+    "candidates": [
+      {
+        "num": 37,
+        "hits": 2
+      },
+      {
+        "num": 8,
+        "hits": 1
+      },
+      {
+        "num": 13,
+        "hits": 1
+      },
+      {
+        "num": 21,
+        "hits": 1
+      },
+      {
+        "num": 24,
+        "hits": 1
+      },
+      {
+        "num": 27,
+        "hits": 1
+      },
+      {
+        "num": 30,
+        "hits": 1
+      },
+      {
+        "num": 40,
+        "hits": 1
+      },
+      {
+        "num": 43,
+        "hits": 1
+      },
+      {
+        "num": 44,
+        "hits": 1
+      },
+      {
+        "num": 45,
+        "hits": 1
+      },
+      {
+        "num": 56,
+        "hits": 1
+      },
+      {
+        "num": 64,
+        "hits": 1
+      },
+      {
+        "num": 65,
+        "hits": 1
+      }
+    ]
+  },
+  "bands": {
+    "window": 50,
+    "whiteCount": 5,
+    "sakai": [
+      {
+        "band": 6,
+        "label": "6+×",
+        "nums": [
+          3,
+          16,
+          17,
+          36,
+          41,
+          42,
+          52,
+          57,
+          59,
+          64
+        ]
+      },
+      {
+        "band": 5,
+        "label": "5×",
+        "nums": [
+          13,
+          14,
+          21,
+          24,
+          30,
+          31,
+          37,
+          38,
+          43,
+          44,
+          47,
+          48,
+          55,
+          56,
+          60,
+          63,
+          65
+        ]
+      },
+      {
+        "band": 4,
+        "label": "4×",
+        "nums": [
+          4,
+          10,
+          12,
+          25,
+          46,
+          49,
+          53,
+          61
+        ]
+      },
+      {
+        "band": 3,
+        "label": "3×",
+        "nums": [
+          6,
+          7,
+          11,
+          18,
+          27,
+          28,
+          32,
+          45,
+          50,
+          51,
+          66,
+          67
+        ]
+      },
+      {
+        "band": 2,
+        "label": "2×",
+        "nums": [
+          2,
+          5,
+          8,
+          19,
+          26,
+          29,
+          34,
+          35,
+          39,
+          40,
+          62,
+          68
+        ]
+      },
+      {
+        "band": 1,
+        "label": "1×",
+        "nums": [
+          1,
+          9,
+          15,
+          20,
+          22,
+          33,
+          58,
+          69
+        ]
+      },
+      {
+        "band": 0,
+        "label": "0×",
+        "nums": [
+          23,
+          54
+        ]
+      }
+    ],
+    "missing": [
+      {
+        "band": 0,
+        "label": "Out 0 (just hit)",
+        "nums": [
+          {
+            "num": 5,
+            "gap": 0
+          },
+          {
+            "num": 25,
+            "gap": 0
+          },
+          {
+            "num": 36,
+            "gap": 0
+          },
+          {
+            "num": 40,
+            "gap": 0
+          },
+          {
+            "num": 48,
+            "gap": 0
+          }
+        ]
+      },
+      {
+        "band": 1,
+        "label": "Out 1",
+        "nums": [
+          {
+            "num": 8,
+            "gap": 1
+          },
+          {
+            "num": 10,
+            "gap": 1
+          },
+          {
+            "num": 14,
+            "gap": 1
+          },
+          {
+            "num": 45,
+            "gap": 1
+          },
+          {
+            "num": 59,
+            "gap": 1
+          }
+        ]
+      },
+      {
+        "band": 2,
+        "label": "Out 2",
+        "nums": [
+          {
+            "num": 12,
+            "gap": 2
+          },
+          {
+            "num": 29,
+            "gap": 2
+          },
+          {
+            "num": 37,
+            "gap": 2
+          },
+          {
+            "num": 43,
+            "gap": 2
+          },
+          {
+            "num": 55,
+            "gap": 2
+          }
+        ]
+      },
+      {
+        "band": 3,
+        "label": "Out 3",
+        "nums": [
+          {
+            "num": 17,
+            "gap": 3
+          },
+          {
+            "num": 44,
+            "gap": 3
+          },
+          {
+            "num": 63,
+            "gap": 3
+          },
+          {
+            "num": 66,
+            "gap": 3
+          },
+          {
+            "num": 67,
+            "gap": 3
+          }
+        ]
+      },
+      {
+        "band": 4,
+        "label": "Out 4",
+        "nums": [
+          {
+            "num": 38,
+            "gap": 4
+          },
+          {
+            "num": 46,
+            "gap": 4
+          },
+          {
+            "num": 50,
+            "gap": 4
+          },
+          {
+            "num": 69,
+            "gap": 4
+          }
+        ]
+      },
+      {
+        "band": 5,
+        "label": "Out 5–6",
+        "nums": [
+          {
+            "num": 2,
+            "gap": 5
+          },
+          {
+            "num": 6,
+            "gap": 5
+          },
+          {
+            "num": 26,
+            "gap": 5
+          },
+          {
+            "num": 39,
+            "gap": 5
+          },
+          {
+            "num": 68,
+            "gap": 5
+          },
+          {
+            "num": 41,
+            "gap": 6
+          },
+          {
+            "num": 53,
+            "gap": 6
+          }
+        ]
+      },
+      {
+        "band": 6,
+        "label": "Out 7–9",
+        "nums": [
+          {
+            "num": 3,
+            "gap": 7
+          },
+          {
+            "num": 16,
+            "gap": 7
+          },
+          {
+            "num": 28,
+            "gap": 7
+          },
+          {
+            "num": 30,
+            "gap": 7
+          },
+          {
+            "num": 13,
+            "gap": 8
+          },
+          {
+            "num": 21,
+            "gap": 8
+          },
+          {
+            "num": 19,
+            "gap": 9
+          }
+        ]
+      },
+      {
+        "band": 7,
+        "label": "Out 10+",
+        "nums": [
+          {
+            "num": 20,
+            "gap": 10
+          },
+          {
+            "num": 49,
+            "gap": 11
+          },
+          {
+            "num": 61,
+            "gap": 11
+          },
+          {
+            "num": 57,
+            "gap": 12
+          },
+          {
+            "num": 60,
+            "gap": 12
+          },
+          {
+            "num": 62,
+            "gap": 12
+          },
+          {
+            "num": 31,
+            "gap": 14
+          },
+          {
+            "num": 24,
+            "gap": 15
+          },
+          {
+            "num": 34,
+            "gap": 15
+          },
+          {
+            "num": 32,
+            "gap": 16
+          },
+          {
+            "num": 64,
+            "gap": 16
+          },
+          {
+            "num": 42,
+            "gap": 18
+          },
+          {
+            "num": 47,
+            "gap": 18
+          },
+          {
+            "num": 58,
+            "gap": 18
+          },
+          {
+            "num": 1,
+            "gap": 19
+          },
+          {
+            "num": 27,
+            "gap": 19
+          },
+          {
+            "num": 35,
+            "gap": 19
+          },
+          {
+            "num": 52,
+            "gap": 19
+          },
+          {
+            "num": 51,
+            "gap": 20
+          },
+          {
+            "num": 4,
+            "gap": 22
+          },
+          {
+            "num": 65,
+            "gap": 24
+          },
+          {
+            "num": 22,
+            "gap": 26
+          },
+          {
+            "num": 56,
+            "gap": 26
+          },
+          {
+            "num": 15,
+            "gap": 28
+          },
+          {
+            "num": 18,
+            "gap": 29
+          },
+          {
+            "num": 33,
+            "gap": 33
+          },
+          {
+            "num": 9,
+            "gap": 36
+          },
+          {
+            "num": 7,
+            "gap": 42
+          },
+          {
+            "num": 11,
+            "gap": 44
+          },
+          {
+            "num": 23,
+            "gap": 50
+          },
+          {
+            "num": 54,
+            "gap": 50
+          }
+        ]
+      }
+    ],
+    "grid": [
+      {
+        "ago": 45,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          11,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 44,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 43,
+        "has": true,
+        "cells": [
+          7,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 42,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 41,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 40,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 39,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 38,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 37,
+        "has": true,
+        "cells": [
+          9,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 36,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 35,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 34,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          33,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 33,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 32,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 31,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 30,
+        "has": true,
+        "cells": [
+          18,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 29,
+        "has": true,
+        "cells": [
+          15,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 28,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 27,
+        "has": true,
+        "cells": [
+          22,
+          null,
+          null,
+          56,
+          null
+        ]
+      },
+      {
+        "ago": 26,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 25,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          65
+        ]
+      },
+      {
+        "ago": 24,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 23,
+        "has": true,
+        "cells": [
+          4,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 22,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 21,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          51
+        ]
+      },
+      {
+        "ago": 20,
+        "has": true,
+        "cells": [
+          1,
+          27,
+          35,
+          null,
+          52
+        ]
+      },
+      {
+        "ago": 19,
+        "has": true,
+        "cells": [
+          null,
+          42,
+          47,
+          null,
+          58
+        ]
+      },
+      {
+        "ago": 18,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 17,
+        "has": true,
+        "cells": [
+          null,
+          32,
+          null,
+          null,
+          64
+        ]
+      },
+      {
+        "ago": 16,
+        "has": true,
+        "cells": [
+          null,
+          24,
+          34,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 15,
+        "has": true,
+        "cells": [
+          null,
+          31,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 14,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 13,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          57,
+          60,
+          62
+        ]
+      },
+      {
+        "ago": 12,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          49,
+          null,
+          61
+        ]
+      },
+      {
+        "ago": 11,
+        "has": true,
+        "cells": [
+          null,
+          20,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 10,
+        "has": true,
+        "cells": [
+          null,
+          19,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 9,
+        "has": true,
+        "cells": [
+          13,
+          null,
+          null,
+          21,
+          null
+        ]
+      },
+      {
+        "ago": 8,
+        "has": true,
+        "cells": [
+          3,
+          16,
+          28,
+          30,
+          null
+        ]
+      },
+      {
+        "ago": 7,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          41,
+          53,
+          null
+        ]
+      },
+      {
+        "ago": 6,
+        "has": true,
+        "cells": [
+          2,
+          6,
+          26,
+          39,
+          68
+        ]
+      },
+      {
+        "ago": 5,
+        "has": true,
+        "cells": [
+          null,
+          38,
+          46,
+          50,
+          69
+        ]
+      },
+      {
+        "ago": 4,
+        "has": true,
+        "cells": [
+          17,
+          44,
+          63,
+          66,
+          67
+        ]
+      },
+      {
+        "ago": 3,
+        "has": true,
+        "cells": [
+          12,
+          29,
+          37,
+          43,
+          55
+        ]
+      },
+      {
+        "ago": 2,
+        "has": true,
+        "cells": [
+          8,
+          10,
+          14,
+          45,
+          59
+        ]
+      },
+      {
+        "ago": 1,
+        "has": true,
+        "cells": [
+          5,
+          25,
+          36,
+          40,
+          48
+        ]
+      }
+    ],
+    "sakaiLift": [
+      {
+        "band": 6,
+        "rounds": 110,
+        "avgSize": 10.3,
+        "act": 0.84,
+        "exp": 0.74,
+        "lift": 1.12
+      },
+      {
+        "band": 5,
+        "rounds": 110,
+        "avgSize": 9.5,
+        "act": 0.58,
+        "exp": 0.69,
+        "lift": 0.85
+      },
+      {
+        "band": 4,
+        "rounds": 110,
+        "avgSize": 13,
+        "act": 1.03,
+        "exp": 0.94,
+        "lift": 1.09
+      },
+      {
+        "band": 3,
+        "rounds": 110,
+        "avgSize": 15.9,
+        "act": 1,
+        "exp": 1.15,
+        "lift": 0.87
+      },
+      {
+        "band": 2,
+        "rounds": 110,
+        "avgSize": 11.6,
+        "act": 0.93,
+        "exp": 0.84,
+        "lift": 1.1
+      },
+      {
+        "band": 1,
+        "rounds": 110,
+        "avgSize": 7.2,
+        "act": 0.49,
+        "exp": 0.52,
+        "lift": 0.94
+      },
+      {
+        "band": 0,
+        "rounds": 91,
+        "avgSize": 1.9,
+        "act": 0.16,
+        "exp": 0.14,
+        "lift": 1.17
+      }
+    ],
+    "gapLift": [
+      {
+        "band": 7,
+        "rounds": 110,
+        "avgSize": 34,
+        "act": 2.21,
+        "exp": 2.46,
+        "lift": 0.9
+      },
+      {
+        "band": 6,
+        "rounds": 110,
+        "avgSize": 7.6,
+        "act": 0.51,
+        "exp": 0.55,
+        "lift": 0.92
+      },
+      {
+        "band": 5,
+        "rounds": 110,
+        "avgSize": 6.1,
+        "act": 0.47,
+        "exp": 0.44,
+        "lift": 1.07
+      },
+      {
+        "band": 4,
+        "rounds": 110,
+        "avgSize": 3.5,
+        "act": 0.35,
+        "exp": 0.25,
+        "lift": 1.39
+      },
+      {
+        "band": 3,
+        "rounds": 110,
+        "avgSize": 3.9,
+        "act": 0.35,
+        "exp": 0.28,
+        "lift": 1.26
+      },
+      {
+        "band": 2,
+        "rounds": 110,
+        "avgSize": 4.3,
+        "act": 0.38,
+        "exp": 0.31,
+        "lift": 1.23
+      },
+      {
+        "band": 1,
+        "rounds": 110,
+        "avgSize": 4.6,
+        "act": 0.3,
+        "exp": 0.33,
+        "lift": 0.9
+      },
+      {
+        "band": 0,
+        "rounds": 110,
+        "avgSize": 5,
+        "act": 0.42,
+        "exp": 0.36,
+        "lift": 1.15
+      }
+    ]
+  },
+  "backtest": {
+    "hot": {
+      "rounds": 110,
+      "poolSize": 8,
+      "act": 0.62,
+      "exp": 0.58,
+      "lift": 1.07
+    },
+    "cold": {
+      "rounds": 110,
+      "poolSize": 8,
+      "act": 0.55,
+      "exp": 0.58,
+      "lift": 0.94
+    },
+    "overdue": {
+      "rounds": 110,
+      "poolSize": 8,
+      "act": 0.59,
+      "exp": 0.58,
+      "lift": 1.02
+    }
+  },
+  "popularity": {
+    "poolMax": 69,
+    "whiteCount": 5,
+    "calendarMax": 31,
+    "calendarSharePct": 45,
+    "aboveCount": 38,
+    "unpopularPool": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "isBig": true
+  },
+  "winDraws": [
+    [
+      5,
+      25,
+      36,
+      40,
+      48
+    ],
+    [
+      8,
+      10,
+      14,
+      45,
+      59
+    ],
+    [
+      12,
+      29,
+      37,
+      43,
+      55
+    ],
+    [
+      17,
+      44,
+      63,
+      66,
+      67
+    ],
+    [
+      17,
+      38,
+      46,
+      50,
+      69
+    ],
+    [
+      2,
+      6,
+      26,
+      39,
+      68
+    ],
+    [
+      10,
+      14,
+      41,
+      53,
+      59
+    ],
+    [
+      3,
+      16,
+      28,
+      30,
+      59
+    ],
+    [
+      13,
+      14,
+      16,
+      21,
+      38
+    ],
+    [
+      17,
+      19,
+      21,
+      45,
+      48
+    ],
+    [
+      16,
+      20,
+      44,
+      48,
+      50
+    ],
+    [
+      3,
+      26,
+      49,
+      53,
+      61
+    ],
+    [
+      25,
+      55,
+      57,
+      60,
+      62
+    ],
+    [
+      3,
+      13,
+      44,
+      50,
+      53
+    ],
+    [
+      12,
+      31,
+      38,
+      60,
+      66
+    ],
+    [
+      3,
+      24,
+      34,
+      43,
+      49
+    ],
+    [
+      16,
+      32,
+      55,
+      59,
+      64
+    ],
+    [
+      14,
+      16,
+      38,
+      55,
+      64
+    ],
+    [
+      2,
+      42,
+      47,
+      57,
+      58
+    ],
+    [
+      1,
+      27,
+      35,
+      44,
+      52
+    ],
+    [
+      5,
+      14,
+      21,
+      31,
+      51
+    ],
+    [
+      17,
+      32,
+      48,
+      60,
+      64
+    ],
+    [
+      4,
+      16,
+      41,
+      48,
+      66
+    ],
+    [
+      10,
+      28,
+      30,
+      46,
+      57
+    ],
+    [
+      4,
+      13,
+      34,
+      61,
+      65
+    ],
+    [
+      8,
+      37,
+      40,
+      44,
+      65
+    ],
+    [
+      22,
+      31,
+      52,
+      56,
+      67
+    ],
+    [
+      24,
+      30,
+      37,
+      56,
+      64
+    ],
+    [
+      15,
+      41,
+      46,
+      47,
+      56
+    ],
+    [
+      18,
+      27,
+      51,
+      65,
+      68
+    ],
+    [
+      30,
+      36,
+      42,
+      60,
+      63
+    ],
+    [
+      25,
+      37,
+      42,
+      52,
+      65
+    ],
+    [
+      3,
+      19,
+      35,
+      51,
+      67
+    ],
+    [
+      18,
+      31,
+      33,
+      36,
+      62
+    ],
+    [
+      4,
+      30,
+      36,
+      52,
+      57
+    ],
+    [
+      24,
+      29,
+      32,
+      49,
+      63
+    ],
+    [
+      9,
+      17,
+      36,
+      47,
+      64
+    ],
+    [
+      24,
+      25,
+      39,
+      46,
+      61
+    ],
+    [
+      13,
+      21,
+      27,
+      43,
+      45
+    ],
+    [
+      38,
+      43,
+      59,
+      63,
+      64
+    ],
+    [
+      6,
+      47,
+      49,
+      53,
+      60
+    ],
+    [
+      3,
+      16,
+      17,
+      42,
+      52
+    ],
+    [
+      7,
+      24,
+      37,
+      42,
+      57
+    ],
+    [
+      3,
+      6,
+      13,
+      41,
+      65
+    ],
+    [
+      4,
+      10,
+      11,
+      52,
+      64
+    ],
+    [
+      7,
+      11,
+      31,
+      41,
+      57
+    ],
+    [
+      11,
+      42,
+      43,
+      59,
+      61
+    ],
+    [
+      7,
+      21,
+      55,
+      56,
+      64
+    ],
+    [
+      12,
+      18,
+      47,
+      56,
+      63
+    ],
+    [
+      12,
+      28,
+      36,
+      41,
+      59
+    ]
+  ],
+  "proof": null
+}
