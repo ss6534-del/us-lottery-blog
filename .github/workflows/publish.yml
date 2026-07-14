@@ -17,6 +17,10 @@ on:
         description: "트윗 없이 이미지 업로드만 1회 시도 (글 생성도 건너뜀)"
         type: boolean
         default: false
+      social_force_fire:
+        description: "발사 시각(9/19 ET)을 기다리지 않고 지금 실제로 1건 트윗 (과금 발생)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write # data/ 커밋용
@@ -68,6 +72,7 @@ jobs:
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
           SOCIAL_DRY_RUN: ${{ inputs.social_dry_run && '1' || '' }}
           SOCIAL_MEDIA_TEST: ${{ inputs.social_media_test && '1' || '' }}
+          SOCIAL_FORCE_FIRE: ${{ inputs.social_force_fire && '1' || '' }}
         run: node scripts/update.js
 
       - name: Commit new posts
