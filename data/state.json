@@ -13,14 +13,16 @@
   "analysis_nylotto": "2026-07-06",
   "_social": {
     "date": "2026-07-15",
-    "count": 1,
+    "count": 2,
     "firedSlots": [
-      "morning"
+      "morning",
+      "evening"
     ],
-    "lastGameId": "mega",
+    "lastGameId": "take5_mid",
     "postedSlugs": [
       "/powerball/2026-07-15/",
-      "/mega-millions/2026-07-13-analysis/"
+      "/mega-millions/2026-07-13-analysis/",
+      "/take-5-midday/2026-07-14-news/"
     ],
     "queue": [
       {
@@ -42,29 +44,6 @@
         "date": "2026-07-14",
         "publishedDate": "2026-07-14",
         "rank": 3
-      },
-      {
-        "kind": "news",
-        "newsType": "parity-extreme",
-        "facts": {
-          "parity": "odd",
-          "c": 5,
-          "numbers": [
-            3,
-            11,
-            13,
-            27,
-            29
-          ],
-          "topic": "parity-extreme:take5_mid:odd-2026-07-14"
-        },
-        "slug": "/take-5-midday/2026-07-14-news/",
-        "gameId": "take5_mid",
-        "gameSlug": "take-5-midday",
-        "gameName": "Take 5 Midday",
-        "date": "2026-07-14",
-        "publishedDate": "2026-07-14",
-        "rank": 0
       }
     ]
   },
