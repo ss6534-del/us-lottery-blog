@@ -20,6 +20,10 @@ export const SITE = {
     "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png",
   analysisWindow: 50, // 최근 N회차 기준 통계
   googleSiteVerification: "txgWs2HdR-deK6dHPXJVIDFQpzbF7UOkdkukzRLJzuM",
+  // AdSense 게시자 ID. 이 한 값이 <head> 스니펫과 /ads.txt 를 동시에 만든다
+  // (둘이 어긋나면 "승인된 판매자가 아님"으로 수익이 막히므로 절대 따로 적지 않는다).
+  // 빈 문자열로 두면 스니펫도 ads.txt도 생성되지 않는다.
+  adsenseClient: "ca-pub-1696623120661876",
 };
 
 // ── Game registry ─────────────────────────────────────────────────────────────

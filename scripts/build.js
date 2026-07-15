@@ -488,6 +488,18 @@ ${stickyNote("Stop checking by hand", "Save your numbers once — the app checks
     "utf8"
   );
 
+  // ads.txt — 루트(/ads.txt)에 없으면 AdSense가 "승인된 판매자" 확인을 못 해 수익이 막힌다.
+  // dist/ 는 매 빌드마다 통째로 지워지므로 손으로 넣지 말고 여기서 만든다.
+  // 마지막 필드는 구글 애드센스 공통 인증기관 ID(모든 게시자 동일 값).
+  if (SITE.adsenseClient) {
+    const pubId = SITE.adsenseClient.replace(/^ca-/, "");
+    fs.writeFileSync(
+      path.join(DIST, "ads.txt"),
+      `google.com, ${pubId}, DIRECT, f08c47fec0942fa0\n`,
+      "utf8"
+    );
+  }
+
   const sitemap =
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
     urls
@@ -530,6 +542,7 @@ ${rssItems}
       title: `Page Not Found — ${SITE.title}`,
       description: "Page not found.",
       path: "/404.html",
+      ads: false, // 게시자 콘텐츠가 없는 화면 — 애드센스 정책상 광고를 넣지 않는다
       content: `<div class="page"><h1>404 — Page not found</h1><p>That page doesn't exist. Head back to the <a href="${u("/")}">latest analysis</a>.</p></div>`,
     }),
     "utf8"
