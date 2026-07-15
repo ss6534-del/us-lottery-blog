@@ -13,22 +13,16 @@
   "analysis_nylotto": "2026-07-06",
   "_social": {
     "date": "2026-07-15",
-    "count": 0,
-    "lastGameId": "powerball",
+    "count": 1,
+    "firedSlots": [
+      "morning"
+    ],
+    "lastGameId": "mega",
     "postedSlugs": [
-      "/powerball/2026-07-15/"
+      "/powerball/2026-07-15/",
+      "/mega-millions/2026-07-13-analysis/"
     ],
     "queue": [
-      {
-        "kind": "analysis",
-        "slug": "/mega-millions/2026-07-13-analysis/",
-        "gameId": "mega",
-        "gameSlug": "mega-millions",
-        "gameName": "Mega Millions",
-        "date": "2026-07-13",
-        "publishedDate": "2026-07-14",
-        "rank": 2
-      },
       {
         "kind": "post",
         "slug": "/mega-millions/2026-07-17/",
