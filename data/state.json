@@ -42,7 +42,34 @@
         "date": "2026-07-14",
         "publishedDate": "2026-07-14",
         "rank": 3
+      },
+      {
+        "kind": "news",
+        "newsType": "parity-extreme",
+        "facts": {
+          "parity": "odd",
+          "c": 5,
+          "numbers": [
+            3,
+            11,
+            13,
+            27,
+            29
+          ],
+          "topic": "parity-extreme:take5_mid:odd-2026-07-14"
+        },
+        "slug": "/take-5-midday/2026-07-14-news/",
+        "gameId": "take5_mid",
+        "gameSlug": "take-5-midday",
+        "gameName": "Take 5 Midday",
+        "date": "2026-07-14",
+        "publishedDate": "2026-07-14",
+        "rank": 0
       }
     ]
+  },
+  "_news": {
+    "date": "2026-07-14",
+    "topic": "parity-extreme:take5_mid:odd-2026-07-14"
   }
 }
