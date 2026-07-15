@@ -75,14 +75,28 @@ jobs:
           SOCIAL_FORCE_FIRE: ${{ inputs.social_force_fire && '1' || '' }}
         run: node scripts/update.js
 
+      # ⚠️ 이 단계가 실패하면 state.json(트윗 이력 postedSlugs·firedSlots 포함)이 저장되지 않는다.
+      # 트윗은 앞 단계에서 이미 X로 나간 뒤라 되돌릴 수 없으므로, 다음 실행이 같은 글을 재트윗한다.
+      # 그래서 bare `git push`로 두면 안 된다 — 그 사이 누가 main에 푸시하면 non-fast-forward로 실패한다.
+      # pull --rebase + 재시도로 흡수한다(봇은 data/만 건드리므로 충돌 가능성은 거의 없다).
       - name: Commit new posts
         if: steps.update.outputs.changed == 'true'
         run: |
           git config user.name "lottery-blog-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data
-          git commit -m "post: auto-update $(date -u +'%Y-%m-%d %H:%M UTC')" || echo "nothing to commit"
-          git push
+          git diff --cached --quiet && { echo "nothing to commit"; exit 0; }
+          git commit -m "post: auto-update $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "push OK (시도 $i)"
+              exit 0
+            fi
+            echo "push 실패 — 재시도 $i/3"
+            sleep 5
+          done
+          echo "::error::state 저장 실패 — 트윗 이력이 커밋되지 않아 재트윗 위험이 있습니다. 수동 확인 필요."
+          exit 1
 
       - name: Build site
         if: steps.update.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
