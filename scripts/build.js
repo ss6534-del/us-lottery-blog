@@ -5,7 +5,8 @@ import { fileURLToPath } from "node:url";
 import { SITE, GAMES, DIGEST, gameById } from "../site.config.js";
 import { longDate } from "../lib/soda.js";
 import {
-  layout, renderPostBody, renderDigestBody, renderRecapBody, renderAnalysisBody, postCard, u, esc,
+  layout, renderPostBody, renderDigestBody, renderRecapBody, renderAnalysisBody,
+  renderNewsBody, postCard, u, esc,
   gameKey, shortDate, sticker, stickyNote, installPanel, countdownTile,
   sectionHead, ctaButton, playBadge, generatorWidget, ticketChecker, setNavCounts,
 } from "../lib/html.js";
@@ -84,11 +85,23 @@ async function main() {
   }
 
   // 드로어 메뉴의 카테고리별 글 수 (렌더링 전에 주입)
-  const navCounts = { games: {}, digests: countJson(path.join(DATA, "digests")), recaps: 0, analysis: 0 };
+  const navCounts = {
+    games: {},
+    digests: countJson(path.join(DATA, "digests")),
+    recaps: 0,
+    analysis: 0,
+    news: 0,
+  };
+  // 이변 뉴스는 다이제스트 게임(Take 5 등)에서도 나온다 — 게임 허브가 없는 게임의
+  // 글도 /news/ 아카이브에는 실려야 하므로 전 게임을 센다.
+  for (const g of GAMES) {
+    navCounts.news += countJson(path.join(DATA, "news", g.slug));
+  }
   for (const g of GAMES.filter((g) => g.mode === "post")) {
     const recs = countJson(path.join(DATA, "recaps", g.slug));
     const anas = countJson(path.join(DATA, "analysis", g.slug));
-    navCounts.games[g.slug] = countJson(path.join(DATA, "posts", g.slug)) + recs + anas;
+    const news = countJson(path.join(DATA, "news", g.slug));
+    navCounts.games[g.slug] = countJson(path.join(DATA, "posts", g.slug)) + recs + anas + news;
     navCounts.recaps += recs;
     navCounts.analysis += anas;
   }
@@ -255,6 +268,47 @@ async function main() {
     }
   }
 
+  // ── 데이터 이변 뉴스 (Number Watch) ──
+  // 다이제스트 게임(Take 5 등)에서도 나오므로 전 게임을 훑는다.
+  for (const game of GAMES) {
+    const dir = path.join(DATA, "news", game.slug);
+    const newsPosts = listJson(dir).map(readJson);
+    newsPosts.sort((a, b) => b.date.localeCompare(a.date));
+    for (const post of newsPosts) {
+      const urlPath = `/${game.slug}/${post.date}-news/`;
+      const description =
+        `${game.name} number watch — ${post.headline.toLowerCase()}. What the ${post.newsStats.window}-draw ` +
+        `window says about the ${longDate(post.resultDate)} drawing, and why it doesn't change what comes next.`;
+      const ogImageFile = await ogFor({
+        kind: "news", gameSlug: game.slug, gameName: game.name, date: post.date,
+      });
+      writePage(urlPath, layout({
+        title: `${post.title} — ${SITE.title}`,
+        description,
+        path: urlPath,
+        ogType: "article",
+        ogImageFile,
+        jsonLd: articleJsonLd(post.title, description, urlPath, post.publishedDate),
+        content: renderNewsBody(post, ogImageFile),
+      }));
+      urls.push({ path: urlPath, date: post.publishedDate });
+      cards.push({
+        path: urlPath,
+        gameKey: gameKey(game.id),
+        gameName: game.name,
+        title: post.title,
+        dateLabel: shortDate(post.resultDate),
+        metaText: "number watch",
+        numbers: post.facts.numbers.slice(0, 6),
+        special: null,
+        stickerText: "★ Number Watch",
+        excerpt: post.prose.intro,
+        sortDate: post.publishedDate,
+        sortKey: `${post.publishedDate}~news~${game.id}`,
+      });
+    }
+  }
+
   cards.sort((a, b) => b.sortKey.localeCompare(a.sortKey));
 
   // ── 게임 허브 페이지 ──
@@ -395,6 +449,31 @@ async function main() {
 </section>
 <section class="wrap">
   <div class="card-grid">${list || "<p>The first weekly analysis lands with the next drawing.</p>"}</div>
+</section>`,
+    }));
+    urls.push({ path: urlPath });
+  }
+
+  // ── Number Watch 아카이브 ──
+  {
+    const urlPath = "/news/";
+    const list = cards.filter((c) => c.stickerText === "★ Number Watch").map(postCard).join("");
+    writePage(urlPath, layout({
+      title: `Number Watch — Draw Oddities & Record Streaks — ${SITE.title}`,
+      description:
+        "Automatically flagged oddities from New York lottery draws: record absences, back-to-back repeats, " +
+        "all-odd and all-even lines, extreme line totals and consecutive pairs.",
+      path: urlPath,
+      content: `
+<section class="hero">
+  <div class="hero-copy">
+    <div style="margin-bottom:14px">${sticker("Auto-flagged · Data oddities")}</div>
+    <h1>Number <span class="scribble">Watch</span></h1>
+    <p>Our tracker reads every drawing as it lands and writes an entry only when something genuinely unusual turns up — a record drought, a repeat, an all-odd line, an extreme total. No entry means nothing unusual happened.</p>
+  </div>
+</section>
+<section class="wrap">
+  <div class="card-grid">${list || "<p>Nothing unusual to report yet — the next oddity gets its own entry the moment it lands.</p>"}</div>
 </section>`,
     }));
     urls.push({ path: urlPath });
