@@ -1,23 +1,20 @@
 {
-  "powerball": "2026-07-13",
+  "powerball": "2026-07-15",
   "mega": "2026-07-14",
-  "nylotto": "2026-07-11",
-  "take5_mid": "2026-07-14",
-  "take5_eve": "2026-07-14",
-  "millionaire": "2026-07-14",
+  "nylotto": "2026-07-15",
+  "take5_mid": "2026-07-15",
+  "take5_eve": "2026-07-15",
+  "millionaire": "2026-07-15",
   "recap_powerball": "2026-06",
   "recap_mega": "2026-06",
   "recap_nylotto": "2026-06",
   "analysis_powerball": "2026-07-13",
   "analysis_mega": "2026-07-13",
-  "analysis_nylotto": "2026-07-06",
+  "analysis_nylotto": "2026-07-13",
   "_social": {
-    "date": "2026-07-15",
-    "count": 2,
-    "firedSlots": [
-      "morning",
-      "evening"
-    ],
+    "date": "2026-07-16",
+    "count": 1,
+    "firedSlots": [],
     "lastGameId": "take5_mid",
     "postedSlugs": [
       "/powerball/2026-07-15/",
@@ -44,11 +41,67 @@
         "date": "2026-07-14",
         "publishedDate": "2026-07-14",
         "rank": 3
+      },
+      {
+        "kind": "post",
+        "newsType": null,
+        "facts": null,
+        "slug": "/powerball/2026-07-18/",
+        "gameId": "powerball",
+        "gameSlug": "powerball",
+        "gameName": "Powerball",
+        "date": "2026-07-18",
+        "publishedDate": "2026-07-15",
+        "rank": 1
+      },
+      {
+        "kind": "analysis",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-lotto/2026-07-13-analysis/",
+        "gameId": "nylotto",
+        "gameSlug": "ny-lotto",
+        "gameName": "NY Lotto",
+        "date": "2026-07-13",
+        "publishedDate": "2026-07-15",
+        "rank": 3
+      },
+      {
+        "kind": "post",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-lotto/2026-07-18/",
+        "gameId": "nylotto",
+        "gameSlug": "ny-lotto",
+        "gameName": "NY Lotto",
+        "date": "2026-07-18",
+        "publishedDate": "2026-07-15",
+        "rank": 2
+      },
+      {
+        "kind": "digest",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-daily/2026-07-15/",
+        "gameId": "ny-daily",
+        "gameSlug": null,
+        "gameName": "NY Daily Digest",
+        "date": "2026-07-15",
+        "publishedDate": "2026-07-15",
+        "rank": 4
       }
     ]
   },
   "_news": {
     "date": "2026-07-14",
     "topic": "parity-extreme:take5_mid:odd-2026-07-14"
+  },
+  "_promo": {
+    "week": "2026-W29",
+    "weekCount": 1,
+    "postedAppIds": [
+      "app8"
+    ],
+    "lastAppId": "app8"
   }
 }
