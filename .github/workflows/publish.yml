@@ -21,6 +21,10 @@ on:
         description: "발사 시각(9/19 ET)을 기다리지 않고 지금 실제로 1건 트윗 (과금 발생)"
         type: boolean
         default: false
+      promo_force:
+        description: "요일·주차 게이트를 무시하고 지금 앱 홍보 트윗 1건 강제 발사 (과금 발생)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write # data/ 커밋용
@@ -73,6 +77,7 @@ jobs:
           SOCIAL_DRY_RUN: ${{ inputs.social_dry_run && '1' || '' }}
           SOCIAL_MEDIA_TEST: ${{ inputs.social_media_test && '1' || '' }}
           SOCIAL_FORCE_FIRE: ${{ inputs.social_force_fire && '1' || '' }}
+          SOCIAL_PROMO_FORCE: ${{ inputs.promo_force && '1' || '' }}
         run: node scripts/update.js
 
       # ⚠️ 이 단계가 실패하면 state.json(트윗 이력 postedSlugs·firedSlots 포함)이 저장되지 않는다.
