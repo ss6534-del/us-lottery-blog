@@ -2,9 +2,9 @@
   "powerball": "2026-07-15",
   "mega": "2026-07-14",
   "nylotto": "2026-07-15",
-  "take5_mid": "2026-07-15",
-  "take5_eve": "2026-07-15",
-  "millionaire": "2026-07-15",
+  "take5_mid": "2026-07-16",
+  "take5_eve": "2026-07-16",
+  "millionaire": "2026-07-16",
   "recap_powerball": "2026-06",
   "recap_mega": "2026-06",
   "recap_nylotto": "2026-06",
@@ -12,11 +12,9 @@
   "analysis_mega": "2026-07-13",
   "analysis_nylotto": "2026-07-13",
   "_social": {
-    "date": "2026-07-16",
-    "count": 2,
-    "firedSlots": [
-      "morning"
-    ],
+    "date": "2026-07-17",
+    "count": 0,
+    "firedSlots": [],
     "lastGameId": "nylotto",
     "postedSlugs": [
       "/powerball/2026-07-15/",
@@ -79,6 +77,18 @@
         "gameName": "NY Daily Digest",
         "date": "2026-07-15",
         "publishedDate": "2026-07-15",
+        "rank": 4
+      },
+      {
+        "kind": "digest",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-daily/2026-07-16/",
+        "gameId": "ny-daily",
+        "gameSlug": null,
+        "gameName": "NY Daily Digest",
+        "date": "2026-07-16",
+        "publishedDate": "2026-07-16",
         "rank": 4
       }
     ]
