@@ -13,14 +13,17 @@
   "analysis_nylotto": "2026-07-13",
   "_social": {
     "date": "2026-07-17",
-    "count": 0,
-    "firedSlots": [],
-    "lastGameId": "nylotto",
+    "count": 1,
+    "firedSlots": [
+      "morning"
+    ],
+    "lastGameId": "ny-daily",
     "postedSlugs": [
       "/powerball/2026-07-15/",
       "/mega-millions/2026-07-13-analysis/",
       "/take-5-midday/2026-07-14-news/",
-      "/ny-lotto/2026-07-13-analysis/"
+      "/ny-lotto/2026-07-13-analysis/",
+      "/ny-daily/2026-07-16/"
     ],
     "queue": [
       {
@@ -77,18 +80,6 @@
         "gameName": "NY Daily Digest",
         "date": "2026-07-15",
         "publishedDate": "2026-07-15",
-        "rank": 4
-      },
-      {
-        "kind": "digest",
-        "newsType": null,
-        "facts": null,
-        "slug": "/ny-daily/2026-07-16/",
-        "gameId": "ny-daily",
-        "gameSlug": null,
-        "gameName": "NY Daily Digest",
-        "date": "2026-07-16",
-        "publishedDate": "2026-07-16",
         "rank": 4
       }
     ]
