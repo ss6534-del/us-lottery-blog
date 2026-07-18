@@ -1,10 +1,10 @@
 {
   "powerball": "2026-07-15",
-  "mega": "2026-07-14",
+  "mega": "2026-07-17",
   "nylotto": "2026-07-15",
-  "take5_mid": "2026-07-16",
-  "take5_eve": "2026-07-16",
-  "millionaire": "2026-07-16",
+  "take5_mid": "2026-07-17",
+  "take5_eve": "2026-07-17",
+  "millionaire": "2026-07-17",
   "recap_powerball": "2026-06",
   "recap_mega": "2026-06",
   "recap_nylotto": "2026-06",
@@ -59,12 +59,60 @@
         "date": "2026-07-15",
         "publishedDate": "2026-07-15",
         "rank": 4
+      },
+      {
+        "kind": "news",
+        "newsType": "repeat-number",
+        "facts": {
+          "nums": [
+            35,
+            37
+          ],
+          "count": 2,
+          "prevDate": "2026-07-11",
+          "numbers": [
+            35,
+            37
+          ],
+          "topic": "repeat-number:nylotto:35-37"
+        },
+        "slug": "/ny-lotto/2026-07-15-news/",
+        "gameId": "nylotto",
+        "gameSlug": "ny-lotto",
+        "gameName": "NY Lotto",
+        "date": "2026-07-15",
+        "publishedDate": "2026-07-15",
+        "rank": 0
+      },
+      {
+        "kind": "post",
+        "newsType": null,
+        "facts": null,
+        "slug": "/mega-millions/2026-07-21/",
+        "gameId": "mega",
+        "gameSlug": "mega-millions",
+        "gameName": "Mega Millions",
+        "date": "2026-07-21",
+        "publishedDate": "2026-07-17",
+        "rank": 1
+      },
+      {
+        "kind": "digest",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-daily/2026-07-17/",
+        "gameId": "ny-daily",
+        "gameSlug": null,
+        "gameName": "NY Daily Digest",
+        "date": "2026-07-17",
+        "publishedDate": "2026-07-17",
+        "rank": 4
       }
     ]
   },
   "_news": {
-    "date": "2026-07-14",
-    "topic": "parity-extreme:take5_mid:odd-2026-07-14"
+    "date": "2026-07-15",
+    "topic": "repeat-number:nylotto:35-37"
   },
   "_promo": {
     "week": "2026-W29",
