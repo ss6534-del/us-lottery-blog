@@ -1,10 +1,10 @@
 {
-  "powerball": "2026-07-15",
+  "powerball": "2026-07-18",
   "mega": "2026-07-17",
-  "nylotto": "2026-07-15",
-  "take5_mid": "2026-07-17",
-  "take5_eve": "2026-07-17",
-  "millionaire": "2026-07-17",
+  "nylotto": "2026-07-18",
+  "take5_mid": "2026-07-18",
+  "take5_eve": "2026-07-18",
+  "millionaire": "2026-07-18",
   "recap_powerball": "2026-06",
   "recap_mega": "2026-06",
   "recap_nylotto": "2026-06",
@@ -49,12 +49,72 @@
         "date": "2026-07-17",
         "publishedDate": "2026-07-17",
         "rank": 4
+      },
+      {
+        "kind": "post",
+        "newsType": null,
+        "facts": null,
+        "slug": "/powerball/2026-07-20/",
+        "gameId": "powerball",
+        "gameSlug": "powerball",
+        "gameName": "Powerball",
+        "date": "2026-07-20",
+        "publishedDate": "2026-07-18",
+        "rank": 1
+      },
+      {
+        "kind": "post",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-lotto/2026-07-22/",
+        "gameId": "nylotto",
+        "gameSlug": "ny-lotto",
+        "gameName": "NY Lotto",
+        "date": "2026-07-22",
+        "publishedDate": "2026-07-18",
+        "rank": 2
+      },
+      {
+        "kind": "digest",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-daily/2026-07-18/",
+        "gameId": "ny-daily",
+        "gameSlug": null,
+        "gameName": "NY Daily Digest",
+        "date": "2026-07-18",
+        "publishedDate": "2026-07-18",
+        "rank": 4
+      },
+      {
+        "kind": "news",
+        "newsType": "repeat-number",
+        "facts": {
+          "nums": [
+            13,
+            20
+          ],
+          "count": 2,
+          "prevDate": "2026-07-17",
+          "numbers": [
+            13,
+            20
+          ],
+          "topic": "repeat-number:take5_eve:13-20"
+        },
+        "slug": "/take-5-evening/2026-07-18-news/",
+        "gameId": "take5_eve",
+        "gameSlug": "take-5-evening",
+        "gameName": "Take 5 Evening",
+        "date": "2026-07-18",
+        "publishedDate": "2026-07-18",
+        "rank": 0
       }
     ]
   },
   "_news": {
-    "date": "2026-07-15",
-    "topic": "repeat-number:nylotto:35-37"
+    "date": "2026-07-18",
+    "topic": "repeat-number:take5_eve:13-20"
   },
   "_promo": {
     "week": "2026-W29",
