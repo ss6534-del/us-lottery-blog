@@ -13,9 +13,11 @@
   "analysis_nylotto": "2026-07-13",
   "_social": {
     "date": "2026-07-19",
-    "count": 0,
-    "firedSlots": [],
-    "lastKind": null,
+    "count": 1,
+    "firedSlots": [
+      "morning"
+    ],
+    "lastKind": "promo",
     "lastGameId": "nylotto",
     "postedSlugs": [
       "/powerball/2026-07-15/",
@@ -118,11 +120,8 @@
   },
   "_promo": {
     "week": "2026-W29",
-    "weekCount": 2,
-    "postedAppIds": [
-      "app8",
-      "app2"
-    ],
-    "lastAppId": "app2"
+    "weekCount": 3,
+    "postedAppIds": [],
+    "lastAppId": "workpay"
   }
 }
