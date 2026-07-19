@@ -12,11 +12,10 @@
   "analysis_mega": "2026-07-13",
   "analysis_nylotto": "2026-07-13",
   "_social": {
-    "date": "2026-07-18",
-    "count": 1,
-    "firedSlots": [
-      "morning"
-    ],
+    "date": "2026-07-19",
+    "count": 0,
+    "firedSlots": [],
+    "lastKind": null,
     "lastGameId": "nylotto",
     "postedSlugs": [
       "/powerball/2026-07-15/",
@@ -27,42 +26,6 @@
       "/ny-lotto/2026-07-15-news/"
     ],
     "queue": [
-      {
-        "kind": "post",
-        "newsType": null,
-        "facts": null,
-        "slug": "/powerball/2026-07-18/",
-        "gameId": "powerball",
-        "gameSlug": "powerball",
-        "gameName": "Powerball",
-        "date": "2026-07-18",
-        "publishedDate": "2026-07-15",
-        "rank": 1
-      },
-      {
-        "kind": "post",
-        "newsType": null,
-        "facts": null,
-        "slug": "/ny-lotto/2026-07-18/",
-        "gameId": "nylotto",
-        "gameSlug": "ny-lotto",
-        "gameName": "NY Lotto",
-        "date": "2026-07-18",
-        "publishedDate": "2026-07-15",
-        "rank": 2
-      },
-      {
-        "kind": "digest",
-        "newsType": null,
-        "facts": null,
-        "slug": "/ny-daily/2026-07-15/",
-        "gameId": "ny-daily",
-        "gameSlug": null,
-        "gameName": "NY Daily Digest",
-        "date": "2026-07-15",
-        "publishedDate": "2026-07-15",
-        "rank": 4
-      },
       {
         "kind": "post",
         "newsType": null,
