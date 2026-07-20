@@ -1,0 +1,144 @@
+{
+  "kind": "news",
+  "newsType": "sum-extreme",
+  "gameId": "take5_mid",
+  "gameSlug": "take-5-midday",
+  "gameName": "Take 5 Midday",
+  "date": "2026-07-19",
+  "resultDate": "2026-07-19",
+  "targetDate": "2026-07-20",
+  "publishedDate": "2026-07-19",
+  "drawTimeEt": "2:30 PM ET",
+  "title": "Take 5 Midday Number Watch — The Biggest Line Total We've Logged",
+  "headline": "The Biggest Line Total We've Logged",
+  "facts": {
+    "sum": 171,
+    "dir": "highest",
+    "prevExtreme": 144,
+    "avg": 102,
+    "numbers": [
+      24,
+      34,
+      36,
+      38,
+      39
+    ],
+    "topic": "sum-extreme:take5_mid:highest-171"
+  },
+  "prose": {
+    "intro": "Line totals usually cluster in a comfortable band. The newest Take 5 Midday draw broke out of it with a highest-ever 171.",
+    "fact": "Totals in this window average 102. The prior highest extreme was 144 — until this 171 landed.",
+    "context": "Worth saying plainly: none of this makes anything \"due\". Every drawing starts from scratch, and no gap or pattern carries over. This entry documents an extreme in the dataset — that's all it is.",
+    "outro": "Filed and logged. AI Lottery Hub keeps live results, pattern views and automatic ticket checking within reach — free on Google Play."
+  },
+  "latest": {
+    "date": "2026-07-19",
+    "white": [
+      24,
+      34,
+      36,
+      38,
+      39
+    ],
+    "special": null
+  },
+  "sumSeries": [
+    79,
+    134,
+    124,
+    85,
+    110,
+    94,
+    117,
+    69,
+    110,
+    80,
+    61,
+    82,
+    60,
+    93,
+    83,
+    67,
+    101,
+    79,
+    119,
+    171
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 24,
+        "count": 10
+      },
+      {
+        "num": 25,
+        "count": 10
+      },
+      {
+        "num": 33,
+        "count": 10
+      },
+      {
+        "num": 36,
+        "count": 9
+      },
+      {
+        "num": 3,
+        "count": 8
+      },
+      {
+        "num": 7,
+        "count": 8
+      },
+      {
+        "num": 10,
+        "count": 8
+      }
+    ],
+    "overdue": [
+      {
+        "num": 8,
+        "gap": 35
+      },
+      {
+        "num": 37,
+        "gap": 28
+      },
+      {
+        "num": 23,
+        "gap": 16
+      },
+      {
+        "num": 25,
+        "gap": 14
+      },
+      {
+        "num": 12,
+        "gap": 13
+      },
+      {
+        "num": 33,
+        "gap": 13
+      },
+      {
+        "num": 18,
+        "gap": 12
+      }
+    ],
+    "sum": {
+      "avg": 102,
+      "min": 48,
+      "max": 171,
+      "p25": 83,
+      "p75": 116
+    },
+    "consecutivePct": 54,
+    "repeatPct": 53,
+    "oddSplit": {
+      "best": 3,
+      "pct": 36,
+      "avgOdd": 2.6
+    }
+  }
+}
