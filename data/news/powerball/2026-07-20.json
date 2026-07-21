@@ -1,0 +1,143 @@
+{
+  "kind": "news",
+  "newsType": "repeat-number",
+  "gameId": "powerball",
+  "gameSlug": "powerball",
+  "gameName": "Powerball",
+  "date": "2026-07-20",
+  "resultDate": "2026-07-20",
+  "targetDate": "2026-07-22",
+  "publishedDate": "2026-07-20",
+  "drawTimeEt": "10:59 PM ET",
+  "title": "Powerball Number Watch — 9 & 44 Came Straight Back",
+  "headline": "9 & 44 Came Straight Back",
+  "facts": {
+    "nums": [
+      9,
+      44
+    ],
+    "count": 2,
+    "prevDate": "2026-07-18",
+    "numbers": [
+      9,
+      44
+    ],
+    "topic": "repeat-number:powerball:9-44"
+  },
+  "prose": {
+    "intro": "Carry-over alert. 2 numbers — 9 & 44 — landed in back-to-back Powerball drawings.",
+    "fact": "One repeat between drawings is routine. 2 in a single transition — 9 & 44 — is measurably less common.",
+    "context": "Standard caveat — every draw is random and independent. Records like this one describe where the data has been, never where it is going. Treat it as a curiosity, not a signal.",
+    "outro": "The regular draw-by-draw analysis continues as always. Want the charts and fresh sets on your phone the moment results drop? The free AI Lottery Hub app runs the same engine for every New York game."
+  },
+  "latest": {
+    "date": "2026-07-20",
+    "white": [
+      2,
+      9,
+      44,
+      53,
+      59
+    ],
+    "special": 8
+  },
+  "sumSeries": [
+    226,
+    153,
+    207,
+    163,
+    259,
+    192,
+    178,
+    150,
+    102,
+    136,
+    177,
+    141,
+    220,
+    257,
+    176,
+    136,
+    154,
+    94,
+    173,
+    167
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 3,
+        "count": 7
+      },
+      {
+        "num": 16,
+        "count": 7
+      },
+      {
+        "num": 44,
+        "count": 7
+      },
+      {
+        "num": 59,
+        "count": 7
+      },
+      {
+        "num": 64,
+        "count": 7
+      },
+      {
+        "num": 14,
+        "count": 6
+      },
+      {
+        "num": 17,
+        "count": 6
+      }
+    ],
+    "overdue": [
+      {
+        "num": 23,
+        "gap": 50
+      },
+      {
+        "num": 54,
+        "gap": 50
+      },
+      {
+        "num": 11,
+        "gap": 47
+      },
+      {
+        "num": 33,
+        "gap": 36
+      },
+      {
+        "num": 15,
+        "gap": 31
+      },
+      {
+        "num": 22,
+        "gap": 29
+      },
+      {
+        "num": 65,
+        "gap": 27
+      }
+    ],
+    "sum": {
+      "avg": 181,
+      "min": 94,
+      "max": 267,
+      "p25": 153,
+      "p75": 211
+    },
+    "consecutivePct": 18,
+    "repeatPct": 35,
+    "oddSplit": {
+      "best": 3,
+      "pct": 34,
+      "avgOdd": 2.5
+    }
+  }
+}
