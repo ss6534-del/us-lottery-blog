@@ -1,15 +1,15 @@
 {
   "powerball": "2026-07-20",
-  "mega": "2026-07-17",
+  "mega": "2026-07-21",
   "nylotto": "2026-07-18",
   "take5_mid": "2026-07-21",
   "take5_eve": "2026-07-21",
-  "millionaire": "2026-07-20",
+  "millionaire": "2026-07-21",
   "recap_powerball": "2026-06",
   "recap_mega": "2026-06",
   "recap_nylotto": "2026-06",
   "analysis_powerball": "2026-07-20",
-  "analysis_mega": "2026-07-13",
+  "analysis_mega": "2026-07-20",
   "analysis_nylotto": "2026-07-13",
   "_social": {
     "date": "2026-07-22",
@@ -145,6 +145,30 @@
         "date": "2026-07-21",
         "publishedDate": "2026-07-21",
         "rank": 0
+      },
+      {
+        "kind": "analysis",
+        "newsType": null,
+        "facts": null,
+        "slug": "/mega-millions/2026-07-20-analysis/",
+        "gameId": "mega",
+        "gameSlug": "mega-millions",
+        "gameName": "Mega Millions",
+        "date": "2026-07-20",
+        "publishedDate": "2026-07-21",
+        "rank": 3
+      },
+      {
+        "kind": "post",
+        "newsType": null,
+        "facts": null,
+        "slug": "/mega-millions/2026-07-24/",
+        "gameId": "mega",
+        "gameSlug": "mega-millions",
+        "gameName": "Mega Millions",
+        "date": "2026-07-24",
+        "publishedDate": "2026-07-21",
+        "rank": 1
       }
     ]
   },

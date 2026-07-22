@@ -804,6 +804,33 @@
             "specialHit": false
           }
         ]
+      },
+      "outcome": {
+        "white": [
+          2,
+          4,
+          24,
+          36,
+          45
+        ],
+        "special": 5,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": true
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 2,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
+            "specialHit": false
+          }
+        ]
       }
     }
   }
