@@ -13,10 +13,12 @@
   "analysis_nylotto": "2026-07-13",
   "_social": {
     "date": "2026-07-22",
-    "count": 0,
-    "firedSlots": [],
-    "lastKind": "promo",
-    "lastGameId": "ny-daily",
+    "count": 1,
+    "firedSlots": [
+      "morning"
+    ],
+    "lastKind": "post",
+    "lastGameId": "mega",
     "postedSlugs": [
       "/powerball/2026-07-15/",
       "/mega-millions/2026-07-13-analysis/",
@@ -24,7 +26,8 @@
       "/ny-lotto/2026-07-13-analysis/",
       "/ny-daily/2026-07-16/",
       "/ny-lotto/2026-07-15-news/",
-      "/ny-daily/2026-07-19/"
+      "/ny-daily/2026-07-19/",
+      "/mega-millions/2026-07-20-analysis/"
     ],
     "queue": [
       {
@@ -145,18 +148,6 @@
         "date": "2026-07-21",
         "publishedDate": "2026-07-21",
         "rank": 0
-      },
-      {
-        "kind": "analysis",
-        "newsType": null,
-        "facts": null,
-        "slug": "/mega-millions/2026-07-20-analysis/",
-        "gameId": "mega",
-        "gameSlug": "mega-millions",
-        "gameName": "Mega Millions",
-        "date": "2026-07-20",
-        "publishedDate": "2026-07-21",
-        "rank": 3
       },
       {
         "kind": "post",
