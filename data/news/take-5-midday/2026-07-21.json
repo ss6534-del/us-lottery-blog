@@ -1,0 +1,141 @@
+{
+  "kind": "news",
+  "newsType": "long-absence",
+  "gameId": "take5_mid",
+  "gameSlug": "take-5-midday",
+  "gameName": "Take 5 Midday",
+  "date": "2026-07-21",
+  "resultDate": "2026-07-21",
+  "targetDate": "2026-07-22",
+  "publishedDate": "2026-07-21",
+  "drawTimeEt": "2:30 PM ET",
+  "title": "Take 5 Midday Number Watch — Number 8 Has Gone Quiet for 37 Draws",
+  "headline": "Number 8 Has Gone Quiet for 37 Draws",
+  "facts": {
+    "num": 8,
+    "gap": 37,
+    "gapText": "37",
+    "capped": false,
+    "record": 29,
+    "numbers": [
+      8
+    ],
+    "topic": "long-absence:take5_mid:8"
+  },
+  "prose": {
+    "intro": "Every so often a number simply stops showing up. In Take 5 Midday, that number is 8, and it has now missed 37 consecutive draws.",
+    "fact": "For scale: the longest completed drought inside the same window was 29 draws. At 37, number 8 has now pushed past everything we had measured.",
+    "context": "Worth saying plainly: none of this makes anything \"due\". Every drawing starts from scratch, and no gap or pattern carries over. This entry documents an extreme in the dataset — that's all it is.",
+    "outro": "That's the entry. For the standing frequency and overdue tables, see our regular posts — or carry them around in the free AI Lottery Hub app, which also checks your saved tickets automatically."
+  },
+  "latest": {
+    "date": "2026-07-21",
+    "white": [
+      5,
+      13,
+      19,
+      26,
+      28
+    ],
+    "special": null
+  },
+  "sumSeries": [
+    124,
+    85,
+    110,
+    94,
+    117,
+    69,
+    110,
+    80,
+    61,
+    82,
+    60,
+    93,
+    83,
+    67,
+    101,
+    79,
+    119,
+    171,
+    127,
+    91
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 24,
+        "count": 10
+      },
+      {
+        "num": 25,
+        "count": 10
+      },
+      {
+        "num": 33,
+        "count": 10
+      },
+      {
+        "num": 13,
+        "count": 9
+      },
+      {
+        "num": 36,
+        "count": 9
+      },
+      {
+        "num": 3,
+        "count": 8
+      },
+      {
+        "num": 5,
+        "count": 8
+      }
+    ],
+    "overdue": [
+      {
+        "num": 8,
+        "gap": 37
+      },
+      {
+        "num": 23,
+        "gap": 18
+      },
+      {
+        "num": 12,
+        "gap": 15
+      },
+      {
+        "num": 33,
+        "gap": 15
+      },
+      {
+        "num": 18,
+        "gap": 14
+      },
+      {
+        "num": 9,
+        "gap": 12
+      },
+      {
+        "num": 32,
+        "gap": 11
+      }
+    ],
+    "sum": {
+      "avg": 103,
+      "min": 60,
+      "max": 171,
+      "p25": 84,
+      "p75": 116
+    },
+    "consecutivePct": 54,
+    "repeatPct": 57,
+    "oddSplit": {
+      "best": 3,
+      "pct": 38,
+      "avgOdd": 2.6
+    }
+  }
+}

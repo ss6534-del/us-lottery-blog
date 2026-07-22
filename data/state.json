@@ -2,8 +2,8 @@
   "powerball": "2026-07-20",
   "mega": "2026-07-17",
   "nylotto": "2026-07-18",
-  "take5_mid": "2026-07-20",
-  "take5_eve": "2026-07-20",
+  "take5_mid": "2026-07-21",
+  "take5_eve": "2026-07-21",
   "millionaire": "2026-07-20",
   "recap_powerball": "2026-06",
   "recap_mega": "2026-06",
@@ -111,12 +111,46 @@
         "date": "2026-07-20",
         "publishedDate": "2026-07-20",
         "rank": 0
+      },
+      {
+        "kind": "digest",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-daily/2026-07-21/",
+        "gameId": "ny-daily",
+        "gameSlug": null,
+        "gameName": "NY Daily Digest",
+        "date": "2026-07-21",
+        "publishedDate": "2026-07-21",
+        "rank": 4
+      },
+      {
+        "kind": "news",
+        "newsType": "long-absence",
+        "facts": {
+          "num": 8,
+          "gap": 37,
+          "gapText": "37",
+          "capped": false,
+          "record": 29,
+          "numbers": [
+            8
+          ],
+          "topic": "long-absence:take5_mid:8"
+        },
+        "slug": "/take-5-midday/2026-07-21-news/",
+        "gameId": "take5_mid",
+        "gameSlug": "take-5-midday",
+        "gameName": "Take 5 Midday",
+        "date": "2026-07-21",
+        "publishedDate": "2026-07-21",
+        "rank": 0
       }
     ]
   },
   "_news": {
-    "date": "2026-07-20",
-    "topic": "repeat-number:powerball:9-44"
+    "date": "2026-07-21",
+    "topic": "long-absence:take5_mid:8"
   },
   "_promo": {
     "week": "2026-W30",
