@@ -1,16 +1,16 @@
 {
-  "powerball": "2026-07-20",
+  "powerball": "2026-07-22",
   "mega": "2026-07-21",
-  "nylotto": "2026-07-18",
-  "take5_mid": "2026-07-21",
-  "take5_eve": "2026-07-21",
-  "millionaire": "2026-07-21",
+  "nylotto": "2026-07-22",
+  "take5_mid": "2026-07-22",
+  "take5_eve": "2026-07-22",
+  "millionaire": "2026-07-22",
   "recap_powerball": "2026-06",
   "recap_mega": "2026-06",
   "recap_nylotto": "2026-06",
   "analysis_powerball": "2026-07-20",
   "analysis_mega": "2026-07-20",
-  "analysis_nylotto": "2026-07-13",
+  "analysis_nylotto": "2026-07-20",
   "_social": {
     "date": "2026-07-23",
     "count": 0,
@@ -133,12 +133,82 @@
         "date": "2026-07-24",
         "publishedDate": "2026-07-21",
         "rank": 1
+      },
+      {
+        "kind": "post",
+        "newsType": null,
+        "facts": null,
+        "slug": "/powerball/2026-07-25/",
+        "gameId": "powerball",
+        "gameSlug": "powerball",
+        "gameName": "Powerball",
+        "date": "2026-07-25",
+        "publishedDate": "2026-07-22",
+        "rank": 1
+      },
+      {
+        "kind": "analysis",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-lotto/2026-07-20-analysis/",
+        "gameId": "nylotto",
+        "gameSlug": "ny-lotto",
+        "gameName": "NY Lotto",
+        "date": "2026-07-20",
+        "publishedDate": "2026-07-22",
+        "rank": 3
+      },
+      {
+        "kind": "post",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-lotto/2026-07-25/",
+        "gameId": "nylotto",
+        "gameSlug": "ny-lotto",
+        "gameName": "NY Lotto",
+        "date": "2026-07-25",
+        "publishedDate": "2026-07-22",
+        "rank": 2
+      },
+      {
+        "kind": "digest",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-daily/2026-07-22/",
+        "gameId": "ny-daily",
+        "gameSlug": null,
+        "gameName": "NY Daily Digest",
+        "date": "2026-07-22",
+        "publishedDate": "2026-07-22",
+        "rank": 4
+      },
+      {
+        "kind": "news",
+        "newsType": "long-absence",
+        "facts": {
+          "num": 55,
+          "gap": 44,
+          "gapText": "44",
+          "capped": false,
+          "record": 36,
+          "numbers": [
+            55
+          ],
+          "topic": "long-absence:millionaire:55"
+        },
+        "slug": "/millionaire-for-life/2026-07-22-news/",
+        "gameId": "millionaire",
+        "gameSlug": "millionaire-for-life",
+        "gameName": "Millionaire for Life",
+        "date": "2026-07-22",
+        "publishedDate": "2026-07-22",
+        "rank": 0
       }
     ]
   },
   "_news": {
-    "date": "2026-07-21",
-    "topic": "long-absence:take5_mid:8"
+    "date": "2026-07-22",
+    "topic": "long-absence:millionaire:55"
   },
   "_promo": {
     "week": "2026-W30",
