@@ -12,11 +12,9 @@
   "analysis_mega": "2026-07-20",
   "analysis_nylotto": "2026-07-13",
   "_social": {
-    "date": "2026-07-22",
-    "count": 1,
-    "firedSlots": [
-      "morning"
-    ],
+    "date": "2026-07-23",
+    "count": 0,
+    "firedSlots": [],
     "lastKind": "post",
     "lastGameId": "mega",
     "postedSlugs": [
@@ -30,31 +28,6 @@
       "/mega-millions/2026-07-20-analysis/"
     ],
     "queue": [
-      {
-        "kind": "news",
-        "newsType": "sum-extreme",
-        "facts": {
-          "sum": 171,
-          "dir": "highest",
-          "prevExtreme": 144,
-          "avg": 102,
-          "numbers": [
-            24,
-            34,
-            36,
-            38,
-            39
-          ],
-          "topic": "sum-extreme:take5_mid:highest-171"
-        },
-        "slug": "/take-5-midday/2026-07-19-news/",
-        "gameId": "take5_mid",
-        "gameSlug": "take-5-midday",
-        "gameName": "Take 5 Midday",
-        "date": "2026-07-19",
-        "publishedDate": "2026-07-19",
-        "rank": 0
-      },
       {
         "kind": "analysis",
         "newsType": null,
