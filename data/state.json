@@ -2,9 +2,9 @@
   "powerball": "2026-07-22",
   "mega": "2026-07-21",
   "nylotto": "2026-07-22",
-  "take5_mid": "2026-07-22",
-  "take5_eve": "2026-07-22",
-  "millionaire": "2026-07-22",
+  "take5_mid": "2026-07-23",
+  "take5_eve": "2026-07-23",
+  "millionaire": "2026-07-23",
   "recap_powerball": "2026-06",
   "recap_mega": "2026-06",
   "recap_nylotto": "2026-06",
@@ -143,12 +143,49 @@
         "date": "2026-07-22",
         "publishedDate": "2026-07-22",
         "rank": 0
+      },
+      {
+        "kind": "digest",
+        "newsType": null,
+        "facts": null,
+        "slug": "/ny-daily/2026-07-23/",
+        "gameId": "ny-daily",
+        "gameSlug": null,
+        "gameName": "NY Daily Digest",
+        "date": "2026-07-23",
+        "publishedDate": "2026-07-23",
+        "rank": 4
+      },
+      {
+        "kind": "news",
+        "newsType": "consecutive-pair",
+        "facts": {
+          "pairs": [
+            "7–8",
+            "32–33"
+          ],
+          "count": 2,
+          "numbers": [
+            7,
+            8,
+            32,
+            33
+          ],
+          "topic": "consecutive-pair:take5_eve:7-8_32-33"
+        },
+        "slug": "/take-5-evening/2026-07-23-news/",
+        "gameId": "take5_eve",
+        "gameSlug": "take-5-evening",
+        "gameName": "Take 5 Evening",
+        "date": "2026-07-23",
+        "publishedDate": "2026-07-23",
+        "rank": 0
       }
     ]
   },
   "_news": {
-    "date": "2026-07-22",
-    "topic": "long-absence:millionaire:55"
+    "date": "2026-07-23",
+    "topic": "consecutive-pair:take5_eve:7-8_32-33"
   },
   "_promo": {
     "week": "2026-W30",
