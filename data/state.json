@@ -1,10 +1,10 @@
 {
-  "powerball": "2026-07-22",
+  "powerball": "2026-07-25",
   "mega": "2026-07-24",
-  "nylotto": "2026-07-22",
-  "take5_mid": "2026-07-24",
-  "take5_eve": "2026-07-24",
-  "millionaire": "2026-07-24",
+  "nylotto": "2026-07-25",
+  "take5_mid": "2026-07-25",
+  "take5_eve": "2026-07-25",
+  "millionaire": "2026-07-25",
   "recap_powerball": "2026-06",
   "recap_mega": "2026-06",
   "recap_nylotto": "2026-06",
@@ -127,8 +127,8 @@
     ]
   },
   "_news": {
-    "date": "2026-07-24",
-    "topic": "repeat-number:take5_eve:7-33"
+    "date": "2026-07-25",
+    "topic": "consecutive-pair:millionaire:29-30_33-34"
   },
   "_promo": {
     "week": "2026-W30",
