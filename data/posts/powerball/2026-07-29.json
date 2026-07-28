@@ -1,22 +1,33 @@
 {
   "gameId": "powerball",
-  "title": "Powerball Predictions for July 27, 2026 — Hot & Cold Numbers, AI Picks",
-  "resultDate": "2026-07-25",
-  "targetDate": "2026-07-27",
-  "publishedDate": "2026-07-25",
+  "title": "Powerball Predictions for July 29, 2026 — Hot & Cold Numbers, AI Picks",
+  "resultDate": "2026-07-27",
+  "targetDate": "2026-07-29",
+  "publishedDate": "2026-07-27",
   "prose": {
-    "intro": "If you are picking your Powerball lines for July 27, 2026, start here: fresh frequency charts, overdue alerts and five AI-generated sets.",
-    "recap": "As always, we start with the numbers that just hit:",
+    "intro": "The numbers are in, and our models have already crunched them. Here is the full breakdown ahead of the Powerball drawing on July 29, 2026.",
+    "recap": "Before looking ahead, here is the latest result at a glance:",
     "hot": "These are the workhorses of the last 50 drawings — the numbers the machine keeps spitting out:",
     "cold": "At the other end of the chart, these numbers have gone quiet. Due-number players watch this list closely:",
     "patterns": "Beyond single numbers, the shape of winning lines has been remarkably consistent:",
-    "predictionsLead": "Our model blended the stats above into the following candidate lines for July 27, 2026:",
-    "outro": "Want fresh sets like these on your phone the moment results drop? The free AI Lottery Hub app runs this same engine for every NY game, checks your saved tickets automatically, and pings you when you win.",
-    "insight": "The draw skewed low this time, summing to just 114 versus a recent average of 179. Watch the carry-over: 4 appeared in back-to-back draws. The draw also produced a consecutive pair (3–4), a pattern that shows up more often than most players expect."
+    "predictionsLead": "Our model blended the stats above into the following candidate lines for July 29, 2026:",
+    "outro": "If you play regularly, let the app do the heavy lifting: live results, AI number generation and automatic winning-ticket alerts, all free in AI Lottery Hub.",
+    "insight": "And 65 finally woke up, ending a 30-draw drought."
   },
   "stats": {
     "window": 50,
     "latest": {
+      "date": "2026-07-27",
+      "white": [
+        6,
+        26,
+        46,
+        58,
+        65
+      ],
+      "special": 25
+    },
+    "previous": {
       "date": "2026-07-25",
       "white": [
         3,
@@ -27,29 +38,18 @@
       ],
       "special": 17
     },
-    "previous": {
-      "date": "2026-07-22",
-      "white": [
-        4,
-        5,
-        22,
-        50,
-        58
-      ],
-      "special": 1
-    },
     "freq": [
       1,
       4,
       8,
-      6,
-      3,
-      3,
-      2,
-      2,
+      5,
       3,
       4,
-      1,
+      2,
+      2,
+      3,
+      3,
+      0,
       2,
       5,
       6,
@@ -64,7 +64,7 @@
       0,
       6,
       4,
-      2,
+      3,
       3,
       2,
       3,
@@ -84,26 +84,26 @@
       4,
       7,
       3,
-      4,
+      5,
       5,
       5,
       4,
       5,
       3,
-      6,
+      5,
       5,
       0,
       4,
       4,
       5,
-      2,
+      3,
       6,
       5,
       3,
       2,
       4,
-      7,
-      5,
+      6,
+      6,
       3,
       3,
       2,
@@ -124,23 +124,27 @@
         "count": 7
       },
       {
-        "num": 64,
-        "count": 7
-      },
-      {
-        "num": 4,
-        "count": 6
-      },
-      {
         "num": 14,
         "count": 6
       },
       {
         "num": 17,
         "count": 6
+      },
+      {
+        "num": 24,
+        "count": 6
+      },
+      {
+        "num": 36,
+        "count": 6
       }
     ],
     "cold": [
+      {
+        "num": 11,
+        "count": 0
+      },
       {
         "num": 23,
         "count": 0
@@ -151,10 +155,6 @@
       },
       {
         "num": 1,
-        "count": 1
-      },
-      {
-        "num": 11,
         "count": 1
       },
       {
@@ -172,6 +172,10 @@
     ],
     "overdue": [
       {
+        "num": 11,
+        "gap": 50
+      },
+      {
         "num": 23,
         "gap": 50
       },
@@ -180,23 +184,19 @@
         "gap": 50
       },
       {
-        "num": 11,
-        "gap": 49
-      },
-      {
         "num": 33,
-        "gap": 38
+        "gap": 39
       },
       {
         "num": 15,
-        "gap": 33
-      },
-      {
-        "num": 65,
-        "gap": 29
+        "gap": 34
       },
       {
         "num": 51,
+        "gap": 26
+      },
+      {
+        "num": 1,
         "gap": 25
       }
     ],
@@ -207,17 +207,17 @@
     },
     "lowSplit": {
       "best": 2,
-      "pct": 44,
+      "pct": 46,
       "lowMax": 34
     },
     "sum": {
-      "avg": 179,
+      "avg": 180,
       "min": 94,
       "max": 267,
-      "p25": 150,
+      "p25": 153,
       "p75": 207
     },
-    "consecutivePct": 20,
+    "consecutivePct": 18,
     "repeatPct": 33,
     "specialHot": [
       {
@@ -248,14 +248,6 @@
       "count": 7
     },
     {
-      "num": 64,
-      "count": 7
-    },
-    {
-      "num": 4,
-      "count": 6
-    },
-    {
       "num": 14,
       "count": 6
     },
@@ -274,6 +266,14 @@
     {
       "num": 38,
       "count": 6
+    },
+    {
+      "num": 59,
+      "count": 6
+    },
+    {
+      "num": 64,
+      "count": 6
     }
   ],
   "sets": [
@@ -281,35 +281,35 @@
       "label": "Hot Streak",
       "description": "Weighted toward the most frequent numbers of the last 50 draws.",
       "white": [
-        13,
-        14,
-        17,
-        43,
-        50
+        16,
+        25,
+        26,
+        28,
+        67
       ],
-      "special": 3
+      "special": 9
     },
     {
       "label": "Balanced Mix",
       "description": "Follows the dominant odd/even and low/high pattern with a typical sum range.",
       "white": [
         1,
-        20,
-        37,
-        49,
-        62
+        18,
+        51,
+        61,
+        64
       ],
-      "special": 3
+      "special": 14
     },
     {
       "label": "Overdue Watch",
       "description": "Blends the longest-absent numbers with a hot-number core.",
       "white": [
-        39,
-        41,
-        52,
-        59,
-        64
+        15,
+        21,
+        23,
+        26,
+        60
       ],
       "special": 6
     },
@@ -317,66 +317,29 @@
       "label": "Pattern Play",
       "description": "Mirrors recent structural trends (consecutive pairs, repeats).",
       "white": [
-        15,
-        18,
-        24,
-        36,
-        53
+        16,
+        34,
+        50,
+        52,
+        59
       ],
-      "special": 6
+      "special": 1
     },
     {
       "label": "Wildcard",
       "description": "A pure random spread across the full number pool.",
       "white": [
-        1,
-        16,
-        34,
-        49,
-        57
+        13,
+        42,
+        56,
+        63,
+        65
       ],
-      "special": 12
+      "special": 14
     }
   ],
   "scorecard": {
-    "forDate": "2026-07-25",
-    "sets": [
-      {
-        "label": "Hot Streak",
-        "matches": 0,
-        "specialHit": false
-      },
-      {
-        "label": "Balanced Mix",
-        "matches": 1,
-        "specialHit": false
-      },
-      {
-        "label": "Overdue Watch",
-        "matches": 0,
-        "specialHit": false
-      },
-      {
-        "label": "Pattern Play",
-        "matches": 0,
-        "specialHit": false
-      },
-      {
-        "label": "Wildcard",
-        "matches": 0,
-        "specialHit": false
-      }
-    ]
-  },
-  "outcome": {
-    "white": [
-      6,
-      26,
-      46,
-      58,
-      65
-    ],
-    "special": 25,
+    "forDate": "2026-07-27",
     "sets": [
       {
         "label": "Hot Streak",
