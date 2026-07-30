@@ -1,0 +1,144 @@
+{
+  "kind": "news",
+  "newsType": "repeat-number",
+  "gameId": "nylotto",
+  "gameSlug": "ny-lotto",
+  "gameName": "NY Lotto",
+  "date": "2026-07-29",
+  "resultDate": "2026-07-29",
+  "targetDate": "2026-08-01",
+  "publishedDate": "2026-07-29",
+  "drawTimeEt": "8:15 PM ET",
+  "title": "NY Lotto Number Watch — 8 & 58 Came Straight Back",
+  "headline": "8 & 58 Came Straight Back",
+  "facts": {
+    "nums": [
+      8,
+      58
+    ],
+    "count": 2,
+    "prevDate": "2026-07-25",
+    "numbers": [
+      8,
+      58
+    ],
+    "topic": "repeat-number:nylotto:8-58"
+  },
+  "prose": {
+    "intro": "Most draws share nothing with the one before. This NY Lotto line shares 2: 8 & 58.",
+    "fact": "Repeats happen often enough that we track them every post. Seeing 2 at once (8 & 58) is the part worth noting.",
+    "context": "Worth saying plainly: none of this makes anything \"due\". Every drawing starts from scratch, and no gap or pattern carries over. This entry documents an extreme in the dataset — that's all it is.",
+    "outro": "The regular draw-by-draw analysis continues as always. Want the charts and fresh sets on your phone the moment results drop? The free AI Lottery Hub app runs the same engine for every New York game."
+  },
+  "latest": {
+    "date": "2026-07-29",
+    "white": [
+      6,
+      8,
+      14,
+      24,
+      31,
+      58
+    ],
+    "special": 45
+  },
+  "sumSeries": [
+    168,
+    176,
+    194,
+    252,
+    161,
+    223,
+    171,
+    182,
+    161,
+    170,
+    135,
+    106,
+    222,
+    157,
+    217,
+    183,
+    184,
+    183,
+    181,
+    141
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 15,
+        "count": 10
+      },
+      {
+        "num": 31,
+        "count": 10
+      },
+      {
+        "num": 10,
+        "count": 8
+      },
+      {
+        "num": 13,
+        "count": 8
+      },
+      {
+        "num": 18,
+        "count": 8
+      },
+      {
+        "num": 37,
+        "count": 8
+      },
+      {
+        "num": 2,
+        "count": 7
+      }
+    ],
+    "overdue": [
+      {
+        "num": 25,
+        "gap": 38
+      },
+      {
+        "num": 47,
+        "gap": 36
+      },
+      {
+        "num": 16,
+        "gap": 26
+      },
+      {
+        "num": 33,
+        "gap": 26
+      },
+      {
+        "num": 28,
+        "gap": 25
+      },
+      {
+        "num": 9,
+        "gap": 21
+      },
+      {
+        "num": 5,
+        "gap": 20
+      }
+    ],
+    "sum": {
+      "avg": 176,
+      "min": 98,
+      "max": 277,
+      "p25": 157,
+      "p75": 194
+    },
+    "consecutivePct": 40,
+    "repeatPct": 53,
+    "oddSplit": {
+      "best": 3,
+      "pct": 34,
+      "avgOdd": 3
+    }
+  }
+}
