@@ -1,31 +1,31 @@
 {
-  "date": "2026-08-01",
-  "title": "NY Take 5 & Millionaire for Life — Results & Predictions — August 1, 2026",
-  "intro": "Your daily roundup of New York's fast games for August 1, 2026: Take 5 (midday and evening) plus Millionaire for Life — latest results, quick hot/overdue reads, and AI picks for the next drawings.",
+  "date": "2026-08-02",
+  "title": "NY Take 5 & Millionaire for Life — Results & Predictions — August 2, 2026",
+  "intro": "Your daily roundup of New York's fast games for August 2, 2026: Take 5 (midday and evening) plus Millionaire for Life — latest results, quick hot/overdue reads, and AI picks for the next drawings.",
   "sections": {
     "take5_mid": {
-      "resultDate": "2026-08-01",
-      "targetDate": "2026-08-02",
+      "resultDate": "2026-08-02",
+      "targetDate": "2026-08-03",
       "stats": {
         "window": 50,
         "latest": {
+          "date": "2026-08-02",
+          "white": [
+            10,
+            11,
+            18,
+            26,
+            28
+          ],
+          "special": null
+        },
+        "previous": {
           "date": "2026-08-01",
           "white": [
             1,
             3,
             9,
             21,
-            38
-          ],
-          "special": null
-        },
-        "previous": {
-          "date": "2026-07-31",
-          "white": [
-            5,
-            11,
-            21,
-            37,
             38
           ],
           "special": null
@@ -39,24 +39,24 @@
           7,
           6,
           2,
-          8,
+          7,
+          7,
           6,
-          5,
           4,
           10,
           4,
           7,
           6,
           6,
-          6,
+          7,
           6,
           7,
           8,
           5,
-          2,
+          1,
+          9,
+          8,
           10,
-          9,
-          9,
           7,
           7,
           6,
@@ -78,7 +78,7 @@
             "count": 10
           },
           {
-            "num": 24,
+            "num": 26,
             "count": 10
           },
           {
@@ -98,17 +98,17 @@
             "count": 9
           },
           {
-            "num": 25,
+            "num": 24,
             "count": 9
           }
         ],
         "cold": [
           {
-            "num": 8,
-            "count": 2
+            "num": 23,
+            "count": 1
           },
           {
-            "num": 23,
+            "num": 8,
             "count": 2
           },
           {
@@ -135,31 +135,31 @@
         "overdue": [
           {
             "num": 23,
-            "gap": 29
+            "gap": 30
           },
           {
             "num": 12,
-            "gap": 26
+            "gap": 27
           },
           {
             "num": 4,
-            "gap": 19
+            "gap": 20
           },
           {
             "num": 31,
-            "gap": 19
+            "gap": 20
           },
           {
             "num": 22,
-            "gap": 17
+            "gap": 18
           },
           {
             "num": 2,
-            "gap": 16
+            "gap": 17
           },
           {
             "num": 20,
-            "gap": 16
+            "gap": 17
           }
         ],
         "oddSplit": {
@@ -169,7 +169,7 @@
         },
         "lowSplit": {
           "best": 3,
-          "pct": 34,
+          "pct": 36,
           "lowMax": 19
         },
         "sum": {
@@ -180,7 +180,7 @@
           "p75": 110
         },
         "consecutivePct": 60,
-        "repeatPct": 51,
+        "repeatPct": 49,
         "specialHot": []
       },
       "sets": [
@@ -188,11 +188,11 @@
           "label": "Hot Streak",
           "description": "Weighted toward the most frequent numbers of the last 50 draws.",
           "white": [
-            3,
-            17,
-            18,
-            26,
-            36
+            16,
+            24,
+            28,
+            33,
+            38
           ],
           "special": null
         },
@@ -200,11 +200,11 @@
           "label": "Balanced Mix",
           "description": "Follows the dominant odd/even and low/high pattern with a typical sum range.",
           "white": [
-            7,
-            10,
-            17,
-            26,
-            34
+            1,
+            6,
+            18,
+            36,
+            37
           ],
           "special": null
         },
@@ -212,44 +212,17 @@
           "label": "Overdue Watch",
           "description": "Blends the longest-absent numbers with a hot-number core.",
           "white": [
-            13,
+            6,
+            7,
+            12,
             15,
-            16,
-            18,
-            34
+            25
           ],
           "special": null
         }
       ],
       "scorecard": {
-        "forDate": "2026-08-01",
-        "sets": [
-          {
-            "label": "Hot Streak",
-            "matches": 2,
-            "specialHit": false
-          },
-          {
-            "label": "Balanced Mix",
-            "matches": 1,
-            "specialHit": false
-          },
-          {
-            "label": "Overdue Watch",
-            "matches": 1,
-            "specialHit": false
-          }
-        ]
-      },
-      "outcome": {
-        "white": [
-          10,
-          11,
-          18,
-          26,
-          28
-        ],
-        "special": null,
+        "forDate": "2026-08-02",
         "sets": [
           {
             "label": "Hot Streak",
@@ -270,11 +243,22 @@
       }
     },
     "take5_eve": {
-      "resultDate": "2026-08-01",
-      "targetDate": "2026-08-02",
+      "resultDate": "2026-08-02",
+      "targetDate": "2026-08-03",
       "stats": {
         "window": 50,
         "latest": {
+          "date": "2026-08-02",
+          "white": [
+            8,
+            17,
+            19,
+            27,
+            36
+          ],
+          "special": null
+        },
+        "previous": {
           "date": "2026-08-01",
           "white": [
             3,
@@ -285,54 +269,43 @@
           ],
           "special": null
         },
-        "previous": {
-          "date": "2026-07-31",
-          "white": [
-            4,
-            7,
-            13,
-            15,
-            31
-          ],
-          "special": null
-        },
         "freq": [
           8,
           7,
           9,
           12,
-          5,
+          4,
           5,
           7,
-          6,
+          7,
           3,
           4,
           7,
-          5,
+          4,
           13,
           10,
           6,
           2,
-          7,
+          8,
           4,
-          10,
-          10,
+          11,
+          9,
           4,
           7,
           4,
           5,
           4,
           6,
-          3,
-          8,
+          4,
+          7,
           8,
           6,
           8,
           11,
           7,
-          9,
+          8,
           6,
-          1,
+          2,
           9,
           2,
           2
@@ -348,6 +321,10 @@
             "count": 12
           },
           {
+            "num": 19,
+            "count": 11
+          },
+          {
             "num": 32,
             "count": 11
           },
@@ -356,25 +333,21 @@
             "count": 10
           },
           {
-            "num": 19,
-            "count": 10
+            "num": 3,
+            "count": 9
           },
           {
             "num": 20,
-            "count": 10
-          },
-          {
-            "num": 3,
             "count": 9
           }
         ],
         "cold": [
           {
-            "num": 36,
-            "count": 1
+            "num": 16,
+            "count": 2
           },
           {
-            "num": 16,
+            "num": 36,
             "count": 2
           },
           {
@@ -390,8 +363,8 @@
             "count": 3
           },
           {
-            "num": 27,
-            "count": 3
+            "num": 5,
+            "count": 4
           },
           {
             "num": 10,
@@ -401,41 +374,41 @@
         "overdue": [
           {
             "num": 38,
-            "gap": 37
-          },
-          {
-            "num": 36,
-            "gap": 36
+            "gap": 38
           },
           {
             "num": 12,
-            "gap": 29
+            "gap": 30
           },
           {
             "num": 21,
-            "gap": 28
+            "gap": 29
           },
           {
             "num": 18,
-            "gap": 19
+            "gap": 20
           },
           {
             "num": 26,
-            "gap": 19
+            "gap": 20
           },
           {
             "num": 9,
+            "gap": 16
+          },
+          {
+            "num": 5,
             "gap": 15
           }
         ],
         "oddSplit": {
           "best": 3,
-          "pct": 36,
+          "pct": 38,
           "avgOdd": 2.6
         },
         "lowSplit": {
           "best": 2,
-          "pct": 36,
+          "pct": 34,
           "lowMax": 19
         },
         "sum": {
@@ -454,11 +427,11 @@
           "label": "Hot Streak",
           "description": "Weighted toward the most frequent numbers of the last 50 draws.",
           "white": [
-            1,
-            7,
-            21,
-            24,
-            28
+            5,
+            13,
+            22,
+            29,
+            37
           ],
           "special": null
         },
@@ -466,9 +439,9 @@
           "label": "Balanced Mix",
           "description": "Follows the dominant odd/even and low/high pattern with a typical sum range.",
           "white": [
-            1,
+            3,
             7,
-            28,
+            26,
             35,
             36
           ],
@@ -478,44 +451,17 @@
           "label": "Overdue Watch",
           "description": "Blends the longest-absent numbers with a hot-number core.",
           "white": [
-            11,
-            21,
-            23,
-            32,
-            34
+            1,
+            5,
+            12,
+            19,
+            20
           ],
           "special": null
         }
       ],
       "scorecard": {
-        "forDate": "2026-08-01",
-        "sets": [
-          {
-            "label": "Hot Streak",
-            "matches": 1,
-            "specialHit": false
-          },
-          {
-            "label": "Balanced Mix",
-            "matches": 1,
-            "specialHit": false
-          },
-          {
-            "label": "Overdue Watch",
-            "matches": 1,
-            "specialHit": false
-          }
-        ]
-      },
-      "outcome": {
-        "white": [
-          8,
-          17,
-          19,
-          27,
-          36
-        ],
-        "special": null,
+        "forDate": "2026-08-02",
         "sets": [
           {
             "label": "Hot Streak",
@@ -536,11 +482,22 @@
       }
     },
     "millionaire": {
-      "resultDate": "2026-08-01",
-      "targetDate": "2026-08-02",
+      "resultDate": "2026-08-02",
+      "targetDate": "2026-08-03",
       "stats": {
         "window": 50,
         "latest": {
+          "date": "2026-08-02",
+          "white": [
+            4,
+            28,
+            44,
+            55,
+            56
+          ],
+          "special": 4
+        },
+        "previous": {
           "date": "2026-08-01",
           "white": [
             15,
@@ -551,31 +508,20 @@
           ],
           "special": 1
         },
-        "previous": {
-          "date": "2026-07-31",
-          "white": [
-            2,
-            6,
-            28,
-            44,
-            45
-          ],
-          "special": 2
-        },
         "freq": [
           4,
           7,
-          8,
-          8,
-          2,
           7,
-          5,
-          5,
-          3,
-          3,
-          2,
-          3,
           9,
+          1,
+          7,
+          5,
+          5,
+          3,
+          3,
+          1,
+          3,
+          8,
           5,
           5,
           5,
@@ -590,7 +536,7 @@
           5,
           2,
           3,
-          3,
+          4,
           5,
           3,
           4,
@@ -606,34 +552,30 @@
           3,
           4,
           4,
-          3,
+          4,
           5,
           4,
           5,
           7,
-          4,
+          3,
           2,
           4,
           3,
           3,
           8,
-          0,
           1,
+          2,
           4,
           6
         ],
         "maxFreq": 9,
         "hot": [
           {
-            "num": 13,
+            "num": 4,
             "count": 9
           },
           {
-            "num": 3,
-            "count": 8
-          },
-          {
-            "num": 4,
+            "num": 13,
             "count": 8
           },
           {
@@ -642,6 +584,10 @@
           },
           {
             "num": 2,
+            "count": 7
+          },
+          {
+            "num": 3,
             "count": 7
           },
           {
@@ -655,20 +601,16 @@
         ],
         "cold": [
           {
-            "num": 55,
-            "count": 0
-          },
-          {
-            "num": 56,
+            "num": 5,
             "count": 1
           },
           {
-            "num": 5,
-            "count": 2
+            "num": 11,
+            "count": 1
           },
           {
-            "num": 11,
-            "count": 2
+            "num": 55,
+            "count": 1
           },
           {
             "num": 19,
@@ -681,42 +623,46 @@
           {
             "num": 35,
             "count": 2
+          },
+          {
+            "num": 50,
+            "count": 2
           }
         ],
         "overdue": [
           {
-            "num": 55,
-            "gap": 50
-          },
-          {
             "num": 11,
-            "gap": 34
+            "gap": 35
           },
           {
             "num": 26,
-            "gap": 33
+            "gap": 34
           },
           {
             "num": 7,
-            "gap": 29
+            "gap": 30
           },
           {
             "num": 37,
-            "gap": 28
+            "gap": 29
           },
           {
             "num": 51,
-            "gap": 27
+            "gap": 28
           },
           {
-            "num": 56,
-            "gap": 26
+            "num": 50,
+            "gap": 25
+          },
+          {
+            "num": 39,
+            "gap": 21
           }
         ],
         "oddSplit": {
           "best": 2,
           "pct": 32,
-          "avgOdd": 2.4
+          "avgOdd": 2.3
         },
         "lowSplit": {
           "best": 3,
@@ -724,26 +670,26 @@
           "lowMax": 29
         },
         "sum": {
-          "avg": 139,
+          "avg": 141,
           "min": 50,
           "max": 217,
-          "p25": 109,
+          "p25": 111,
           "p75": 166
         },
-        "consecutivePct": 46,
-        "repeatPct": 41,
+        "consecutivePct": 48,
+        "repeatPct": 39,
         "specialHot": [
           {
             "num": 1,
-            "count": 13
+            "count": 12
+          },
+          {
+            "num": 4,
+            "count": 11
           },
           {
             "num": 5,
             "count": 11
-          },
-          {
-            "num": 4,
-            "count": 10
           }
         ]
       },
@@ -753,22 +699,22 @@
           "description": "Weighted toward the most frequent numbers of the last 50 draws.",
           "white": [
             3,
-            7,
+            4,
+            6,
             13,
-            30,
-            48
+            15
           ],
-          "special": 5
+          "special": 1
         },
         {
           "label": "Balanced Mix",
           "description": "Follows the dominant odd/even and low/high pattern with a typical sum range.",
           "white": [
-            17,
-            26,
-            28,
-            34,
-            43
+            8,
+            16,
+            22,
+            47,
+            49
           ],
           "special": 4
         },
@@ -776,44 +722,17 @@
           "label": "Overdue Watch",
           "description": "Blends the longest-absent numbers with a hot-number core.",
           "white": [
-            13,
-            15,
-            20,
-            40,
-            56
+            6,
+            19,
+            31,
+            36,
+            46
           ],
-          "special": 5
+          "special": 3
         }
       ],
       "scorecard": {
-        "forDate": "2026-08-01",
-        "sets": [
-          {
-            "label": "Hot Streak",
-            "matches": 1,
-            "specialHit": true
-          },
-          {
-            "label": "Balanced Mix",
-            "matches": 0,
-            "specialHit": false
-          },
-          {
-            "label": "Overdue Watch",
-            "matches": 0,
-            "specialHit": false
-          }
-        ]
-      },
-      "outcome": {
-        "white": [
-          4,
-          28,
-          44,
-          55,
-          56
-        ],
-        "special": 4,
+        "forDate": "2026-08-02",
         "sets": [
           {
             "label": "Hot Streak",
