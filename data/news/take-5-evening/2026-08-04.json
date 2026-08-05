@@ -1,0 +1,141 @@
+{
+  "kind": "news",
+  "newsType": "long-absence",
+  "gameId": "take5_eve",
+  "gameSlug": "take-5-evening",
+  "gameName": "Take 5 Evening",
+  "date": "2026-08-04",
+  "resultDate": "2026-08-04",
+  "targetDate": "2026-08-05",
+  "publishedDate": "2026-08-04",
+  "drawTimeEt": "10:30 PM ET",
+  "title": "Take 5 Evening Number Watch — Number 38 Has Gone Quiet for 40 Draws",
+  "headline": "Number 38 Has Gone Quiet for 40 Draws",
+  "facts": {
+    "num": 38,
+    "gap": 40,
+    "gapText": "40",
+    "capped": false,
+    "record": 36,
+    "numbers": [
+      38
+    ],
+    "topic": "long-absence:take5_eve:38"
+  },
+  "prose": {
+    "intro": "Our tracker flagged something in the latest Take 5 Evening draw: number 38 has now sat out 40 drawings in a row — the longest absence anywhere in our 50-draw window.",
+    "fact": "The previous record in this window was a 36-draw absence. Number 38 is at 40 and still counting.",
+    "context": "The usual reminder applies, and it matters most on days like this: draws are independent. A streak, a gap or an odd shape says nothing about what the next drawing will do. We log these because they describe the data, not because they change it.",
+    "outro": "The regular draw-by-draw analysis continues as always. Want the charts and fresh sets on your phone the moment results drop? The free AI Lottery Hub app runs the same engine for every New York game."
+  },
+  "latest": {
+    "date": "2026-08-04",
+    "white": [
+      11,
+      13,
+      18,
+      26,
+      33
+    ],
+    "special": null
+  },
+  "sumSeries": [
+    108,
+    72,
+    48,
+    82,
+    83,
+    106,
+    112,
+    110,
+    110,
+    38,
+    101,
+    97,
+    137,
+    93,
+    113,
+    70,
+    116,
+    107,
+    114,
+    101
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 13,
+        "count": 14
+      },
+      {
+        "num": 19,
+        "count": 12
+      },
+      {
+        "num": 4,
+        "count": 11
+      },
+      {
+        "num": 32,
+        "count": 11
+      },
+      {
+        "num": 14,
+        "count": 10
+      },
+      {
+        "num": 20,
+        "count": 10
+      },
+      {
+        "num": 3,
+        "count": 9
+      }
+    ],
+    "overdue": [
+      {
+        "num": 38,
+        "gap": 40
+      },
+      {
+        "num": 12,
+        "gap": 32
+      },
+      {
+        "num": 21,
+        "gap": 31
+      },
+      {
+        "num": 9,
+        "gap": 18
+      },
+      {
+        "num": 5,
+        "gap": 17
+      },
+      {
+        "num": 6,
+        "gap": 15
+      },
+      {
+        "num": 23,
+        "gap": 13
+      }
+    ],
+    "sum": {
+      "avg": 96,
+      "min": 38,
+      "max": 140,
+      "p25": 84,
+      "p75": 112
+    },
+    "consecutivePct": 46,
+    "repeatPct": 53,
+    "oddSplit": {
+      "best": 3,
+      "pct": 38,
+      "avgOdd": 2.6
+    }
+  }
+}

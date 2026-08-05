@@ -1,0 +1,372 @@
+{
+  "gameId": "mega",
+  "month": "2026-07",
+  "monthName": "July 2026",
+  "title": "Mega Millions in July 2026 — Every Draw, Hot Numbers & Patterns",
+  "draws": [
+    {
+      "date": "2026-07-31",
+      "white": [
+        4,
+        18,
+        26,
+        43,
+        51
+      ],
+      "special": 4
+    },
+    {
+      "date": "2026-07-28",
+      "white": [
+        34,
+        48,
+        49,
+        59,
+        70
+      ],
+      "special": 12
+    },
+    {
+      "date": "2026-07-24",
+      "white": [
+        2,
+        5,
+        42,
+        44,
+        60
+      ],
+      "special": 1
+    },
+    {
+      "date": "2026-07-21",
+      "white": [
+        25,
+        37,
+        59,
+        68,
+        70
+      ],
+      "special": 10
+    },
+    {
+      "date": "2026-07-17",
+      "white": [
+        22,
+        34,
+        45,
+        48,
+        55
+      ],
+      "special": 14
+    },
+    {
+      "date": "2026-07-14",
+      "white": [
+        2,
+        4,
+        10,
+        48,
+        56
+      ],
+      "special": 22
+    },
+    {
+      "date": "2026-07-10",
+      "white": [
+        2,
+        39,
+        44,
+        46,
+        56
+      ],
+      "special": 23
+    },
+    {
+      "date": "2026-07-07",
+      "white": [
+        2,
+        31,
+        35,
+        36,
+        63
+      ],
+      "special": 12
+    },
+    {
+      "date": "2026-07-03",
+      "white": [
+        5,
+        9,
+        29,
+        47,
+        57
+      ],
+      "special": 16
+    }
+  ],
+  "stats": {
+    "window": 9,
+    "latest": {
+      "date": "2026-07-31",
+      "white": [
+        4,
+        18,
+        26,
+        43,
+        51
+      ],
+      "special": 4
+    },
+    "previous": {
+      "date": "2026-07-28",
+      "white": [
+        34,
+        48,
+        49,
+        59,
+        70
+      ],
+      "special": 12
+    },
+    "freq": [
+      0,
+      4,
+      0,
+      2,
+      2,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      2,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      3,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      2,
+      1,
+      0,
+      2,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    "maxFreq": 4,
+    "hot": [
+      {
+        "num": 2,
+        "count": 4
+      },
+      {
+        "num": 48,
+        "count": 3
+      },
+      {
+        "num": 4,
+        "count": 2
+      },
+      {
+        "num": 5,
+        "count": 2
+      },
+      {
+        "num": 34,
+        "count": 2
+      },
+      {
+        "num": 44,
+        "count": 2
+      },
+      {
+        "num": 56,
+        "count": 2
+      }
+    ],
+    "cold": [
+      {
+        "num": 1,
+        "count": 0
+      },
+      {
+        "num": 3,
+        "count": 0
+      },
+      {
+        "num": 6,
+        "count": 0
+      },
+      {
+        "num": 7,
+        "count": 0
+      },
+      {
+        "num": 8,
+        "count": 0
+      },
+      {
+        "num": 11,
+        "count": 0
+      },
+      {
+        "num": 12,
+        "count": 0
+      }
+    ],
+    "overdue": [
+      {
+        "num": 1,
+        "gap": 9
+      },
+      {
+        "num": 3,
+        "gap": 9
+      },
+      {
+        "num": 6,
+        "gap": 9
+      },
+      {
+        "num": 7,
+        "gap": 9
+      },
+      {
+        "num": 8,
+        "gap": 9
+      },
+      {
+        "num": 11,
+        "gap": 9
+      },
+      {
+        "num": 12,
+        "gap": 9
+      }
+    ],
+    "oddSplit": {
+      "best": 2,
+      "pct": 33,
+      "avgOdd": 2.1
+    },
+    "lowSplit": {
+      "best": 3,
+      "pct": 44,
+      "lowMax": 35
+    },
+    "sum": {
+      "avg": 182,
+      "min": 120,
+      "max": 260,
+      "p25": 147,
+      "p75": 204
+    },
+    "consecutivePct": 22,
+    "repeatPct": 38,
+    "specialHot": [
+      {
+        "num": 12,
+        "count": 2
+      },
+      {
+        "num": 1,
+        "count": 1
+      },
+      {
+        "num": 4,
+        "count": 1
+      }
+    ]
+  },
+  "hot": [
+    {
+      "num": 2,
+      "count": 4
+    },
+    {
+      "num": 48,
+      "count": 3
+    },
+    {
+      "num": 4,
+      "count": 2
+    },
+    {
+      "num": 5,
+      "count": 2
+    },
+    {
+      "num": 34,
+      "count": 2
+    },
+    {
+      "num": 44,
+      "count": 2
+    },
+    {
+      "num": 56,
+      "count": 2
+    },
+    {
+      "num": 59,
+      "count": 2
+    }
+  ],
+  "ai": {
+    "postsGraded": 9,
+    "best": {
+      "date": "2026-07-17",
+      "label": "Hot Streak",
+      "matches": 2,
+      "specialHit": false
+    },
+    "threePlus": 0
+  }
+}
