@@ -240,6 +240,7 @@ img { max-width: 100%; height: auto; }
   display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--s-5); margin: 20px 0 var(--s-7);
 }
+.card-grid--mixed .a-thumb { min-height: 0; aspect-ratio: 7 / 4; }
 .a-card {
   display: block; text-decoration: none; color: var(--ink);
   background: var(--surface-card);
@@ -256,6 +257,15 @@ img { max-width: 100%; height: auto; }
   padding: var(--s-5); min-height: 128px;
   display: flex; flex-direction: column; justify-content: space-between; gap: 12px;
 }
+.a-thumb--image {
+  padding: 0; min-height: 0; aspect-ratio: 7 / 4;
+  display: block; overflow: hidden; background: #07111f;
+}
+.a-thumb--image img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  transition: transform 320ms var(--ease-soft);
+}
+.a-card--image:hover .a-thumb--image img { transform: scale(1.025); }
 .a-thumb .doodle-tr { position: absolute; top: 12px; right: 14px; opacity: 0.4; }
 .a-thumb .sticker { position: absolute; bottom: 12px; right: 12px; --rot: -6deg; }
 .a-body { padding: var(--s-5); }
@@ -700,6 +710,7 @@ body.drawer-open { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   .a-card, .btn-cta, .btn-ink { transition: none; }
+  .a-thumb--image img { transition: none; }
   .ball.pop { animation: none; }
   .drawer, .drawer-overlay { transition: none; }
 }

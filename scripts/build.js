@@ -138,6 +138,8 @@ async function main() {
       urls.push({ path: urlPath, date: post.publishedDate });
       cards.push({
         path: urlPath,
+        kind: "post",
+        ogImageFile,
         gameKey: gameKey(game.id),
         gameName: game.name,
         title: post.title,
@@ -175,6 +177,8 @@ async function main() {
       digest.sections.take5_eve || digest.sections.take5_mid || digest.sections.millionaire;
     cards.push({
       path: urlPath,
+      kind: "digest",
+      ogImageFile,
       gameKey: "take5",
       gameName: DIGEST.name,
       title: digest.title,
@@ -213,6 +217,8 @@ async function main() {
       urls.push({ path: urlPath, date: recap.draws[0]?.date });
       cards.push({
         path: urlPath,
+        kind: "recap",
+        ogImageFile,
         gameKey: gameKey(game.id),
         gameName: game.name,
         title: recap.title,
@@ -253,6 +259,8 @@ async function main() {
       urls.push({ path: urlPath, date: analysis.publishedDate });
       cards.push({
         path: urlPath,
+        kind: "analysis",
+        ogImageFile,
         gameKey: gameKey(game.id),
         gameName: game.name,
         title: analysis.title,
@@ -294,6 +302,8 @@ async function main() {
       urls.push({ path: urlPath, date: post.publishedDate });
       cards.push({
         path: urlPath,
+        kind: "news",
+        ogImageFile,
         gameKey: gameKey(game.id),
         gameName: game.name,
         title: post.title,
@@ -373,7 +383,14 @@ async function main() {
         console.warn(`[og] index image failed: ${e.message}`);
       }
     }
-    const latest = cards.slice(0, 12).map(postCard).join("");
+    // 숫자형 카드의 빠른 훑어보기 장점은 유지하면서, 4장마다 1장은 이미 만들어 둔
+    // 글별 OG 이미지를 노출해 홈 피드에 시각적 리듬을 준다. OG 생성 실패 시
+    // postCard가 기존 숫자형 카드로 자동 폴백한다.
+    const homeImageSlots = new Set([0, 4, 8]);
+    const latest = cards
+      .slice(0, 12)
+      .map((card, index) => postCard({ ...card, showImage: homeImageSlots.has(index) }))
+      .join("");
     const pb = gameById("powerball");
     const stripTiles = ["mega", "nylotto", "take5_eve", "millionaire"]
       .map((id) => countdownTile(gameById(id)))
@@ -400,7 +417,7 @@ async function main() {
 <section class="content">${generatorWidget()}</section>
 <section class="wrap">
   ${sectionHead("Latest predictions", "updated after every draw")}
-  <div class="card-grid">${latest}</div>
+  <div class="card-grid card-grid--mixed">${latest}</div>
 </section>
 <section class="content">${stickyNote()}</section>
 <div class="wrap">${installPanel()}</div>`,
