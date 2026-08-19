@@ -1,44 +1,44 @@
 {
   "gameId": "nylotto",
-  "title": "NY Lotto Predictions for August 8, 2026 — Hot & Cold Numbers, AI Picks",
-  "resultDate": "2026-08-05",
-  "targetDate": "2026-08-08",
-  "publishedDate": "2026-08-05",
+  "title": "NY Lotto Predictions for August 15, 2026 — Hot & Cold Numbers, AI Picks",
+  "resultDate": "2026-08-12",
+  "targetDate": "2026-08-15",
+  "publishedDate": "2026-08-12",
   "prose": {
-    "intro": "Our AI engine has re-run its full analysis after the latest NY Lotto results. Here is what the data says heading into August 8, 2026.",
-    "recap": "First, a quick look back at the most recent winning line:",
+    "intro": "Another NY Lotto draw is behind us — time to reset the charts and look forward. Below is our data-driven preview of the August 15, 2026 drawing.",
+    "recap": "Before looking ahead, here is the latest result at a glance:",
     "hot": "Over the last 50 draws, these numbers have shown up more often than any others. Streaks never last forever, but hot numbers are where frequency players start:",
     "cold": "Cold does not mean dead — it means overdue, at least in theory. The longest droughts right now:",
     "patterns": "Structure matters as much as individual numbers. Here is how recent draws have been shaped:",
-    "predictionsLead": "Our model blended the stats above into the following candidate lines for August 8, 2026:",
-    "outro": "Want fresh sets like these on your phone the moment results drop? The free AI Lottery Hub app runs this same engine for every NY game, checks your saved tickets automatically, and pings you when you win.",
-    "insight": "And 9 finally woke up, ending a 23-draw drought. No cooling off for 2, which hit yet again."
+    "predictionsLead": "Putting it all together, our engine generated the following sets for August 15, 2026. Each one follows a different strategy, so pick the philosophy that suits you:",
+    "outro": "These picks update after every single draw. To get them instantly — plus automatic ticket checking and win alerts — grab the free AI Lottery Hub app below.",
+    "insight": "This was a top-heavy draw — the line summed to 225, well above the recent average of 178. No cooling off for 31, which hit yet again."
   },
   "stats": {
     "window": 50,
     "latest": {
-      "date": "2026-08-05",
+      "date": "2026-08-12",
+      "white": [
+        14,
+        31,
+        34,
+        43,
+        46,
+        57
+      ],
+      "special": 26
+    },
+    "previous": {
+      "date": "2026-08-08",
       "white": [
         2,
         9,
-        30,
-        38,
-        42,
-        53
-      ],
-      "special": 10
-    },
-    "previous": {
-      "date": "2026-08-01",
-      "white": [
-        21,
-        22,
+        24,
+        26,
         28,
-        41,
-        49,
-        57
+        35
       ],
-      "special": 38
+      "special": 42
     },
     "freq": [
       3,
@@ -54,41 +54,41 @@
       6,
       3,
       7,
-      6,
+      7,
       10,
       3,
+      6,
+      6,
+      4,
+      3,
+      6,
+      6,
+      4,
+      7,
+      1,
+      5,
+      7,
+      6,
+      5,
+      7,
+      11,
+      5,
+      2,
       6,
       8,
+      6,
+      6,
+      7,
       5,
       3,
-      6,
-      6,
       4,
-      7,
+      5,
+      4,
+      6,
+      5,
+      6,
       2,
-      4,
-      7,
-      5,
-      6,
-      7,
-      10,
-      5,
       2,
-      6,
-      7,
-      6,
-      7,
-      7,
-      5,
-      3,
-      5,
-      5,
-      3,
-      6,
-      5,
-      5,
-      2,
-      3,
       7,
       4,
       6,
@@ -97,18 +97,18 @@
       5,
       6,
       6,
-      5,
+      6,
       4,
       1
     ],
-    "maxFreq": 10,
+    "maxFreq": 11,
     "hot": [
       {
-        "num": 15,
-        "count": 10
+        "num": 31,
+        "count": 11
       },
       {
-        "num": 31,
+        "num": 15,
         "count": 10
       },
       {
@@ -116,7 +116,7 @@
         "count": 8
       },
       {
-        "num": 18,
+        "num": 35,
         "count": 8
       },
       {
@@ -134,6 +134,10 @@
     ],
     "cold": [
       {
+        "num": 25,
+        "count": 1
+      },
+      {
         "num": 59,
         "count": 1
       },
@@ -142,10 +146,6 @@
         "count": 2
       },
       {
-        "num": 25,
-        "count": 2
-      },
-      {
         "num": 33,
         "count": 2
       },
@@ -154,47 +154,47 @@
         "count": 2
       },
       {
-        "num": 1,
-        "count": 3
+        "num": 48,
+        "count": 2
       },
       {
-        "num": 3,
+        "num": 1,
         "count": 3
       }
     ],
     "overdue": [
       {
         "num": 25,
-        "gap": 40
+        "gap": 42
       },
       {
         "num": 47,
-        "gap": 38
+        "gap": 40
       },
       {
         "num": 16,
-        "gap": 28
+        "gap": 30
       },
       {
         "num": 33,
-        "gap": 28
+        "gap": 30
       },
       {
         "num": 5,
-        "gap": 22
+        "gap": 24
       },
       {
         "num": 39,
-        "gap": 20
+        "gap": 22
       },
       {
         "num": 40,
-        "gap": 19
+        "gap": 21
       }
     ],
     "oddSplit": {
       "best": 3,
-      "pct": 32,
+      "pct": 30,
       "avgOdd": 3
     },
     "lowSplit": {
@@ -203,36 +203,36 @@
       "lowMax": 29
     },
     "sum": {
-      "avg": 177,
+      "avg": 178,
       "min": 98,
       "max": 277,
       "p25": 158,
-      "p75": 194
+      "p75": 206
     },
-    "consecutivePct": 42,
-    "repeatPct": 53,
+    "consecutivePct": 40,
+    "repeatPct": 51,
     "specialHot": [
       {
         "num": 34,
         "count": 3
       },
       {
-        "num": 45,
+        "num": 42,
         "count": 3
       },
       {
-        "num": 3,
-        "count": 2
+        "num": 45,
+        "count": 3
       }
     ]
   },
   "hot10": [
     {
-      "num": 15,
-      "count": 10
+      "num": 31,
+      "count": 11
     },
     {
-      "num": 31,
+      "num": 15,
       "count": 10
     },
     {
@@ -240,7 +240,7 @@
       "count": 8
     },
     {
-      "num": 18,
+      "num": 35,
       "count": 8
     },
     {
@@ -256,15 +256,15 @@
       "count": 7
     },
     {
+      "num": 14,
+      "count": 7
+    },
+    {
       "num": 24,
       "count": 7
     },
     {
       "num": 27,
-      "count": 7
-    },
-    {
-      "num": 30,
       "count": 7
     }
   ],
@@ -273,70 +273,70 @@
       "label": "Hot Streak",
       "description": "Weighted toward the most frequent numbers of the last 50 draws.",
       "white": [
-        13,
-        17,
-        18,
-        29,
-        32,
-        44
+        2,
+        19,
+        27,
+        35,
+        42,
+        56
       ],
-      "special": 22
+      "special": 14
     },
     {
       "label": "Balanced Mix",
       "description": "Follows the dominant odd/even and low/high pattern with a typical sum range.",
       "white": [
+        9,
         13,
-        20,
-        25,
-        33,
+        26,
+        41,
         42,
-        52
+        46
       ],
-      "special": 52
+      "special": 45
     },
     {
       "label": "Overdue Watch",
       "description": "Blends the longest-absent numbers with a hot-number core.",
       "white": [
-        12,
-        13,
-        15,
-        26,
-        28,
-        47
+        5,
+        6,
+        8,
+        17,
+        38,
+        54
       ],
-      "special": 4
+      "special": 39
     },
     {
       "label": "Pattern Play",
       "description": "Mirrors recent structural trends (consecutive pairs, repeats).",
       "white": [
-        17,
-        26,
-        27,
-        29,
-        30,
-        42
+        2,
+        8,
+        23,
+        46,
+        48,
+        49
       ],
-      "special": 5
+      "special": 18
     },
     {
       "label": "Wildcard",
       "description": "A pure random spread across the full number pool.",
       "white": [
-        9,
-        16,
-        30,
-        34,
-        37,
-        43
+        3,
+        5,
+        17,
+        24,
+        33,
+        53
       ],
-      "special": 30
+      "special": 56
     }
   ],
   "scorecard": {
-    "forDate": "2026-08-05",
+    "forDate": "2026-08-12",
     "sets": [
       {
         "label": "Hot Streak",
@@ -355,26 +355,26 @@
       },
       {
         "label": "Pattern Play",
-        "matches": 0,
+        "matches": 1,
         "specialHit": false
       },
       {
         "label": "Wildcard",
         "matches": 1,
-        "specialHit": true
+        "specialHit": false
       }
     ]
   },
   "outcome": {
     "white": [
-      2,
-      9,
-      24,
-      26,
-      28,
-      35
+      6,
+      7,
+      23,
+      25,
+      36,
+      37
     ],
-    "special": 42,
+    "special": 32,
     "sets": [
       {
         "label": "Hot Streak",
@@ -388,7 +388,7 @@
       },
       {
         "label": "Overdue Watch",
-        "matches": 2,
+        "matches": 1,
         "specialHit": false
       },
       {
@@ -398,7 +398,7 @@
       },
       {
         "label": "Wildcard",
-        "matches": 1,
+        "matches": 0,
         "specialHit": false
       }
     ]

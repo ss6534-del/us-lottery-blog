@@ -1,0 +1,145 @@
+{
+  "kind": "news",
+  "newsType": "consecutive-pair",
+  "gameId": "nylotto",
+  "gameSlug": "ny-lotto",
+  "gameName": "NY Lotto",
+  "date": "2026-08-15",
+  "resultDate": "2026-08-15",
+  "targetDate": "2026-08-19",
+  "publishedDate": "2026-08-15",
+  "drawTimeEt": "8:15 PM ET",
+  "title": "NY Lotto Number Watch — 2 Consecutive Pairs in a Single Draw",
+  "headline": "2 Consecutive Pairs in a Single Draw",
+  "facts": {
+    "pairs": [
+      "6–7",
+      "36–37"
+    ],
+    "count": 2,
+    "numbers": [
+      6,
+      7,
+      36,
+      37
+    ],
+    "topic": "consecutive-pair:nylotto:6-7_36-37"
+  },
+  "prose": {
+    "intro": "The NY Lotto machine drew neighbors twice over this time: 6–7 and 36–37, 2 consecutive pairs in one line.",
+    "fact": "A single consecutive pair turns up in a healthy share of draws. Two or more in the same line pushes the result into the tail of the shape distribution.",
+    "context": "Standard caveat — every draw is random and independent. Records like this one describe where the data has been, never where it is going. Treat it as a curiosity, not a signal.",
+    "outro": "Filed and logged. AI Lottery Hub keeps live results, pattern views and automatic ticket checking within reach — free on Google Play."
+  },
+  "latest": {
+    "date": "2026-08-15",
+    "white": [
+      6,
+      7,
+      23,
+      25,
+      36,
+      37
+    ],
+    "special": 32
+  },
+  "sumSeries": [
+    223,
+    171,
+    182,
+    161,
+    170,
+    135,
+    106,
+    222,
+    157,
+    217,
+    183,
+    184,
+    183,
+    181,
+    141,
+    218,
+    174,
+    124,
+    225,
+    134
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 31,
+        "count": 11
+      },
+      {
+        "num": 15,
+        "count": 10
+      },
+      {
+        "num": 10,
+        "count": 8
+      },
+      {
+        "num": 35,
+        "count": 8
+      },
+      {
+        "num": 8,
+        "count": 7
+      },
+      {
+        "num": 13,
+        "count": 7
+      },
+      {
+        "num": 14,
+        "count": 7
+      }
+    ],
+    "overdue": [
+      {
+        "num": 47,
+        "gap": 41
+      },
+      {
+        "num": 16,
+        "gap": 31
+      },
+      {
+        "num": 33,
+        "gap": 31
+      },
+      {
+        "num": 5,
+        "gap": 25
+      },
+      {
+        "num": 39,
+        "gap": 23
+      },
+      {
+        "num": 40,
+        "gap": 22
+      },
+      {
+        "num": 44,
+        "gap": 21
+      }
+    ],
+    "sum": {
+      "avg": 177,
+      "min": 98,
+      "max": 277,
+      "p25": 157,
+      "p75": 206
+    },
+    "consecutivePct": 42,
+    "repeatPct": 51,
+    "oddSplit": {
+      "best": 3,
+      "pct": 30,
+      "avgOdd": 3
+    }
+  }
+}
