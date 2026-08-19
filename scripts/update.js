@@ -15,10 +15,13 @@ import { predictSets } from "../lib/predict.js";
 import { prosePicker, POOLS } from "../lib/prose.js";
 import { detectNews, buildNewsPost } from "../lib/news.js";
 import { runSocial, runMediaTest } from "../lib/social.js";
+import { MAX_CATCH_UP_DRAWS, planCatchUp } from "../lib/catchup.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = path.join(ROOT, "data");
 const STATE_FILE = path.join(DATA, "state.json");
+const STATS_HISTORY_DRAWS = SITE.analysisWindow + 110;
+const FETCH_DRAW_LIMIT = STATS_HISTORY_DRAWS + MAX_CATCH_UP_DRAWS;
 
 const MONTHS = [
   "January", "February", "March", "April", "May", "June",
@@ -269,102 +272,136 @@ function maybeBuildRecap(game, draws, state, newItems) {
 }
 
 async function processGame(game, state, newItems, drawsByGame) {
-  // +110: 롤링 백테스트(리프트·신호)에 충분한 과거 회차 확보 (윈도 밖은 슬라이스로 무시됨)
-  const draws = await fetchDraws(game, SITE.analysisWindow + 110);
+  // 각 과거 회차에도 기존 +110 롤링 백테스트 히스토리가 남도록 catch-up 범위를
+  // 조회량에 더한다. planner가 안전성 검증을 끝내기 전에는 아무 파일도 쓰지 않는다.
+  const draws = await fetchDraws(game, FETCH_DRAW_LIMIT);
   if (draws.length === 0) {
-    console.warn(`[${game.id}] no draws returned — skipping`);
-    return false;
+    throw new Error(`no valid draws returned`);
   }
-  // 이변 탐지는 전 게임 회차를 한자리에서 비교해야 하므로 여기서 넘겨둔다
+  const plan = planCatchUp(draws, state[game.id]);
+
+  // 이변 탐지는 전 게임 회차를 한자리에서 비교해야 하므로, 유효한 히스토리만 넘긴다.
   if (drawsByGame) drawsByGame[game.id] = draws;
-  const latest = draws[0];
   let changed = false;
 
-  // 월간 리캡 + 주간 심층 분석 (빅3만; 새 회차 여부와 무관하게 주기가 넘어가면 생성)
-  if (game.mode === "post") {
-    if (maybeBuildRecap(game, draws, state, newItems)) changed = true;
-    if (maybeBuildAnalysis(game, draws, state, newItems)) changed = true;
-  }
-
-  if (state[game.id] === latest.date) {
-    console.log(`[${game.id}] up to date (${latest.date})`);
+  // 새 회차가 없어도 기존처럼 주간/월간 산출물의 누락 여부는 최신 시점에서 확인한다.
+  if (plan.length === 0) {
+    if (game.mode === "post") {
+      if (maybeBuildRecap(game, draws, state, newItems)) changed = true;
+      if (maybeBuildAnalysis(game, draws, state, newItems)) changed = true;
+    }
+    console.log(`[${game.id}] up to date (${draws[0].date})`);
     return changed;
   }
 
-  const stats = analyze(game, draws, SITE.analysisWindow);
-  const targetDate = nextDrawDate(game, latest.date);
+  console.log(
+    `[${game.id}] catch-up ${plan.length} draw(s): ` +
+    `${plan[0].draw.date} through ${plan.at(-1).draw.date}`,
+  );
 
-  if (game.mode === "post") {
-    // 직전 글(이 회차를 예측했던 글) 채점 → 성적표 + 그 글에 결과 기록
-    let scorecard = null;
-    const prevFile = path.join(DATA, "posts", game.slug, `${latest.date}.json`);
-    const prevPost = readJson(prevFile, null);
-    if (prevPost && Array.isArray(prevPost.sets) && prevPost.targetDate === latest.date) {
-      scorecard = gradeSets(prevPost.sets, latest, game);
-      prevPost.outcome = { white: latest.white, special: latest.special, sets: scorecard.sets };
-      writeJson(prevFile, prevPost);
-      console.log(`[${game.id}] graded previous post ${latest.date}`);
-    }
+  try {
+    for (const step of plan) {
+      // snapshot[0]은 이 단계의 실제 결과이고, 그 뒤에는 그보다 오래된 회차만 있다.
+      // 통계·예측·채점 어디에도 이후 회차가 섞이지 않는다.
+      const snapshot = step.snapshot;
+      const latest = snapshot[0];
 
-    const post = {
-      gameId: game.id,
-      title: `${game.name} Predictions for ${longDate(targetDate)} — Hot & Cold Numbers, AI Picks`,
-      resultDate: latest.date,
-      targetDate,
-      publishedDate: latest.date,
-      prose: { ...buildProse(game, targetDate, stats.window), insight: buildInsights(game, stats, draws) },
-      stats,
-      hot10: hotFromStats(stats, 10),
-      sets: predictSets(game, stats, targetDate, 5),
-      scorecard,
-    };
-    writeJson(path.join(DATA, "posts", game.slug, `${targetDate}.json`), post);
-    newItems.push({
-      kind: "post", gameId: game.id, gameSlug: game.slug, gameName: game.name,
-      date: targetDate, publishedDate: latest.date,
-    });
-    console.log(`[${game.id}] new post → ${game.slug}/${targetDate}`);
-  } else {
-    // 다이제스트: 직전 날짜 다이제스트의 이 게임 섹션 채점
-    let scorecard = null;
-    const prevDate = draws[1] ? draws[1].date : null;
-    if (prevDate) {
-      const prevFile = path.join(DATA, "digests", `${prevDate}.json`);
-      const prevDigest = readJson(prevFile, null);
-      const prevSec = prevDigest && prevDigest.sections ? prevDigest.sections[game.id] : null;
-      if (prevSec && Array.isArray(prevSec.sets) && prevSec.targetDate === latest.date) {
-        scorecard = gradeSets(prevSec.sets, latest, game);
-        prevSec.outcome = { white: latest.white, special: latest.special, sets: scorecard.sets };
-        writeJson(prevFile, prevDigest);
-        console.log(`[${game.id}] graded previous digest section ${prevDate}`);
+      // 월간 리캡 + 주간 심층 분석도 각 역사적 시점 순서대로 복구한다.
+      if (game.mode === "post") {
+        if (maybeBuildRecap(game, snapshot, state, newItems)) changed = true;
+        if (maybeBuildAnalysis(game, snapshot, state, newItems)) changed = true;
       }
-    }
 
-    const file = path.join(DATA, "digests", `${latest.date}.json`);
-    const digest = readJson(file, {
-      date: latest.date,
-      title: `${DIGEST.title.replace("Daily Results", "Results")} — ${longDate(latest.date)}`,
-      intro:
-        `Your daily roundup of New York's fast games for ${longDate(latest.date)}: ` +
-        `Take 5 (midday and evening) plus Millionaire for Life — latest results, ` +
-        `quick hot/overdue reads, and AI picks for the next drawings.`,
-      sections: {},
-    });
-    digest.sections[game.id] = {
-      resultDate: latest.date,
-      targetDate,
-      stats,
-      sets: predictSets(game, stats, targetDate, 3),
-      scorecard,
-    };
-    writeJson(file, digest);
-    // 같은 날짜 다이제스트는 게임 3종이 각각 밀어넣지만 enqueue가 중복을 걸러낸다
-    newItems.push({ kind: "digest", date: latest.date, publishedDate: latest.date });
-    console.log(`[${game.id}] digest section → ${latest.date}`);
+      const stats = analyze(game, snapshot, SITE.analysisWindow);
+      const targetDate = nextDrawDate(game, latest.date);
+
+      if (game.mode === "post") {
+        // 직전 글(이 회차를 예측했던 글) 채점 → 성적표 + 그 글에 결과 기록
+        let scorecard = null;
+        const prevFile = path.join(DATA, "posts", game.slug, `${latest.date}.json`);
+        const prevPost = readJson(prevFile, null);
+        if (prevPost && Array.isArray(prevPost.sets) && prevPost.targetDate === latest.date) {
+          scorecard = gradeSets(prevPost.sets, latest, game);
+          prevPost.outcome = { white: latest.white, special: latest.special, sets: scorecard.sets };
+          writeJson(prevFile, prevPost);
+          console.log(`[${game.id}] graded previous post ${latest.date}`);
+        }
+
+        const post = {
+          gameId: game.id,
+          title: `${game.name} Predictions for ${longDate(targetDate)} — Hot & Cold Numbers, AI Picks`,
+          resultDate: latest.date,
+          targetDate,
+          publishedDate: latest.date,
+          prose: {
+            ...buildProse(game, targetDate, stats.window),
+            insight: buildInsights(game, stats, snapshot),
+          },
+          stats,
+          hot10: hotFromStats(stats, 10),
+          sets: predictSets(game, stats, targetDate, 5),
+          scorecard,
+        };
+        writeJson(path.join(DATA, "posts", game.slug, `${targetDate}.json`), post);
+        newItems.push({
+          kind: "post", gameId: game.id, gameSlug: game.slug, gameName: game.name,
+          date: targetDate, publishedDate: latest.date,
+        });
+        console.log(`[${game.id}] new post → ${game.slug}/${targetDate}`);
+      } else {
+        // 다이제스트: 직전 날짜 다이제스트의 이 게임 섹션 채점
+        let scorecard = null;
+        const prevDate = snapshot[1] ? snapshot[1].date : null;
+        if (prevDate) {
+          const prevFile = path.join(DATA, "digests", `${prevDate}.json`);
+          const prevDigest = readJson(prevFile, null);
+          const prevSec = prevDigest && prevDigest.sections ? prevDigest.sections[game.id] : null;
+          if (prevSec && Array.isArray(prevSec.sets) && prevSec.targetDate === latest.date) {
+            scorecard = gradeSets(prevSec.sets, latest, game);
+            prevSec.outcome = { white: latest.white, special: latest.special, sets: scorecard.sets };
+            writeJson(prevFile, prevDigest);
+            console.log(`[${game.id}] graded previous digest section ${prevDate}`);
+          }
+        }
+
+        const file = path.join(DATA, "digests", `${latest.date}.json`);
+        const digest = readJson(file, {
+          date: latest.date,
+          title: `${DIGEST.title.replace("Daily Results", "Results")} — ${longDate(latest.date)}`,
+          intro:
+            `Your daily roundup of New York's fast games for ${longDate(latest.date)}: ` +
+            `Take 5 (midday and evening) plus Millionaire for Life — latest results, ` +
+            `quick hot/overdue reads, and AI picks for the next drawings.`,
+          sections: {},
+        });
+        digest.sections[game.id] = {
+          resultDate: latest.date,
+          targetDate,
+          stats,
+          sets: predictSets(game, stats, targetDate, 3),
+          scorecard,
+        };
+        writeJson(file, digest);
+        // 같은 날짜 다이제스트는 게임 3종이 각각 밀어넣지만 enqueue가 중복을 걸러낸다
+        newItems.push({ kind: "digest", date: latest.date, publishedDate: latest.date });
+        console.log(`[${game.id}] digest section → ${latest.date}`);
+      }
+
+      // 반드시 이 회차의 모든 작업이 성공한 뒤에만 메모리 state를 한 칸 전진한다.
+      // 어느 게임이든 실패하면 main이 STATE_FILE 저장 전에 종료하므로 디스크 state는
+      // 실행 전 값 그대로이고, 특히 최신 날짜로 건너뛰는 일은 없다.
+      state[game.id] = latest.date;
+      changed = true;
+    }
+  } catch (err) {
+    console.error(
+      `[${game.id}] catch-up stopped (last completed in memory: ` +
+      `${state[game.id] || "none"}): ${err.message}`,
+    );
+    throw err;
   }
 
-  state[game.id] = latest.date;
-  return true;
+  return changed;
 }
 
 // ── 데이터 이변 뉴스 글 (kind:"news") ───────────────────────────────────────
@@ -427,13 +464,21 @@ async function main() {
 
   const newItems = []; // 이번 실행에서 생긴 글 — 트윗 큐에 적립된다
   const drawsByGame = {}; // 이변 탐지가 전 게임을 한자리에서 비교하는 데 쓴다
+  const gameFailures = [];
   for (const game of GAMES) {
     try {
       if (await processGame(game, state, newItems, drawsByGame)) changed = true;
     } catch (err) {
-      // 한 게임 실패가 나머지를 막지 않게 한다
+      // 어느 게임이 실패했는지는 모두 수집해 한 번에 보여주되, 실패한 실행에서는
+      // news/social/state 저장 단계로 넘어가지 않는다.
+      gameFailures.push({ gameId: game.id, message: err.message });
       console.error(`[${game.id}] FAILED: ${err.message}`);
     }
+  }
+
+  if (gameFailures.length > 0) {
+    const detail = gameFailures.map((failure) => `${failure.gameId}: ${failure.message}`).join("; ");
+    throw new Error(`lottery update failed for ${gameFailures.length} game(s): ${detail}`);
   }
 
   // 데이터 이변 뉴스 — 탐지가 없으면 글이 없다. 실패해도 다른 글을 막지 않는다.

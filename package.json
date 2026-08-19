@@ -8,6 +8,7 @@
     "node": ">=20"
   },
   "scripts": {
+    "test": "node --test",
     "update": "node scripts/update.js",
     "build": "node scripts/build.js",
     "publish-local": "node scripts/update.js && node scripts/build.js"

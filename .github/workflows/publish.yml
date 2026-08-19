@@ -31,16 +31,15 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: publish
-  cancel-in-progress: false
-
 jobs:
-  publish:
+  prepare:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    timeout-minutes: 20
+    concurrency:
+      group: publish-prepare
+      cancel-in-progress: false
+    outputs:
+      changed: ${{ steps.update.outputs.changed || 'false' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -113,7 +112,22 @@ jobs:
         with:
           path: dist
 
+  deploy-pages:
+    needs: prepare
+    if: >-
+      ${{
+        always() &&
+        needs.prepare.result == 'success' &&
+        (needs.prepare.outputs.changed == 'true' || github.event_name == 'workflow_dispatch')
+      }}
+    runs-on: ubuntu-latest
+    concurrency:
+      group: publish-pages
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
-        if: steps.update.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
         id: deployment
         uses: actions/deploy-pages@v4
