@@ -1,0 +1,2350 @@
+{
+  "gameId": "mega",
+  "weekStart": "2026-08-24",
+  "publishedDate": "2026-08-25",
+  "targetDate": "2026-08-28",
+  "title": "Mega Millions Deep Analysis — Week of August 24, 2026 (Build Your Own Numbers)",
+  "prose": {
+    "intro": "This is our weekly deep-dive for Mega Millions — no ready-made picks here, just the raw analysis so you can build your own line. We break down the number pools, the play-slip pattern, the trend curve and the neighbor effect below.",
+    "pools": "The classic build: 2 hot + 2 middle + 1 overdue. Draft from the pools below, then run your line through the checklist before you play it.",
+    "outro": "That's the full workbench. Combine carefully, keep the checklist handy — and if you'd rather have this done for you, the app assembles five strategy lines from this exact data after every draw."
+  },
+  "stats": {
+    "window": 50,
+    "latest": {
+      "date": "2026-08-25",
+      "white": [
+        7,
+        10,
+        47,
+        48,
+        50
+      ],
+      "special": 14
+    },
+    "previous": {
+      "date": "2026-08-21",
+      "white": [
+        1,
+        25,
+        34,
+        48,
+        57
+      ],
+      "special": 24
+    },
+    "freq": [
+      4,
+      4,
+      3,
+      4,
+      6,
+      1,
+      2,
+      1,
+      3,
+      3,
+      2,
+      2,
+      5,
+      2,
+      2,
+      4,
+      5,
+      4,
+      4,
+      4,
+      5,
+      4,
+      2,
+      3,
+      3,
+      6,
+      3,
+      1,
+      1,
+      6,
+      2,
+      3,
+      2,
+      5,
+      5,
+      6,
+      3,
+      5,
+      2,
+      4,
+      4,
+      3,
+      4,
+      3,
+      3,
+      3,
+      6,
+      7,
+      5,
+      6,
+      8,
+      4,
+      3,
+      2,
+      5,
+      4,
+      4,
+      2,
+      5,
+      5,
+      3,
+      4,
+      4,
+      1,
+      4,
+      3,
+      1,
+      3,
+      2,
+      3
+    ],
+    "maxFreq": 8,
+    "hot": [
+      {
+        "num": 51,
+        "count": 8
+      },
+      {
+        "num": 48,
+        "count": 7
+      },
+      {
+        "num": 5,
+        "count": 6
+      },
+      {
+        "num": 26,
+        "count": 6
+      },
+      {
+        "num": 30,
+        "count": 6
+      },
+      {
+        "num": 36,
+        "count": 6
+      },
+      {
+        "num": 47,
+        "count": 6
+      }
+    ],
+    "cold": [
+      {
+        "num": 6,
+        "count": 1
+      },
+      {
+        "num": 8,
+        "count": 1
+      },
+      {
+        "num": 28,
+        "count": 1
+      },
+      {
+        "num": 29,
+        "count": 1
+      },
+      {
+        "num": 64,
+        "count": 1
+      },
+      {
+        "num": 67,
+        "count": 1
+      },
+      {
+        "num": 7,
+        "count": 2
+      }
+    ],
+    "overdue": [
+      {
+        "num": 8,
+        "gap": 49
+      },
+      {
+        "num": 6,
+        "gap": 47
+      },
+      {
+        "num": 11,
+        "gap": 45
+      },
+      {
+        "num": 28,
+        "gap": 43
+      },
+      {
+        "num": 69,
+        "gap": 38
+      },
+      {
+        "num": 58,
+        "gap": 31
+      },
+      {
+        "num": 64,
+        "gap": 28
+      }
+    ],
+    "oddSplit": {
+      "best": 2,
+      "pct": 36,
+      "avgOdd": 2.5
+    },
+    "lowSplit": {
+      "best": 3,
+      "pct": 38,
+      "lowMax": 35
+    },
+    "sum": {
+      "avg": 181,
+      "min": 112,
+      "max": 288,
+      "p25": 153,
+      "p75": 204
+    },
+    "consecutivePct": 16,
+    "repeatPct": 39,
+    "specialHot": [
+      {
+        "num": 12,
+        "count": 9
+      },
+      {
+        "num": 7,
+        "count": 4
+      },
+      {
+        "num": 24,
+        "count": 4
+      }
+    ]
+  },
+  "deep": {
+    "window": 50,
+    "digits": [
+      31,
+      28,
+      24,
+      23,
+      20,
+      28,
+      27,
+      24,
+      23,
+      22
+    ],
+    "decades": [
+      31,
+      34,
+      34,
+      37,
+      44,
+      42,
+      28
+    ],
+    "decadeLabels": [
+      "1–10",
+      "11–20",
+      "21–30",
+      "31–40",
+      "41–50",
+      "51–60",
+      "61–70"
+    ],
+    "neighborRate": 49,
+    "neighborPool": [
+      6,
+      8,
+      9,
+      11,
+      46,
+      49,
+      51
+    ],
+    "sumTrend": {
+      "slope": -1.1,
+      "direction": "falling",
+      "series": [
+        126,
+        288,
+        133,
+        232,
+        147,
+        167,
+        187,
+        120,
+        204,
+        259,
+        153,
+        260,
+        142,
+        206,
+        180,
+        165,
+        159,
+        151,
+        165,
+        162
+      ],
+      "avg": 180
+    },
+    "risers": [
+      {
+        "num": 48,
+        "r": 0.15999999999999998,
+        "c10": 3,
+        "cAll": 7
+      },
+      {
+        "num": 46,
+        "r": 0.14,
+        "c10": 2,
+        "cAll": 3
+      },
+      {
+        "num": 1,
+        "r": 0.12000000000000001,
+        "c10": 2,
+        "cAll": 4
+      },
+      {
+        "num": 20,
+        "r": 0.12000000000000001,
+        "c10": 2,
+        "cAll": 4
+      },
+      {
+        "num": 57,
+        "r": 0.12000000000000001,
+        "c10": 2,
+        "cAll": 4
+      }
+    ],
+    "fallers": [
+      {
+        "num": 36,
+        "r": -0.12,
+        "c10": 0,
+        "cAll": 6
+      },
+      {
+        "num": 13,
+        "r": -0.1,
+        "c10": 0,
+        "cAll": 5
+      },
+      {
+        "num": 35,
+        "r": -0.1,
+        "c10": 0,
+        "cAll": 5
+      },
+      {
+        "num": 16,
+        "r": -0.08,
+        "c10": 0,
+        "cAll": 4
+      },
+      {
+        "num": 22,
+        "r": -0.08,
+        "c10": 0,
+        "cAll": 4
+      }
+    ],
+    "pools": {
+      "hot": [
+        {
+          "num": 51,
+          "count": 8
+        },
+        {
+          "num": 48,
+          "count": 7
+        },
+        {
+          "num": 5,
+          "count": 6
+        },
+        {
+          "num": 26,
+          "count": 6
+        },
+        {
+          "num": 30,
+          "count": 6
+        },
+        {
+          "num": 36,
+          "count": 6
+        },
+        {
+          "num": 47,
+          "count": 6
+        },
+        {
+          "num": 50,
+          "count": 6
+        }
+      ],
+      "mid": [
+        {
+          "num": 3,
+          "count": 3
+        },
+        {
+          "num": 9,
+          "count": 3
+        },
+        {
+          "num": 10,
+          "count": 3
+        },
+        {
+          "num": 24,
+          "count": 3
+        },
+        {
+          "num": 57,
+          "count": 4
+        },
+        {
+          "num": 62,
+          "count": 4
+        },
+        {
+          "num": 63,
+          "count": 4
+        },
+        {
+          "num": 65,
+          "count": 4
+        }
+      ],
+      "overdue": [
+        {
+          "num": 8,
+          "gap": 49
+        },
+        {
+          "num": 6,
+          "gap": 47
+        },
+        {
+          "num": 11,
+          "gap": 45
+        },
+        {
+          "num": 28,
+          "gap": 43
+        },
+        {
+          "num": 69,
+          "gap": 38
+        },
+        {
+          "num": 58,
+          "gap": 31
+        }
+      ]
+    }
+  },
+  "recurrence": {
+    "window": 60,
+    "maxStep": 40,
+    "steps": [
+      {
+        "s": 1,
+        "current": 0,
+        "max": 7,
+        "diff": -7,
+        "lastHit": 0
+      },
+      {
+        "s": 2,
+        "current": 2,
+        "max": 9,
+        "diff": -7,
+        "lastHit": 2
+      },
+      {
+        "s": 3,
+        "current": 1,
+        "max": 12,
+        "diff": -11,
+        "lastHit": 1
+      },
+      {
+        "s": 4,
+        "current": 1,
+        "max": 12,
+        "diff": -11,
+        "lastHit": 1
+      },
+      {
+        "s": 5,
+        "current": 6,
+        "max": 11,
+        "diff": -5,
+        "lastHit": 6
+      },
+      {
+        "s": 6,
+        "current": 2,
+        "max": 5,
+        "diff": -3,
+        "lastHit": 2
+      },
+      {
+        "s": 7,
+        "current": 1,
+        "max": 18,
+        "diff": -17,
+        "lastHit": 1
+      },
+      {
+        "s": 8,
+        "current": 0,
+        "max": 6,
+        "diff": -6,
+        "lastHit": 0
+      },
+      {
+        "s": 9,
+        "current": 1,
+        "max": 7,
+        "diff": -6,
+        "lastHit": 1
+      },
+      {
+        "s": 10,
+        "current": 1,
+        "max": 6,
+        "diff": -5,
+        "lastHit": 1
+      },
+      {
+        "s": 11,
+        "current": 0,
+        "max": 12,
+        "diff": -12,
+        "lastHit": 0
+      },
+      {
+        "s": 12,
+        "current": 0,
+        "max": 5,
+        "diff": -5,
+        "lastHit": 0
+      },
+      {
+        "s": 13,
+        "current": 2,
+        "max": 6,
+        "diff": -4,
+        "lastHit": 2
+      },
+      {
+        "s": 14,
+        "current": 1,
+        "max": 10,
+        "diff": -9,
+        "lastHit": 1
+      },
+      {
+        "s": 15,
+        "current": 0,
+        "max": 6,
+        "diff": -6,
+        "lastHit": 0
+      },
+      {
+        "s": 16,
+        "current": 0,
+        "max": 11,
+        "diff": -11,
+        "lastHit": 0
+      },
+      {
+        "s": 17,
+        "current": 1,
+        "max": 5,
+        "diff": -4,
+        "lastHit": 1
+      },
+      {
+        "s": 18,
+        "current": 0,
+        "max": 7,
+        "diff": -7,
+        "lastHit": 0
+      },
+      {
+        "s": 19,
+        "current": 0,
+        "max": 11,
+        "diff": -11,
+        "lastHit": 0
+      },
+      {
+        "s": 20,
+        "current": 2,
+        "max": 8,
+        "diff": -6,
+        "lastHit": 2
+      },
+      {
+        "s": 21,
+        "current": 2,
+        "max": 7,
+        "diff": -5,
+        "lastHit": 2
+      },
+      {
+        "s": 22,
+        "current": 4,
+        "max": 10,
+        "diff": -6,
+        "lastHit": 4
+      },
+      {
+        "s": 23,
+        "current": 0,
+        "max": 5,
+        "diff": -5,
+        "lastHit": 0
+      },
+      {
+        "s": 24,
+        "current": 0,
+        "max": 5,
+        "diff": -5,
+        "lastHit": 0
+      },
+      {
+        "s": 25,
+        "current": 0,
+        "max": 6,
+        "diff": -6,
+        "lastHit": 0
+      },
+      {
+        "s": 26,
+        "current": 1,
+        "max": 10,
+        "diff": -9,
+        "lastHit": 1
+      },
+      {
+        "s": 27,
+        "current": 1,
+        "max": 7,
+        "diff": -6,
+        "lastHit": 1
+      },
+      {
+        "s": 28,
+        "current": 0,
+        "max": 7,
+        "diff": -7,
+        "lastHit": 0
+      },
+      {
+        "s": 29,
+        "current": 7,
+        "max": 7,
+        "diff": 0,
+        "lastHit": 7
+      },
+      {
+        "s": 30,
+        "current": 0,
+        "max": 4,
+        "diff": -4,
+        "lastHit": 0
+      },
+      {
+        "s": 31,
+        "current": 0,
+        "max": 7,
+        "diff": -7,
+        "lastHit": 0
+      },
+      {
+        "s": 32,
+        "current": 0,
+        "max": 7,
+        "diff": -7,
+        "lastHit": 0
+      },
+      {
+        "s": 33,
+        "current": 5,
+        "max": 5,
+        "diff": 0,
+        "lastHit": 5
+      },
+      {
+        "s": 34,
+        "current": 0,
+        "max": 10,
+        "diff": -10,
+        "lastHit": 0
+      },
+      {
+        "s": 35,
+        "current": 0,
+        "max": 10,
+        "diff": -10,
+        "lastHit": 0
+      },
+      {
+        "s": 36,
+        "current": 3,
+        "max": 6,
+        "diff": -3,
+        "lastHit": 3
+      },
+      {
+        "s": 37,
+        "current": 1,
+        "max": 9,
+        "diff": -8,
+        "lastHit": 1
+      },
+      {
+        "s": 38,
+        "current": 2,
+        "max": 5,
+        "diff": -3,
+        "lastHit": 2
+      },
+      {
+        "s": 39,
+        "current": 3,
+        "max": 5,
+        "diff": -2,
+        "lastHit": 3
+      },
+      {
+        "s": 40,
+        "current": 3,
+        "max": 4,
+        "diff": -1,
+        "lastHit": 3
+      }
+    ],
+    "hot": [
+      {
+        "s": 29,
+        "current": 7,
+        "max": 7,
+        "diff": 0,
+        "lastHit": 7
+      },
+      {
+        "s": 33,
+        "current": 5,
+        "max": 5,
+        "diff": 0,
+        "lastHit": 5
+      }
+    ],
+    "candidates": [
+      {
+        "num": 10,
+        "hits": 1
+      },
+      {
+        "num": 12,
+        "hits": 1
+      },
+      {
+        "num": 22,
+        "hits": 1
+      },
+      {
+        "num": 26,
+        "hits": 1
+      },
+      {
+        "num": 34,
+        "hits": 1
+      },
+      {
+        "num": 50,
+        "hits": 1
+      },
+      {
+        "num": 51,
+        "hits": 1
+      },
+      {
+        "num": 55,
+        "hits": 1
+      },
+      {
+        "num": 56,
+        "hits": 1
+      },
+      {
+        "num": 64,
+        "hits": 1
+      }
+    ]
+  },
+  "bands": {
+    "window": 50,
+    "whiteCount": 5,
+    "sakai": [
+      {
+        "band": 6,
+        "label": "6+×",
+        "nums": [
+          5,
+          26,
+          30,
+          36,
+          47,
+          48,
+          50,
+          51
+        ]
+      },
+      {
+        "band": 5,
+        "label": "5×",
+        "nums": [
+          13,
+          17,
+          21,
+          34,
+          35,
+          38,
+          49,
+          55,
+          59,
+          60
+        ]
+      },
+      {
+        "band": 4,
+        "label": "4×",
+        "nums": [
+          1,
+          2,
+          4,
+          16,
+          18,
+          19,
+          20,
+          22,
+          40,
+          41,
+          43,
+          52,
+          56,
+          57,
+          62,
+          63,
+          65
+        ]
+      },
+      {
+        "band": 3,
+        "label": "3×",
+        "nums": [
+          3,
+          9,
+          10,
+          24,
+          25,
+          27,
+          32,
+          37,
+          42,
+          44,
+          45,
+          46,
+          53,
+          61,
+          66,
+          68,
+          70
+        ]
+      },
+      {
+        "band": 2,
+        "label": "2×",
+        "nums": [
+          7,
+          11,
+          12,
+          14,
+          15,
+          23,
+          31,
+          33,
+          39,
+          54,
+          58,
+          69
+        ]
+      },
+      {
+        "band": 1,
+        "label": "1×",
+        "nums": [
+          6,
+          8,
+          28,
+          29,
+          64,
+          67
+        ]
+      }
+    ],
+    "missing": [
+      {
+        "band": 0,
+        "label": "Out 0 (just hit)",
+        "nums": [
+          {
+            "num": 7,
+            "gap": 0
+          },
+          {
+            "num": 10,
+            "gap": 0
+          },
+          {
+            "num": 47,
+            "gap": 0
+          },
+          {
+            "num": 48,
+            "gap": 0
+          },
+          {
+            "num": 50,
+            "gap": 0
+          }
+        ]
+      },
+      {
+        "band": 1,
+        "label": "Out 1",
+        "nums": [
+          {
+            "num": 1,
+            "gap": 1
+          },
+          {
+            "num": 25,
+            "gap": 1
+          },
+          {
+            "num": 34,
+            "gap": 1
+          },
+          {
+            "num": 57,
+            "gap": 1
+          }
+        ]
+      },
+      {
+        "band": 2,
+        "label": "Out 2",
+        "nums": [
+          {
+            "num": 5,
+            "gap": 2
+          },
+          {
+            "num": 19,
+            "gap": 2
+          },
+          {
+            "num": 30,
+            "gap": 2
+          },
+          {
+            "num": 38,
+            "gap": 2
+          },
+          {
+            "num": 59,
+            "gap": 2
+          }
+        ]
+      },
+      {
+        "band": 3,
+        "label": "Out 3",
+        "nums": [
+          {
+            "num": 3,
+            "gap": 3
+          },
+          {
+            "num": 23,
+            "gap": 3
+          },
+          {
+            "num": 27,
+            "gap": 3
+          },
+          {
+            "num": 46,
+            "gap": 3
+          },
+          {
+            "num": 60,
+            "gap": 3
+          }
+        ]
+      },
+      {
+        "band": 4,
+        "label": "Out 4",
+        "nums": [
+          {
+            "num": 20,
+            "gap": 4
+          },
+          {
+            "num": 68,
+            "gap": 4
+          }
+        ]
+      },
+      {
+        "band": 5,
+        "label": "Out 5–6",
+        "nums": [
+          {
+            "num": 17,
+            "gap": 5
+          },
+          {
+            "num": 32,
+            "gap": 5
+          },
+          {
+            "num": 54,
+            "gap": 5
+          },
+          {
+            "num": 14,
+            "gap": 6
+          },
+          {
+            "num": 21,
+            "gap": 6
+          },
+          {
+            "num": 51,
+            "gap": 6
+          },
+          {
+            "num": 55,
+            "gap": 6
+          },
+          {
+            "num": 65,
+            "gap": 6
+          }
+        ]
+      },
+      {
+        "band": 6,
+        "label": "Out 7–9",
+        "nums": [
+          {
+            "num": 4,
+            "gap": 7
+          },
+          {
+            "num": 18,
+            "gap": 7
+          },
+          {
+            "num": 26,
+            "gap": 7
+          },
+          {
+            "num": 43,
+            "gap": 7
+          },
+          {
+            "num": 49,
+            "gap": 8
+          },
+          {
+            "num": 70,
+            "gap": 8
+          },
+          {
+            "num": 2,
+            "gap": 9
+          },
+          {
+            "num": 42,
+            "gap": 9
+          },
+          {
+            "num": 44,
+            "gap": 9
+          }
+        ]
+      },
+      {
+        "band": 7,
+        "label": "Out 10+",
+        "nums": [
+          {
+            "num": 37,
+            "gap": 10
+          },
+          {
+            "num": 22,
+            "gap": 11
+          },
+          {
+            "num": 45,
+            "gap": 11
+          },
+          {
+            "num": 56,
+            "gap": 12
+          },
+          {
+            "num": 39,
+            "gap": 13
+          },
+          {
+            "num": 31,
+            "gap": 14
+          },
+          {
+            "num": 35,
+            "gap": 14
+          },
+          {
+            "num": 36,
+            "gap": 14
+          },
+          {
+            "num": 63,
+            "gap": 14
+          },
+          {
+            "num": 9,
+            "gap": 15
+          },
+          {
+            "num": 29,
+            "gap": 15
+          },
+          {
+            "num": 41,
+            "gap": 16
+          },
+          {
+            "num": 53,
+            "gap": 16
+          },
+          {
+            "num": 62,
+            "gap": 16
+          },
+          {
+            "num": 13,
+            "gap": 17
+          },
+          {
+            "num": 33,
+            "gap": 17
+          },
+          {
+            "num": 52,
+            "gap": 17
+          },
+          {
+            "num": 66,
+            "gap": 18
+          },
+          {
+            "num": 16,
+            "gap": 19
+          },
+          {
+            "num": 12,
+            "gap": 20
+          },
+          {
+            "num": 67,
+            "gap": 20
+          },
+          {
+            "num": 24,
+            "gap": 21
+          },
+          {
+            "num": 40,
+            "gap": 22
+          },
+          {
+            "num": 15,
+            "gap": 24
+          },
+          {
+            "num": 61,
+            "gap": 27
+          },
+          {
+            "num": 64,
+            "gap": 28
+          },
+          {
+            "num": 58,
+            "gap": 31
+          },
+          {
+            "num": 69,
+            "gap": 38
+          },
+          {
+            "num": 28,
+            "gap": 43
+          },
+          {
+            "num": 11,
+            "gap": 45
+          },
+          {
+            "num": 6,
+            "gap": 47
+          },
+          {
+            "num": 8,
+            "gap": 49
+          }
+        ]
+      }
+    ],
+    "grid": [
+      {
+        "ago": 50,
+        "has": true,
+        "cells": [
+          8,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 49,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 48,
+        "has": true,
+        "cells": [
+          6,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 47,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 46,
+        "has": true,
+        "cells": [
+          11,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 45,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 44,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          28,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 43,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 42,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 41,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 40,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 39,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          69
+        ]
+      },
+      {
+        "ago": 38,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 37,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 36,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 35,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 34,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 33,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 32,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          58
+        ]
+      },
+      {
+        "ago": 31,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 30,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 29,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          64
+        ]
+      },
+      {
+        "ago": 28,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          61
+        ]
+      },
+      {
+        "ago": 27,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 26,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 25,
+        "has": true,
+        "cells": [
+          15,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 24,
+        "has": false,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 23,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          40
+        ]
+      },
+      {
+        "ago": 22,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          24,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 21,
+        "has": true,
+        "cells": [
+          12,
+          null,
+          null,
+          67,
+          null
+        ]
+      },
+      {
+        "ago": 20,
+        "has": true,
+        "cells": [
+          null,
+          16,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 19,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          66
+        ]
+      },
+      {
+        "ago": 18,
+        "has": true,
+        "cells": [
+          null,
+          13,
+          null,
+          33,
+          52
+        ]
+      },
+      {
+        "ago": 17,
+        "has": true,
+        "cells": [
+          null,
+          41,
+          null,
+          53,
+          62
+        ]
+      },
+      {
+        "ago": 16,
+        "has": true,
+        "cells": [
+          null,
+          9,
+          29,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 15,
+        "has": true,
+        "cells": [
+          null,
+          31,
+          35,
+          36,
+          63
+        ]
+      },
+      {
+        "ago": 14,
+        "has": true,
+        "cells": [
+          null,
+          39,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 13,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          null,
+          null,
+          56
+        ]
+      },
+      {
+        "ago": 12,
+        "has": true,
+        "cells": [
+          22,
+          null,
+          45,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 11,
+        "has": true,
+        "cells": [
+          null,
+          37,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "ago": 10,
+        "has": true,
+        "cells": [
+          2,
+          null,
+          42,
+          44,
+          null
+        ]
+      },
+      {
+        "ago": 9,
+        "has": true,
+        "cells": [
+          null,
+          null,
+          49,
+          null,
+          70
+        ]
+      },
+      {
+        "ago": 8,
+        "has": true,
+        "cells": [
+          4,
+          18,
+          26,
+          43,
+          null
+        ]
+      },
+      {
+        "ago": 7,
+        "has": true,
+        "cells": [
+          14,
+          21,
+          51,
+          55,
+          65
+        ]
+      },
+      {
+        "ago": 6,
+        "has": true,
+        "cells": [
+          17,
+          null,
+          32,
+          54,
+          null
+        ]
+      },
+      {
+        "ago": 5,
+        "has": true,
+        "cells": [
+          null,
+          20,
+          null,
+          null,
+          68
+        ]
+      },
+      {
+        "ago": 4,
+        "has": true,
+        "cells": [
+          3,
+          23,
+          27,
+          46,
+          60
+        ]
+      },
+      {
+        "ago": 3,
+        "has": true,
+        "cells": [
+          5,
+          19,
+          30,
+          38,
+          59
+        ]
+      },
+      {
+        "ago": 2,
+        "has": true,
+        "cells": [
+          1,
+          25,
+          34,
+          null,
+          57
+        ]
+      },
+      {
+        "ago": 1,
+        "has": true,
+        "cells": [
+          7,
+          10,
+          47,
+          48,
+          50
+        ]
+      }
+    ],
+    "sakaiLift": [
+      {
+        "band": 6,
+        "rounds": 230,
+        "avgSize": 10,
+        "act": 0.75,
+        "exp": 0.71,
+        "lift": 1.06
+      },
+      {
+        "band": 5,
+        "rounds": 230,
+        "avgSize": 9.4,
+        "act": 0.69,
+        "exp": 0.67,
+        "lift": 1.02
+      },
+      {
+        "band": 4,
+        "rounds": 230,
+        "avgSize": 14,
+        "act": 1,
+        "exp": 1,
+        "lift": 1
+      },
+      {
+        "band": 3,
+        "rounds": 230,
+        "avgSize": 15.8,
+        "act": 1.06,
+        "exp": 1.13,
+        "lift": 0.94
+      },
+      {
+        "band": 2,
+        "rounds": 230,
+        "avgSize": 13.2,
+        "act": 0.89,
+        "exp": 0.94,
+        "lift": 0.95
+      },
+      {
+        "band": 1,
+        "rounds": 230,
+        "avgSize": 6.5,
+        "act": 0.5,
+        "exp": 0.46,
+        "lift": 1.09
+      },
+      {
+        "band": 0,
+        "rounds": 169,
+        "avgSize": 1.6,
+        "act": 0.14,
+        "exp": 0.11,
+        "lift": 1.26
+      }
+    ],
+    "gapLift": [
+      {
+        "band": 7,
+        "rounds": 230,
+        "avgSize": 32.9,
+        "act": 2.39,
+        "exp": 2.35,
+        "lift": 1.02
+      },
+      {
+        "band": 6,
+        "rounds": 230,
+        "avgSize": 8.5,
+        "act": 0.64,
+        "exp": 0.6,
+        "lift": 1.07
+      },
+      {
+        "band": 5,
+        "rounds": 230,
+        "avgSize": 6.8,
+        "act": 0.5,
+        "exp": 0.49,
+        "lift": 1.03
+      },
+      {
+        "band": 4,
+        "rounds": 230,
+        "avgSize": 3.8,
+        "act": 0.3,
+        "exp": 0.27,
+        "lift": 1.11
+      },
+      {
+        "band": 3,
+        "rounds": 230,
+        "avgSize": 4.1,
+        "act": 0.23,
+        "exp": 0.29,
+        "lift": 0.81
+      },
+      {
+        "band": 2,
+        "rounds": 230,
+        "avgSize": 4.3,
+        "act": 0.25,
+        "exp": 0.31,
+        "lift": 0.82
+      },
+      {
+        "band": 1,
+        "rounds": 230,
+        "avgSize": 4.6,
+        "act": 0.27,
+        "exp": 0.33,
+        "lift": 0.83
+      },
+      {
+        "band": 0,
+        "rounds": 230,
+        "avgSize": 5,
+        "act": 0.4,
+        "exp": 0.36,
+        "lift": 1.12
+      }
+    ]
+  },
+  "backtest": {
+    "hot": {
+      "rounds": 230,
+      "poolSize": 8,
+      "act": 0.62,
+      "exp": 0.57,
+      "lift": 1.09
+    },
+    "cold": {
+      "rounds": 230,
+      "poolSize": 8,
+      "act": 0.61,
+      "exp": 0.57,
+      "lift": 1.07
+    },
+    "overdue": {
+      "rounds": 230,
+      "poolSize": 8,
+      "act": 0.63,
+      "exp": 0.57,
+      "lift": 1.1
+    }
+  },
+  "popularity": {
+    "poolMax": 70,
+    "whiteCount": 5,
+    "calendarMax": 31,
+    "calendarSharePct": 44,
+    "aboveCount": 39,
+    "unpopularPool": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "isBig": true
+  },
+  "winDraws": [
+    [
+      7,
+      10,
+      47,
+      48,
+      50
+    ],
+    [
+      1,
+      25,
+      34,
+      48,
+      57
+    ],
+    [
+      5,
+      19,
+      30,
+      38,
+      59
+    ],
+    [
+      3,
+      23,
+      27,
+      46,
+      60
+    ],
+    [
+      1,
+      20,
+      30,
+      46,
+      68
+    ],
+    [
+      17,
+      20,
+      32,
+      54,
+      57
+    ],
+    [
+      14,
+      21,
+      51,
+      55,
+      65
+    ],
+    [
+      4,
+      18,
+      26,
+      43,
+      51
+    ],
+    [
+      34,
+      48,
+      49,
+      59,
+      70
+    ],
+    [
+      2,
+      5,
+      42,
+      44,
+      60
+    ],
+    [
+      25,
+      37,
+      59,
+      68,
+      70
+    ],
+    [
+      22,
+      34,
+      45,
+      48,
+      55
+    ],
+    [
+      2,
+      4,
+      10,
+      48,
+      56
+    ],
+    [
+      2,
+      39,
+      44,
+      46,
+      56
+    ],
+    [
+      2,
+      31,
+      35,
+      36,
+      63
+    ],
+    [
+      5,
+      9,
+      29,
+      47,
+      57
+    ],
+    [
+      26,
+      41,
+      50,
+      53,
+      62
+    ],
+    [
+      5,
+      13,
+      30,
+      33,
+      52
+    ],
+    [
+      48,
+      51,
+      60,
+      63,
+      66
+    ],
+    [
+      13,
+      16,
+      21,
+      26,
+      50
+    ],
+    [
+      12,
+      20,
+      53,
+      67,
+      70
+    ],
+    [
+      9,
+      17,
+      24,
+      39,
+      51
+    ],
+    [
+      9,
+      30,
+      36,
+      38,
+      40
+    ],
+    [
+      13,
+      30,
+      50,
+      52,
+      66
+    ],
+    [
+      15,
+      26,
+      43,
+      48,
+      60
+    ],
+    [
+      19,
+      24,
+      47,
+      59,
+      65
+    ],
+    [
+      1,
+      5,
+      49,
+      51,
+      59
+    ],
+    [
+      3,
+      22,
+      34,
+      54,
+      61
+    ],
+    [
+      10,
+      26,
+      34,
+      56,
+      64
+    ],
+    [
+      17,
+      23,
+      25,
+      52,
+      61
+    ],
+    [
+      17,
+      32,
+      35,
+      40,
+      47
+    ],
+    [
+      37,
+      47,
+      49,
+      51,
+      58
+    ],
+    [
+      12,
+      22,
+      50,
+      51,
+      55
+    ],
+    [
+      16,
+      21,
+      27,
+      41,
+      61
+    ],
+    [
+      14,
+      36,
+      41,
+      47,
+      66
+    ],
+    [
+      7,
+      16,
+      32,
+      35,
+      40
+    ],
+    [
+      1,
+      36,
+      43,
+      56,
+      58
+    ],
+    [
+      38,
+      43,
+      44,
+      49,
+      62
+    ],
+    [
+      17,
+      21,
+      24,
+      57,
+      69
+    ],
+    [
+      3,
+      18,
+      36,
+      42,
+      49
+    ],
+    [
+      5,
+      15,
+      22,
+      33,
+      37
+    ],
+    [
+      31,
+      45,
+      62,
+      63,
+      68
+    ],
+    [
+      18,
+      35,
+      45,
+      60,
+      65
+    ],
+    [
+      13,
+      27,
+      28,
+      41,
+      62
+    ],
+    [
+      4,
+      13,
+      52,
+      53,
+      69
+    ],
+    [
+      11,
+      20,
+      51,
+      55,
+      63
+    ],
+    [
+      4,
+      11,
+      18,
+      38,
+      50
+    ],
+    [
+      6,
+      19,
+      36,
+      40,
+      55
+    ],
+    [
+      16,
+      21,
+      30,
+      35,
+      65
+    ],
+    [
+      8,
+      19,
+      26,
+      38,
+      42
+    ]
+  ],
+  "proof": null
+}
