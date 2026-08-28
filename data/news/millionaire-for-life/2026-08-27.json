@@ -1,0 +1,142 @@
+{
+  "kind": "news",
+  "newsType": "parity-extreme",
+  "gameId": "millionaire",
+  "gameSlug": "millionaire-for-life",
+  "gameName": "Millionaire for Life",
+  "date": "2026-08-27",
+  "resultDate": "2026-08-27",
+  "targetDate": "2026-08-28",
+  "publishedDate": "2026-08-27",
+  "drawTimeEt": "11:15 PM ET",
+  "title": "Millionaire for Life Number Watch — An All-Odd Line Just Landed",
+  "headline": "An All-Odd Line Just Landed",
+  "facts": {
+    "parity": "odd",
+    "c": 5,
+    "numbers": [
+      3,
+      7,
+      29,
+      35,
+      49
+    ],
+    "topic": "parity-extreme:millionaire:odd-2026-08-27"
+  },
+  "prose": {
+    "intro": "The Millionaire for Life machine skipped half the pool this draw. All 5 numbers came in odd.",
+    "fact": "Across recent Millionaire for Life draws the split clusters around the halfway mark. A line with all 5 numbers odd is the far edge of the range.",
+    "context": "The usual reminder applies, and it matters most on days like this: draws are independent. A streak, a gap or an odd shape says nothing about what the next drawing will do. We log these because they describe the data, not because they change it.",
+    "outro": "The regular draw-by-draw analysis continues as always. Want the charts and fresh sets on your phone the moment results drop? The free AI Lottery Hub app runs the same engine for every New York game."
+  },
+  "latest": {
+    "date": "2026-08-27",
+    "white": [
+      3,
+      7,
+      29,
+      35,
+      49
+    ],
+    "special": 5
+  },
+  "sumSeries": [
+    118,
+    176,
+    147,
+    79,
+    116,
+    125,
+    108,
+    129,
+    159,
+    132,
+    120,
+    149,
+    127,
+    159,
+    126,
+    187,
+    142,
+    229,
+    189,
+    123
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 35,
+        "count": 9
+      },
+      {
+        "num": 3,
+        "count": 7
+      },
+      {
+        "num": 44,
+        "count": 7
+      },
+      {
+        "num": 49,
+        "count": 7
+      },
+      {
+        "num": 57,
+        "count": 7
+      },
+      {
+        "num": 6,
+        "count": 6
+      },
+      {
+        "num": 7,
+        "count": 6
+      }
+    ],
+    "overdue": [
+      {
+        "num": 34,
+        "gap": 33
+      },
+      {
+        "num": 21,
+        "gap": 23
+      },
+      {
+        "num": 46,
+        "gap": 23
+      },
+      {
+        "num": 38,
+        "gap": 22
+      },
+      {
+        "num": 47,
+        "gap": 20
+      },
+      {
+        "num": 5,
+        "gap": 19
+      },
+      {
+        "num": 31,
+        "gap": 18
+      }
+    ],
+    "sum": {
+      "avg": 146,
+      "min": 76,
+      "max": 229,
+      "p25": 120,
+      "p75": 173
+    },
+    "consecutivePct": 40,
+    "repeatPct": 39,
+    "oddSplit": {
+      "best": 2,
+      "pct": 36,
+      "avgOdd": 2.4
+    }
+  }
+}
