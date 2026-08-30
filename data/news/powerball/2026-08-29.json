@@ -1,0 +1,144 @@
+{
+  "kind": "news",
+  "newsType": "sum-extreme",
+  "gameId": "powerball",
+  "gameSlug": "powerball",
+  "gameName": "Powerball",
+  "date": "2026-08-29",
+  "resultDate": "2026-08-29",
+  "targetDate": "2026-08-31",
+  "publishedDate": "2026-08-29",
+  "drawTimeEt": "10:59 PM ET",
+  "title": "Powerball Number Watch — The Biggest Line Total We've Logged",
+  "headline": "The Biggest Line Total We've Logged",
+  "facts": {
+    "sum": 268,
+    "dir": "highest",
+    "prevExtreme": 259,
+    "avg": 182,
+    "numbers": [
+      18,
+      56,
+      62,
+      65,
+      67
+    ],
+    "topic": "sum-extreme:powerball:highest-268"
+  },
+  "prose": {
+    "intro": "The Powerball numbers pushed to an extreme this draw: a line total of 268, the highest we have on record for this window.",
+    "fact": "Totals in this window average 182. The prior highest extreme was 259 — until this 268 landed.",
+    "context": "Standard caveat — every draw is random and independent. Records like this one describe where the data has been, never where it is going. Treat it as a curiosity, not a signal.",
+    "outro": "The regular draw-by-draw analysis continues as always. Want the charts and fresh sets on your phone the moment results drop? The free AI Lottery Hub app runs the same engine for every New York game."
+  },
+  "latest": {
+    "date": "2026-08-29",
+    "white": [
+      18,
+      56,
+      62,
+      65,
+      67
+    ],
+    "special": 18
+  },
+  "sumSeries": [
+    94,
+    173,
+    167,
+    139,
+    114,
+    201,
+    205,
+    148,
+    181,
+    214,
+    166,
+    216,
+    232,
+    132,
+    162,
+    214,
+    220,
+    158,
+    197,
+    268
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 14,
+        "count": 7
+      },
+      {
+        "num": 16,
+        "count": 7
+      },
+      {
+        "num": 44,
+        "count": 7
+      },
+      {
+        "num": 48,
+        "count": 7
+      },
+      {
+        "num": 50,
+        "count": 7
+      },
+      {
+        "num": 65,
+        "count": 7
+      },
+      {
+        "num": 3,
+        "count": 6
+      }
+    ],
+    "overdue": [
+      {
+        "num": 11,
+        "gap": 50
+      },
+      {
+        "num": 23,
+        "gap": 50
+      },
+      {
+        "num": 51,
+        "gap": 40
+      },
+      {
+        "num": 1,
+        "gap": 39
+      },
+      {
+        "num": 52,
+        "gap": 39
+      },
+      {
+        "num": 34,
+        "gap": 35
+      },
+      {
+        "num": 19,
+        "gap": 29
+      }
+    ],
+    "sum": {
+      "avg": 182,
+      "min": 94,
+      "max": 268,
+      "p25": 154,
+      "p75": 214
+    },
+    "consecutivePct": 18,
+    "repeatPct": 31,
+    "oddSplit": {
+      "best": 2,
+      "pct": 36,
+      "avgOdd": 2.2
+    }
+  }
+}
