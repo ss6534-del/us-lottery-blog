@@ -1,0 +1,361 @@
+{
+  "gameId": "mega",
+  "month": "2026-08",
+  "monthName": "August 2026",
+  "title": "Mega Millions in August 2026 — Every Draw, Hot Numbers & Patterns",
+  "draws": [
+    {
+      "date": "2026-08-28",
+      "white": [
+        8,
+        17,
+        29,
+        42,
+        55
+      ],
+      "special": 2
+    },
+    {
+      "date": "2026-08-25",
+      "white": [
+        7,
+        10,
+        47,
+        48,
+        50
+      ],
+      "special": 14
+    },
+    {
+      "date": "2026-08-21",
+      "white": [
+        1,
+        25,
+        34,
+        48,
+        57
+      ],
+      "special": 24
+    },
+    {
+      "date": "2026-08-18",
+      "white": [
+        5,
+        19,
+        30,
+        38,
+        59
+      ],
+      "special": 12
+    },
+    {
+      "date": "2026-08-14",
+      "white": [
+        3,
+        23,
+        27,
+        46,
+        60
+      ],
+      "special": 11
+    },
+    {
+      "date": "2026-08-11",
+      "white": [
+        1,
+        20,
+        30,
+        46,
+        68
+      ],
+      "special": 17
+    },
+    {
+      "date": "2026-08-07",
+      "white": [
+        17,
+        20,
+        32,
+        54,
+        57
+      ],
+      "special": 23
+    },
+    {
+      "date": "2026-08-04",
+      "white": [
+        14,
+        21,
+        51,
+        55,
+        65
+      ],
+      "special": 21
+    }
+  ],
+  "stats": {
+    "window": 8,
+    "latest": {
+      "date": "2026-08-28",
+      "white": [
+        8,
+        17,
+        29,
+        42,
+        55
+      ],
+      "special": 2
+    },
+    "previous": {
+      "date": "2026-08-25",
+      "white": [
+        7,
+        10,
+        47,
+        48,
+        50
+      ],
+      "special": 14
+    },
+    "freq": [
+      2,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      2,
+      0,
+      1,
+      2,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      2,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      2,
+      0,
+      2,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "maxFreq": 2,
+    "hot": [
+      {
+        "num": 1,
+        "count": 2
+      },
+      {
+        "num": 17,
+        "count": 2
+      },
+      {
+        "num": 20,
+        "count": 2
+      },
+      {
+        "num": 30,
+        "count": 2
+      },
+      {
+        "num": 46,
+        "count": 2
+      },
+      {
+        "num": 48,
+        "count": 2
+      },
+      {
+        "num": 55,
+        "count": 2
+      }
+    ],
+    "cold": [
+      {
+        "num": 2,
+        "count": 0
+      },
+      {
+        "num": 4,
+        "count": 0
+      },
+      {
+        "num": 6,
+        "count": 0
+      },
+      {
+        "num": 9,
+        "count": 0
+      },
+      {
+        "num": 11,
+        "count": 0
+      },
+      {
+        "num": 12,
+        "count": 0
+      },
+      {
+        "num": 13,
+        "count": 0
+      }
+    ],
+    "overdue": [
+      {
+        "num": 2,
+        "gap": 8
+      },
+      {
+        "num": 4,
+        "gap": 8
+      },
+      {
+        "num": 6,
+        "gap": 8
+      },
+      {
+        "num": 9,
+        "gap": 8
+      },
+      {
+        "num": 11,
+        "gap": 8
+      },
+      {
+        "num": 12,
+        "gap": 8
+      },
+      {
+        "num": 13,
+        "gap": 8
+      }
+    ],
+    "oddSplit": {
+      "best": 3,
+      "pct": 50,
+      "avgOdd": 2.6
+    },
+    "lowSplit": {
+      "best": 3,
+      "pct": 75,
+      "lowMax": 35
+    },
+    "sum": {
+      "avg": 167,
+      "min": 151,
+      "max": 206,
+      "p25": 159,
+      "p75": 180
+    },
+    "consecutivePct": 13,
+    "repeatPct": 43,
+    "specialHot": [
+      {
+        "num": 2,
+        "count": 1
+      },
+      {
+        "num": 11,
+        "count": 1
+      },
+      {
+        "num": 12,
+        "count": 1
+      }
+    ]
+  },
+  "hot": [
+    {
+      "num": 1,
+      "count": 2
+    },
+    {
+      "num": 17,
+      "count": 2
+    },
+    {
+      "num": 20,
+      "count": 2
+    },
+    {
+      "num": 30,
+      "count": 2
+    },
+    {
+      "num": 46,
+      "count": 2
+    },
+    {
+      "num": 48,
+      "count": 2
+    },
+    {
+      "num": 55,
+      "count": 2
+    },
+    {
+      "num": 57,
+      "count": 2
+    }
+  ],
+  "ai": {
+    "postsGraded": 8,
+    "best": {
+      "date": "2026-08-21",
+      "label": "Balanced Mix",
+      "matches": 1,
+      "specialHit": true
+    },
+    "threePlus": 0
+  }
+}
