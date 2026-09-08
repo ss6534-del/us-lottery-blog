@@ -1,0 +1,143 @@
+{
+  "kind": "news",
+  "newsType": "repeat-number",
+  "gameId": "take5_eve",
+  "gameSlug": "take-5-evening",
+  "gameName": "Take 5 Evening",
+  "date": "2026-09-07",
+  "resultDate": "2026-09-07",
+  "targetDate": "2026-09-08",
+  "publishedDate": "2026-09-07",
+  "drawTimeEt": "10:30 PM ET",
+  "title": "Take 5 Evening Number Watch — 19 & 31 Came Straight Back",
+  "headline": "19 & 31 Came Straight Back",
+  "facts": {
+    "nums": [
+      19,
+      31
+    ],
+    "count": 2,
+    "prevDate": "2026-09-06",
+    "numbers": [
+      19,
+      31
+    ],
+    "topic": "repeat-number:take5_eve:19-31"
+  },
+  "prose": {
+    "intro": "The latest Take 5 Evening draw did something the charts rarely see: 19 & 31 came straight back from the previous drawing.",
+    "fact": "Repeats happen often enough that we track them every post. Seeing 2 at once (19 & 31) is the part worth noting.",
+    "context": "Worth saying plainly: none of this makes anything \"due\". Every drawing starts from scratch, and no gap or pattern carries over. This entry documents an extreme in the dataset — that's all it is.",
+    "outro": "The regular draw-by-draw analysis continues as always. Want the charts and fresh sets on your phone the moment results drop? The free AI Lottery Hub app runs the same engine for every New York game."
+  },
+  "latest": {
+    "date": "2026-09-07",
+    "white": [
+      13,
+      19,
+      31,
+      36,
+      38
+    ],
+    "special": null
+  },
+  "sumSeries": [
+    125,
+    50,
+    123,
+    70,
+    137,
+    89,
+    117,
+    96,
+    86,
+    151,
+    102,
+    98,
+    91,
+    102,
+    104,
+    116,
+    108,
+    67,
+    96,
+    137
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 20,
+        "count": 11
+      },
+      {
+        "num": 31,
+        "count": 11
+      },
+      {
+        "num": 4,
+        "count": 10
+      },
+      {
+        "num": 27,
+        "count": 10
+      },
+      {
+        "num": 37,
+        "count": 10
+      },
+      {
+        "num": 21,
+        "count": 9
+      },
+      {
+        "num": 35,
+        "count": 9
+      }
+    ],
+    "overdue": [
+      {
+        "num": 28,
+        "gap": 28
+      },
+      {
+        "num": 8,
+        "gap": 27
+      },
+      {
+        "num": 6,
+        "gap": 25
+      },
+      {
+        "num": 34,
+        "gap": 22
+      },
+      {
+        "num": 5,
+        "gap": 18
+      },
+      {
+        "num": 25,
+        "gap": 13
+      },
+      {
+        "num": 7,
+        "gap": 12
+      }
+    ],
+    "sum": {
+      "avg": 107,
+      "min": 38,
+      "max": 171,
+      "p25": 95,
+      "p75": 119
+    },
+    "consecutivePct": 50,
+    "repeatPct": 47,
+    "oddSplit": {
+      "best": 3,
+      "pct": 40,
+      "avgOdd": 2.6
+    }
+  }
+}
