@@ -1,0 +1,143 @@
+{
+  "kind": "news",
+  "newsType": "repeat-number",
+  "gameId": "millionaire",
+  "gameSlug": "millionaire-for-life",
+  "gameName": "Millionaire for Life",
+  "date": "2026-09-08",
+  "resultDate": "2026-09-08",
+  "targetDate": "2026-09-09",
+  "publishedDate": "2026-09-08",
+  "drawTimeEt": "11:15 PM ET",
+  "title": "Millionaire for Life Number Watch — 14 & 42 Came Straight Back",
+  "headline": "14 & 42 Came Straight Back",
+  "facts": {
+    "nums": [
+      14,
+      42
+    ],
+    "count": 2,
+    "prevDate": "2026-09-07",
+    "numbers": [
+      14,
+      42
+    ],
+    "topic": "repeat-number:millionaire:14-42"
+  },
+  "prose": {
+    "intro": "The latest Millionaire for Life draw did something the charts rarely see: 14 & 42 came straight back from the previous drawing.",
+    "fact": "Across our window, back-to-back draws typically share one number at most. An overlap of 2 sits well clear of that baseline.",
+    "context": "Standard caveat — every draw is random and independent. Records like this one describe where the data has been, never where it is going. Treat it as a curiosity, not a signal.",
+    "outro": "Filed and logged. AI Lottery Hub keeps live results, pattern views and automatic ticket checking within reach — free on Google Play."
+  },
+  "latest": {
+    "date": "2026-09-08",
+    "white": [
+      14,
+      19,
+      36,
+      41,
+      42
+    ],
+    "special": 2
+  },
+  "sumSeries": [
+    127,
+    159,
+    126,
+    187,
+    142,
+    229,
+    189,
+    123,
+    85,
+    132,
+    182,
+    123,
+    211,
+    172,
+    96,
+    191,
+    150,
+    181,
+    143,
+    152
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 35,
+        "count": 9
+      },
+      {
+        "num": 7,
+        "count": 8
+      },
+      {
+        "num": 10,
+        "count": 7
+      },
+      {
+        "num": 44,
+        "count": 7
+      },
+      {
+        "num": 45,
+        "count": 7
+      },
+      {
+        "num": 2,
+        "count": 6
+      },
+      {
+        "num": 25,
+        "count": 6
+      }
+    ],
+    "overdue": [
+      {
+        "num": 21,
+        "gap": 35
+      },
+      {
+        "num": 47,
+        "gap": 32
+      },
+      {
+        "num": 5,
+        "gap": 31
+      },
+      {
+        "num": 31,
+        "gap": 30
+      },
+      {
+        "num": 6,
+        "gap": 22
+      },
+      {
+        "num": 48,
+        "gap": 22
+      },
+      {
+        "num": 4,
+        "gap": 21
+      }
+    ],
+    "sum": {
+      "avg": 148,
+      "min": 76,
+      "max": 229,
+      "p25": 123,
+      "p75": 176
+    },
+    "consecutivePct": 40,
+    "repeatPct": 39,
+    "oddSplit": {
+      "best": 3,
+      "pct": 40,
+      "avgOdd": 2.5
+    }
+  }
+}
