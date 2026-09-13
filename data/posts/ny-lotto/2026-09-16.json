@@ -1,22 +1,34 @@
 {
   "gameId": "nylotto",
-  "title": "NY Lotto Predictions for September 12, 2026 — Hot & Cold Numbers, AI Picks",
-  "resultDate": "2026-09-09",
-  "targetDate": "2026-09-12",
-  "publishedDate": "2026-09-09",
+  "title": "NY Lotto Predictions for September 16, 2026 — Hot & Cold Numbers, AI Picks",
+  "resultDate": "2026-09-12",
+  "targetDate": "2026-09-16",
+  "publishedDate": "2026-09-12",
   "prose": {
-    "intro": "Another NY Lotto draw is behind us — time to reset the charts and look forward. Below is our data-driven preview of the September 12, 2026 drawing.",
+    "intro": "Another NY Lotto draw is behind us — time to reset the charts and look forward. Below is our data-driven preview of the September 16, 2026 drawing.",
     "recap": "Before looking ahead, here is the latest result at a glance:",
-    "hot": "Over the last 50 draws, these numbers have shown up more often than any others. Streaks never last forever, but hot numbers are where frequency players start:",
-    "cold": "Every draw pool has its sleepers. These numbers have been absent the longest:",
-    "patterns": "Structure matters as much as individual numbers. Here is how recent draws have been shaped:",
-    "predictionsLead": "Our model blended the stats above into the following candidate lines for September 12, 2026:",
+    "hot": "These are the workhorses of the last 50 drawings — the numbers the machine keeps spitting out:",
+    "cold": "At the other end of the chart, these numbers have gone quiet. Due-number players watch this list closely:",
+    "patterns": "Beyond single numbers, the shape of winning lines has been remarkably consistent:",
+    "predictionsLead": "Putting it all together, our engine generated the following sets for September 16, 2026. Each one follows a different strategy, so pick the philosophy that suits you:",
     "outro": "These picks update after every single draw. To get them instantly — plus automatic ticket checking and win alerts — grab the free AI Lottery Hub app below.",
-    "insight": "Watch the carry-over: 4 appeared in back-to-back draws. Meanwhile 13 keeps rolling — it's one of the hottest numbers of the current window."
+    "insight": "Notably, the numbers ran high: a total of 223 against a typical 180. The draw also produced a consecutive pair (48–49), a pattern that shows up more often than most players expect. Overdue watchers got paid: 48 showed for the first time in 23 draws."
   },
   "stats": {
     "window": 50,
     "latest": {
+      "date": "2026-09-12",
+      "white": [
+        8,
+        31,
+        42,
+        45,
+        48,
+        49
+      ],
+      "special": 44
+    },
+    "previous": {
       "date": "2026-09-09",
       "white": [
         4,
@@ -28,42 +40,30 @@
       ],
       "special": 49
     },
-    "previous": {
-      "date": "2026-09-05",
-      "white": [
-        4,
-        6,
-        22,
-        50,
-        53,
-        58
-      ],
-      "special": 14
-    },
     "freq": [
       4,
-      4,
+      3,
       3,
       6,
       3,
       6,
       3,
-      6,
-      4,
+      7,
+      3,
       8,
       5,
       3,
       9,
-      8,
+      7,
       11,
       5,
       6,
       4,
-      4,
+      3,
       3,
       5,
       8,
-      4,
+      3,
       5,
       1,
       4,
@@ -82,14 +82,14 @@
       3,
       4,
       4,
-      5,
+      6,
       3,
       5,
-      4,
+      5,
       4,
       2,
-      2,
-      7,
+      3,
+      8,
       6,
       6,
       3,
@@ -120,15 +120,15 @@
         "count": 8
       },
       {
-        "num": 14,
-        "count": 8
-      },
-      {
         "num": 22,
         "count": 8
       },
       {
         "num": 30,
+        "count": 8
+      },
+      {
+        "num": 37,
         "count": 8
       }
     ],
@@ -146,12 +146,12 @@
         "count": 2
       },
       {
-        "num": 48,
+        "num": 59,
         "count": 2
       },
       {
-        "num": 59,
-        "count": 2
+        "num": 2,
+        "count": 3
       },
       {
         "num": 3,
@@ -165,37 +165,37 @@
     "overdue": [
       {
         "num": 33,
-        "gap": 38
+        "gap": 39
       },
       {
         "num": 39,
-        "gap": 30
+        "gap": 31
       },
       {
         "num": 44,
-        "gap": 28
+        "gap": 29
       },
       {
         "num": 55,
-        "gap": 25
+        "gap": 26
       },
       {
         "num": 32,
-        "gap": 24
+        "gap": 25
       },
       {
         "num": 56,
-        "gap": 23
+        "gap": 24
       },
       {
         "num": 11,
-        "gap": 22
+        "gap": 23
       }
     ],
     "oddSplit": {
-      "best": 4,
-      "pct": 30,
-      "avgOdd": 3
+      "best": 3,
+      "pct": 28,
+      "avgOdd": 2.9
     },
     "lowSplit": {
       "best": 3,
@@ -203,13 +203,13 @@
       "lowMax": 29
     },
     "sum": {
-      "avg": 177,
-      "min": 98,
+      "avg": 180,
+      "min": 104,
       "max": 277,
       "p25": 157,
-      "p75": 194
+      "p75": 208
     },
-    "consecutivePct": 42,
+    "consecutivePct": 44,
     "repeatPct": 53,
     "specialHot": [
       {
@@ -244,10 +244,6 @@
       "count": 8
     },
     {
-      "num": 14,
-      "count": 8
-    },
-    {
       "num": 22,
       "count": 8
     },
@@ -260,11 +256,15 @@
       "count": 8
     },
     {
-      "num": 27,
+      "num": 49,
+      "count": 8
+    },
+    {
+      "num": 8,
       "count": 7
     },
     {
-      "num": 35,
+      "num": 14,
       "count": 7
     }
   ],
@@ -273,38 +273,38 @@
       "label": "Hot Streak",
       "description": "Weighted toward the most frequent numbers of the last 50 draws.",
       "white": [
-        8,
-        22,
-        38,
-        47,
-        53,
-        57
+        15,
+        16,
+        19,
+        36,
+        58,
+        59
       ],
-      "special": 51
+      "special": 6
     },
     {
       "label": "Balanced Mix",
       "description": "Follows the dominant odd/even and low/high pattern with a typical sum range.",
       "white": [
-        7,
-        25,
-        27,
-        38,
-        41,
-        54
+        8,
+        13,
+        28,
+        39,
+        50,
+        51
       ],
-      "special": 44
+      "special": 24
     },
     {
       "label": "Overdue Watch",
       "description": "Blends the longest-absent numbers with a hot-number core.",
       "white": [
-        31,
-        33,
         36,
-        38,
-        53,
-        55
+        37,
+        39,
+        50,
+        55,
+        58
       ],
       "special": 42
     },
@@ -312,69 +312,31 @@
       "label": "Pattern Play",
       "description": "Mirrors recent structural trends (consecutive pairs, repeats).",
       "white": [
-        16,
-        40,
-        47,
-        48,
-        53,
-        57
+        20,
+        41,
+        43,
+        45,
+        49,
+        50
       ],
-      "special": 50
+      "special": 40
     },
     {
       "label": "Wildcard",
       "description": "A pure random spread across the full number pool.",
       "white": [
-        8,
-        12,
-        15,
-        47,
-        49,
-        57
+        9,
+        17,
+        25,
+        50,
+        58,
+        59
       ],
-      "special": 33
+      "special": 23
     }
   ],
   "scorecard": {
-    "forDate": "2026-09-09",
-    "sets": [
-      {
-        "label": "Hot Streak",
-        "matches": 0,
-        "specialHit": false
-      },
-      {
-        "label": "Balanced Mix",
-        "matches": 0,
-        "specialHit": false
-      },
-      {
-        "label": "Overdue Watch",
-        "matches": 0,
-        "specialHit": false
-      },
-      {
-        "label": "Pattern Play",
-        "matches": 1,
-        "specialHit": false
-      },
-      {
-        "label": "Wildcard",
-        "matches": 0,
-        "specialHit": false
-      }
-    ]
-  },
-  "outcome": {
-    "white": [
-      8,
-      31,
-      42,
-      45,
-      48,
-      49
-    ],
-    "special": 44,
+    "forDate": "2026-09-12",
     "sets": [
       {
         "label": "Hot Streak",

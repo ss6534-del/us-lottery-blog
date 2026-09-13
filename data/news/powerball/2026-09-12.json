@@ -1,0 +1,141 @@
+{
+  "kind": "news",
+  "newsType": "long-absence",
+  "gameId": "powerball",
+  "gameSlug": "powerball",
+  "gameName": "Powerball",
+  "date": "2026-09-12",
+  "resultDate": "2026-09-12",
+  "targetDate": "2026-09-14",
+  "publishedDate": "2026-09-12",
+  "drawTimeEt": "10:59 PM ET",
+  "title": "Powerball Number Watch — Number 51 Has Gone Quiet for 46 Draws",
+  "headline": "Number 51 Has Gone Quiet for 46 Draws",
+  "facts": {
+    "num": 51,
+    "gap": 46,
+    "gapText": "46",
+    "capped": false,
+    "record": 34,
+    "numbers": [
+      51
+    ],
+    "topic": "long-absence:powerball:51"
+  },
+  "prose": {
+    "intro": "Our tracker flagged something in the latest Powerball draw: number 51 has now sat out 46 drawings in a row — the longest absence anywhere in our 50-draw window.",
+    "fact": "For scale: the longest completed drought inside the same window was 34 draws. At 46, number 51 has now pushed past everything we had measured.",
+    "context": "Worth saying plainly: none of this makes anything \"due\". Every drawing starts from scratch, and no gap or pattern carries over. This entry documents an extreme in the dataset — that's all it is.",
+    "outro": "Filed and logged. AI Lottery Hub keeps live results, pattern views and automatic ticket checking within reach — free on Google Play."
+  },
+  "latest": {
+    "date": "2026-09-12",
+    "white": [
+      14,
+      16,
+      23,
+      58,
+      69
+    ],
+    "special": 3
+  },
+  "sumSeries": [
+    205,
+    148,
+    181,
+    214,
+    166,
+    216,
+    232,
+    132,
+    162,
+    214,
+    220,
+    158,
+    197,
+    268,
+    139,
+    164,
+    214,
+    157,
+    211,
+    180
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 14,
+        "count": 8
+      },
+      {
+        "num": 16,
+        "count": 8
+      },
+      {
+        "num": 3,
+        "count": 7
+      },
+      {
+        "num": 48,
+        "count": 7
+      },
+      {
+        "num": 50,
+        "count": 7
+      },
+      {
+        "num": 58,
+        "count": 7
+      },
+      {
+        "num": 59,
+        "count": 7
+      }
+    ],
+    "overdue": [
+      {
+        "num": 51,
+        "gap": 46
+      },
+      {
+        "num": 1,
+        "gap": 45
+      },
+      {
+        "num": 52,
+        "gap": 45
+      },
+      {
+        "num": 34,
+        "gap": 41
+      },
+      {
+        "num": 43,
+        "gap": 28
+      },
+      {
+        "num": 7,
+        "gap": 25
+      },
+      {
+        "num": 2,
+        "gap": 23
+      }
+    ],
+    "sum": {
+      "avg": 179,
+      "min": 94,
+      "max": 268,
+      "p25": 153,
+      "p75": 211
+    },
+    "consecutivePct": 16,
+    "repeatPct": 27,
+    "oddSplit": {
+      "best": 2,
+      "pct": 36,
+      "avgOdd": 2.3
+    }
+  }
+}
