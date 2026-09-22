@@ -1,0 +1,142 @@
+{
+  "kind": "news",
+  "newsType": "parity-extreme",
+  "gameId": "take5_mid",
+  "gameSlug": "take-5-midday",
+  "gameName": "Take 5 Midday",
+  "date": "2026-09-21",
+  "resultDate": "2026-09-21",
+  "targetDate": "2026-09-22",
+  "publishedDate": "2026-09-21",
+  "drawTimeEt": "2:30 PM ET",
+  "title": "Take 5 Midday Number Watch — An All-Odd Line Just Landed",
+  "headline": "An All-Odd Line Just Landed",
+  "facts": {
+    "parity": "odd",
+    "c": 5,
+    "numbers": [
+      1,
+      19,
+      29,
+      31,
+      33
+    ],
+    "topic": "parity-extreme:take5_mid:odd-2026-09-21"
+  },
+  "prose": {
+    "intro": "The Take 5 Midday machine skipped half the pool this draw. All 5 numbers came in odd.",
+    "fact": "Mixed lines dominate the record — the odd/even split almost always sits near the middle. A uniform all-odd line lives in the thin tail of that distribution.",
+    "context": "Worth saying plainly: none of this makes anything \"due\". Every drawing starts from scratch, and no gap or pattern carries over. This entry documents an extreme in the dataset — that's all it is.",
+    "outro": "Filed and logged. AI Lottery Hub keeps live results, pattern views and automatic ticket checking within reach — free on Google Play."
+  },
+  "latest": {
+    "date": "2026-09-21",
+    "white": [
+      1,
+      19,
+      29,
+      31,
+      33
+    ],
+    "special": null
+  },
+  "sumSeries": [
+    117,
+    91,
+    125,
+    111,
+    111,
+    115,
+    119,
+    72,
+    131,
+    119,
+    104,
+    125,
+    128,
+    137,
+    83,
+    74,
+    108,
+    79,
+    92,
+    113
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 19,
+        "count": 12
+      },
+      {
+        "num": 23,
+        "count": 10
+      },
+      {
+        "num": 30,
+        "count": 10
+      },
+      {
+        "num": 15,
+        "count": 9
+      },
+      {
+        "num": 18,
+        "count": 9
+      },
+      {
+        "num": 27,
+        "count": 9
+      },
+      {
+        "num": 32,
+        "count": 9
+      }
+    ],
+    "overdue": [
+      {
+        "num": 5,
+        "gap": 18
+      },
+      {
+        "num": 35,
+        "gap": 16
+      },
+      {
+        "num": 17,
+        "gap": 15
+      },
+      {
+        "num": 7,
+        "gap": 14
+      },
+      {
+        "num": 9,
+        "gap": 13
+      },
+      {
+        "num": 15,
+        "gap": 11
+      },
+      {
+        "num": 25,
+        "gap": 10
+      }
+    ],
+    "sum": {
+      "avg": 105,
+      "min": 59,
+      "max": 158,
+      "p25": 90,
+      "p75": 120
+    },
+    "consecutivePct": 26,
+    "repeatPct": 47,
+    "oddSplit": {
+      "best": 2,
+      "pct": 26,
+      "avgOdd": 2.6
+    }
+  }
+}
