@@ -1,0 +1,144 @@
+{
+  "kind": "news",
+  "newsType": "repeat-number",
+  "gameId": "nylotto",
+  "gameSlug": "ny-lotto",
+  "gameName": "NY Lotto",
+  "date": "2026-09-23",
+  "resultDate": "2026-09-23",
+  "targetDate": "2026-09-26",
+  "publishedDate": "2026-09-23",
+  "drawTimeEt": "8:15 PM ET",
+  "title": "NY Lotto Number Watch — 1 & 17 Came Straight Back",
+  "headline": "1 & 17 Came Straight Back",
+  "facts": {
+    "nums": [
+      1,
+      17
+    ],
+    "count": 2,
+    "prevDate": "2026-09-19",
+    "numbers": [
+      1,
+      17
+    ],
+    "topic": "repeat-number:nylotto:1-17"
+  },
+  "prose": {
+    "intro": "Carry-over alert. 2 numbers — 1 & 17 — landed in back-to-back NY Lotto drawings.",
+    "fact": "One repeat between drawings is routine. 2 in a single transition — 1 & 17 — is measurably less common.",
+    "context": "Standard caveat — every draw is random and independent. Records like this one describe where the data has been, never where it is going. Treat it as a curiosity, not a signal.",
+    "outro": "Filed and logged. AI Lottery Hub keeps live results, pattern views and automatic ticket checking within reach — free on Google Play."
+  },
+  "latest": {
+    "date": "2026-09-23",
+    "white": [
+      1,
+      11,
+      15,
+      17,
+      22,
+      38
+    ],
+    "special": 53
+  },
+  "sumSeries": [
+    184,
+    183,
+    181,
+    141,
+    218,
+    174,
+    124,
+    225,
+    134,
+    156,
+    192,
+    116,
+    157,
+    224,
+    193,
+    171,
+    223,
+    164,
+    152,
+    104
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 15,
+        "count": 11
+      },
+      {
+        "num": 13,
+        "count": 9
+      },
+      {
+        "num": 22,
+        "count": 9
+      },
+      {
+        "num": 31,
+        "count": 9
+      },
+      {
+        "num": 49,
+        "count": 9
+      },
+      {
+        "num": 10,
+        "count": 8
+      },
+      {
+        "num": 14,
+        "count": 8
+      }
+    ],
+    "overdue": [
+      {
+        "num": 33,
+        "gap": 42
+      },
+      {
+        "num": 39,
+        "gap": 34
+      },
+      {
+        "num": 44,
+        "gap": 32
+      },
+      {
+        "num": 55,
+        "gap": 29
+      },
+      {
+        "num": 3,
+        "gap": 24
+      },
+      {
+        "num": 51,
+        "gap": 21
+      },
+      {
+        "num": 20,
+        "gap": 20
+      }
+    ],
+    "sum": {
+      "avg": 175,
+      "min": 104,
+      "max": 277,
+      "p25": 156,
+      "p75": 194
+    },
+    "consecutivePct": 42,
+    "repeatPct": 53,
+    "oddSplit": {
+      "best": 4,
+      "pct": 30,
+      "avgOdd": 2.9
+    }
+  }
+}
