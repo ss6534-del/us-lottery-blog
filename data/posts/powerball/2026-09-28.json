@@ -1,22 +1,33 @@
 {
   "gameId": "powerball",
-  "title": "Powerball Predictions for September 26, 2026 — Hot & Cold Numbers, AI Picks",
-  "resultDate": "2026-09-23",
-  "targetDate": "2026-09-26",
-  "publishedDate": "2026-09-23",
+  "title": "Powerball Predictions for September 28, 2026 — Hot & Cold Numbers, AI Picks",
+  "resultDate": "2026-09-26",
+  "targetDate": "2026-09-28",
+  "publishedDate": "2026-09-26",
   "prose": {
-    "intro": "Another Powerball draw is behind us — time to reset the charts and look forward. Below is our data-driven preview of the September 26, 2026 drawing.",
-    "recap": "Before looking ahead, here is the latest result at a glance:",
+    "intro": "Our AI engine has re-run its full analysis after the latest Powerball results. Here is what the data says heading into September 28, 2026.",
+    "recap": "As always, we start with the numbers that just hit:",
     "hot": "These are the workhorses of the last 50 drawings — the numbers the machine keeps spitting out:",
     "cold": "At the other end of the chart, these numbers have gone quiet. Due-number players watch this list closely:",
     "patterns": "Zooming out, the recent draws share some clear structural tendencies:",
-    "predictionsLead": "Putting it all together, our engine generated the following sets for September 26, 2026. Each one follows a different strategy, so pick the philosophy that suits you:",
+    "predictionsLead": "Putting it all together, our engine generated the following sets for September 28, 2026. Each one follows a different strategy, so pick the philosophy that suits you:",
     "outro": "Want fresh sets like these on your phone the moment results drop? The free AI Lottery Hub app runs this same engine for every NY game, checks your saved tickets automatically, and pings you when you win.",
-    "insight": "The draw skewed low this time, summing to just 105 versus a recent average of 177. There it is again — a back-to-back pair (29–30) landed in this line."
+    "insight": "Notably, the numbers ran high: a total of 218 against a typical 177. And 52 finally woke up, ending a 51-draw drought. No cooling off for 14, which hit yet again."
   },
   "stats": {
     "window": 50,
     "latest": {
+      "date": "2026-09-26",
+      "white": [
+        14,
+        40,
+        52,
+        55,
+        57
+      ],
+      "special": 24
+    },
+    "previous": {
       "date": "2026-09-23",
       "white": [
         5,
@@ -27,20 +38,9 @@
       ],
       "special": 14
     },
-    "previous": {
-      "date": "2026-09-21",
-      "white": [
-        2,
-        7,
-        9,
-        17,
-        58
-      ],
-      "special": 20
-    },
     "freq": [
       0,
-      6,
+      5,
       7,
       3,
       5,
@@ -52,51 +52,51 @@
       1,
       3,
       3,
-      7,
-      4,
-      7,
-      6,
-      3,
-      3,
-      3,
-      4,
-      1,
-      1,
-      3,
-      5,
-      5,
-      2,
-      2,
-      5,
-      5,
-      2,
-      2,
-      1,
-      1,
-      1,
-      3,
-      3,
-      6,
-      2,
-      4,
-      3,
-      3,
-      2,
-      5,
-      4,
-      2,
-      3,
-      5,
-      4,
-      7,
-      0,
-      0,
-      5,
-      4,
-      6,
-      3,
-      5,
       8,
+      4,
+      7,
+      6,
+      3,
+      3,
+      3,
+      4,
+      1,
+      1,
+      3,
+      5,
+      5,
+      2,
+      2,
+      5,
+      5,
+      2,
+      2,
+      1,
+      1,
+      1,
+      3,
+      3,
+      6,
+      2,
+      5,
+      3,
+      2,
+      2,
+      5,
+      4,
+      2,
+      2,
+      5,
+      4,
+      7,
+      0,
+      1,
+      5,
+      4,
+      7,
+      3,
+      5,
+      7,
       7,
       3,
       4,
@@ -112,15 +112,11 @@
     "maxFreq": 8,
     "hot": [
       {
-        "num": 58,
+        "num": 14,
         "count": 8
       },
       {
         "num": 3,
-        "count": 7
-      },
-      {
-        "num": 14,
         "count": 7
       },
       {
@@ -132,12 +128,16 @@
         "count": 7
       },
       {
-        "num": 59,
+        "num": 55,
         "count": 7
       },
       {
-        "num": 2,
-        "count": 6
+        "num": 58,
+        "count": 7
+      },
+      {
+        "num": 59,
+        "count": 7
       }
     ],
     "cold": [
@@ -147,10 +147,6 @@
       },
       {
         "num": 51,
-        "count": 0
-      },
-      {
-        "num": 52,
         "count": 0
       },
       {
@@ -168,6 +164,10 @@
       {
         "num": 33,
         "count": 1
+      },
+      {
+        "num": 34,
+        "count": 1
       }
     ],
     "overdue": [
@@ -180,24 +180,24 @@
         "gap": 50
       },
       {
-        "num": 52,
-        "gap": 50
-      },
-      {
         "num": 34,
-        "gap": 46
+        "gap": 47
       },
       {
         "num": 43,
-        "gap": 33
+        "gap": 34
       },
       {
         "num": 44,
-        "gap": 28
+        "gap": 29
       },
       {
         "num": 22,
-        "gap": 27
+        "gap": 28
+      },
+      {
+        "num": 46,
+        "gap": 26
       }
     ],
     "oddSplit": {
@@ -215,9 +215,9 @@
       "min": 93,
       "max": 268,
       "p25": 148,
-      "p75": 211
+      "p75": 214
     },
-    "consecutivePct": 22,
+    "consecutivePct": 20,
     "repeatPct": 24,
     "specialHot": [
       {
@@ -225,26 +225,22 @@
         "count": 6
       },
       {
-        "num": 14,
-        "count": 5
+        "num": 2,
+        "count": 4
       },
       {
-        "num": 2,
+        "num": 14,
         "count": 4
       }
     ]
   },
   "hot10": [
     {
-      "num": 58,
+      "num": 14,
       "count": 8
     },
     {
       "num": 3,
-      "count": 7
-    },
-    {
-      "num": 14,
       "count": 7
     },
     {
@@ -256,12 +252,16 @@
       "count": 7
     },
     {
-      "num": 59,
+      "num": 55,
       "count": 7
     },
     {
-      "num": 2,
-      "count": 6
+      "num": 58,
+      "count": 7
+    },
+    {
+      "num": 59,
+      "count": 7
     },
     {
       "num": 17,
@@ -272,7 +272,7 @@
       "count": 6
     },
     {
-      "num": 55,
+      "num": 64,
       "count": 6
     }
   ],
@@ -281,102 +281,65 @@
       "label": "Hot Streak",
       "description": "Weighted toward the most frequent numbers of the last 50 draws.",
       "white": [
-        2,
-        12,
-        14,
-        29,
-        57
+        3,
+        17,
+        53,
+        58,
+        69
       ],
-      "special": 2
+      "special": 16
     },
     {
       "label": "Balanced Mix",
       "description": "Follows the dominant odd/even and low/high pattern with a typical sum range.",
       "white": [
-        2,
+        27,
         31,
         36,
-        53,
-        54
+        58,
+        60
       ],
-      "special": 2
+      "special": 24
     },
     {
       "label": "Overdue Watch",
       "description": "Blends the longest-absent numbers with a hot-number core.",
       "white": [
-        1,
-        9,
-        24,
-        35,
-        51
-      ],
-      "special": 2
-    },
-    {
-      "label": "Pattern Play",
-      "description": "Mirrors recent structural trends (consecutive pairs, repeats).",
-      "white": [
-        2,
-        16,
+        4,
+        25,
+        36,
         48,
-        61,
         66
       ],
       "special": 3
     },
     {
+      "label": "Pattern Play",
+      "description": "Mirrors recent structural trends (consecutive pairs, repeats).",
+      "white": [
+        7,
+        15,
+        29,
+        42,
+        64
+      ],
+      "special": 13
+    },
+    {
       "label": "Wildcard",
       "description": "A pure random spread across the full number pool.",
       "white": [
-        5,
-        28,
-        41,
-        48,
-        52
+        4,
+        25,
+        44,
+        51,
+        64
       ],
-      "special": 25
+      "special": 24
     }
   ],
   "scorecard": {
-    "forDate": "2026-09-23",
-    "sets": [
-      {
-        "label": "Hot Streak",
-        "matches": 0,
-        "specialHit": true
-      },
-      {
-        "label": "Balanced Mix",
-        "matches": 1,
-        "specialHit": false
-      },
-      {
-        "label": "Overdue Watch",
-        "matches": 0,
-        "specialHit": false
-      },
-      {
-        "label": "Pattern Play",
-        "matches": 1,
-        "specialHit": true
-      },
-      {
-        "label": "Wildcard",
-        "matches": 1,
-        "specialHit": false
-      }
-    ]
-  },
-  "outcome": {
-    "white": [
-      14,
-      40,
-      52,
-      55,
-      57
-    ],
-    "special": 24,
+    "forDate": "2026-09-26",
     "sets": [
       {
         "label": "Hot Streak",
