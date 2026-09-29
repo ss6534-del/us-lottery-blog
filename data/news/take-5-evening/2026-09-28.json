@@ -1,0 +1,142 @@
+{
+  "kind": "news",
+  "newsType": "parity-extreme",
+  "gameId": "take5_eve",
+  "gameSlug": "take-5-evening",
+  "gameName": "Take 5 Evening",
+  "date": "2026-09-28",
+  "resultDate": "2026-09-28",
+  "targetDate": "2026-09-29",
+  "publishedDate": "2026-09-28",
+  "drawTimeEt": "10:30 PM ET",
+  "title": "Take 5 Evening Number Watch — An All-Even Line Just Landed",
+  "headline": "An All-Even Line Just Landed",
+  "facts": {
+    "parity": "even",
+    "c": 5,
+    "numbers": [
+      12,
+      24,
+      28,
+      30,
+      38
+    ],
+    "topic": "parity-extreme:take5_eve:even-2026-09-28"
+  },
+  "prose": {
+    "intro": "The Take 5 Evening machine skipped half the pool this draw. All 5 numbers came in even.",
+    "fact": "The balanced splits do the heavy lifting draw after draw. Every number arriving even is the exception, not the drift.",
+    "context": "Standard caveat — every draw is random and independent. Records like this one describe where the data has been, never where it is going. Treat it as a curiosity, not a signal.",
+    "outro": "Filed and logged. AI Lottery Hub keeps live results, pattern views and automatic ticket checking within reach — free on Google Play."
+  },
+  "latest": {
+    "date": "2026-09-28",
+    "white": [
+      12,
+      24,
+      28,
+      30,
+      38
+    ],
+    "special": null
+  },
+  "sumSeries": [
+    99,
+    138,
+    99,
+    59,
+    140,
+    78,
+    48,
+    84,
+    78,
+    113,
+    87,
+    120,
+    141,
+    105,
+    91,
+    72,
+    100,
+    94,
+    103,
+    132
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 21,
+        "count": 15
+      },
+      {
+        "num": 20,
+        "count": 11
+      },
+      {
+        "num": 36,
+        "count": 11
+      },
+      {
+        "num": 12,
+        "count": 10
+      },
+      {
+        "num": 31,
+        "count": 10
+      },
+      {
+        "num": 38,
+        "count": 10
+      },
+      {
+        "num": 30,
+        "count": 9
+      }
+    ],
+    "overdue": [
+      {
+        "num": 37,
+        "gap": 25
+      },
+      {
+        "num": 18,
+        "gap": 24
+      },
+      {
+        "num": 13,
+        "gap": 21
+      },
+      {
+        "num": 4,
+        "gap": 16
+      },
+      {
+        "num": 33,
+        "gap": 16
+      },
+      {
+        "num": 8,
+        "gap": 13
+      },
+      {
+        "num": 6,
+        "gap": 11
+      }
+    ],
+    "sum": {
+      "avg": 105,
+      "min": 48,
+      "max": 171,
+      "p25": 87,
+      "p75": 125
+    },
+    "consecutivePct": 44,
+    "repeatPct": 45,
+    "oddSplit": {
+      "best": 3,
+      "pct": 34,
+      "avgOdd": 2.4
+    }
+  }
+}
