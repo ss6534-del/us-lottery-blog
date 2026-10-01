@@ -1,0 +1,142 @@
+{
+  "kind": "news",
+  "newsType": "long-absence",
+  "gameId": "nylotto",
+  "gameSlug": "ny-lotto",
+  "gameName": "NY Lotto",
+  "date": "2026-09-30",
+  "resultDate": "2026-09-30",
+  "targetDate": "2026-10-03",
+  "publishedDate": "2026-09-30",
+  "drawTimeEt": "8:15 PM ET",
+  "title": "NY Lotto Number Watch — Number 33 Has Gone Quiet for 44 Draws",
+  "headline": "Number 33 Has Gone Quiet for 44 Draws",
+  "facts": {
+    "num": 33,
+    "gap": 44,
+    "gapText": "44",
+    "capped": false,
+    "record": 31,
+    "numbers": [
+      33
+    ],
+    "topic": "long-absence:nylotto:33"
+  },
+  "prose": {
+    "intro": "Our tracker flagged something in the latest NY Lotto draw: number 33 has now sat out 44 drawings in a row — the longest absence anywhere in our 50-draw window.",
+    "fact": "The previous record in this window was a 31-draw absence. Number 33 is at 44 and still counting.",
+    "context": "Worth saying plainly: none of this makes anything \"due\". Every drawing starts from scratch, and no gap or pattern carries over. This entry documents an extreme in the dataset — that's all it is.",
+    "outro": "That's the entry. For the standing frequency and overdue tables, see our regular posts — or carry them around in the free AI Lottery Hub app, which also checks your saved tickets automatically."
+  },
+  "latest": {
+    "date": "2026-09-30",
+    "white": [
+      17,
+      27,
+      31,
+      40,
+      46,
+      57
+    ],
+    "special": 29
+  },
+  "sumSeries": [
+    181,
+    141,
+    218,
+    174,
+    124,
+    225,
+    134,
+    156,
+    192,
+    116,
+    157,
+    224,
+    193,
+    171,
+    223,
+    164,
+    152,
+    104,
+    159,
+    218
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 15,
+        "count": 11
+      },
+      {
+        "num": 13,
+        "count": 10
+      },
+      {
+        "num": 17,
+        "count": 9
+      },
+      {
+        "num": 22,
+        "count": 9
+      },
+      {
+        "num": 27,
+        "count": 9
+      },
+      {
+        "num": 31,
+        "count": 9
+      },
+      {
+        "num": 10,
+        "count": 8
+      }
+    ],
+    "overdue": [
+      {
+        "num": 33,
+        "gap": 44
+      },
+      {
+        "num": 39,
+        "gap": 36
+      },
+      {
+        "num": 44,
+        "gap": 34
+      },
+      {
+        "num": 55,
+        "gap": 31
+      },
+      {
+        "num": 3,
+        "gap": 26
+      },
+      {
+        "num": 51,
+        "gap": 23
+      },
+      {
+        "num": 20,
+        "gap": 22
+      }
+    ],
+    "sum": {
+      "avg": 172,
+      "min": 104,
+      "max": 252,
+      "p25": 156,
+      "p75": 193
+    },
+    "consecutivePct": 38,
+    "repeatPct": 53,
+    "oddSplit": {
+      "best": 4,
+      "pct": 30,
+      "avgOdd": 2.9
+    }
+  }
+}
