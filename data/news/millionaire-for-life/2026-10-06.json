@@ -1,0 +1,141 @@
+{
+  "kind": "news",
+  "newsType": "long-absence",
+  "gameId": "millionaire",
+  "gameSlug": "millionaire-for-life",
+  "gameName": "Millionaire for Life",
+  "date": "2026-10-06",
+  "resultDate": "2026-10-06",
+  "targetDate": "2026-10-07",
+  "publishedDate": "2026-10-06",
+  "drawTimeEt": "11:15 PM ET",
+  "title": "Millionaire for Life Number Watch — Number 48 Has Gone Quiet for 50+ Draws",
+  "headline": "Number 48 Has Gone Quiet for 50+ Draws",
+  "facts": {
+    "num": 48,
+    "gap": 50,
+    "gapText": "50+",
+    "capped": true,
+    "record": 37,
+    "numbers": [
+      48
+    ],
+    "topic": "long-absence:millionaire:48"
+  },
+  "prose": {
+    "intro": "Our tracker flagged something in the latest Millionaire for Life draw: number 48 has now sat out 50+ drawings in a row — the longest absence anywhere in our 50-draw window.",
+    "fact": "The previous record in this window was a 37-draw absence. Number 48 is at 50+ and still counting.",
+    "context": "Standard caveat — every draw is random and independent. Records like this one describe where the data has been, never where it is going. Treat it as a curiosity, not a signal.",
+    "outro": "That's the entry. For the standing frequency and overdue tables, see our regular posts — or carry them around in the free AI Lottery Hub app, which also checks your saved tickets automatically."
+  },
+  "latest": {
+    "date": "2026-10-06",
+    "white": [
+      16,
+      25,
+      27,
+      41,
+      46
+    ],
+    "special": 3
+  },
+  "sumSeries": [
+    154,
+    156,
+    140,
+    151,
+    156,
+    131,
+    113,
+    87,
+    151,
+    165,
+    161,
+    94,
+    158,
+    127,
+    149,
+    118,
+    180,
+    85,
+    130,
+    155
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 7,
+        "count": 8
+      },
+      {
+        "num": 25,
+        "count": 8
+      },
+      {
+        "num": 40,
+        "count": 8
+      },
+      {
+        "num": 27,
+        "count": 7
+      },
+      {
+        "num": 41,
+        "count": 7
+      },
+      {
+        "num": 57,
+        "count": 7
+      },
+      {
+        "num": 1,
+        "count": 6
+      }
+    ],
+    "overdue": [
+      {
+        "num": 48,
+        "gap": 50
+      },
+      {
+        "num": 49,
+        "gap": 40
+      },
+      {
+        "num": 10,
+        "gap": 33
+      },
+      {
+        "num": 54,
+        "gap": 27
+      },
+      {
+        "num": 55,
+        "gap": 27
+      },
+      {
+        "num": 5,
+        "gap": 21
+      },
+      {
+        "num": 6,
+        "gap": 21
+      }
+    ],
+    "sum": {
+      "avg": 146,
+      "min": 85,
+      "max": 229,
+      "p25": 126,
+      "p75": 161
+    },
+    "consecutivePct": 34,
+    "repeatPct": 37,
+    "oddSplit": {
+      "best": 3,
+      "pct": 36,
+      "avgOdd": 2.5
+    }
+  }
+}
