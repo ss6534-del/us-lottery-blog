@@ -1,0 +1,143 @@
+{
+  "kind": "news",
+  "newsType": "consecutive-pair",
+  "gameId": "millionaire",
+  "gameSlug": "millionaire-for-life",
+  "gameName": "Millionaire for Life",
+  "date": "2026-10-11",
+  "resultDate": "2026-10-11",
+  "targetDate": "2026-10-12",
+  "publishedDate": "2026-10-11",
+  "drawTimeEt": "11:15 PM ET",
+  "title": "Millionaire for Life Number Watch — 2 Consecutive Pairs in a Single Draw",
+  "headline": "2 Consecutive Pairs in a Single Draw",
+  "facts": {
+    "pairs": [
+      "43–44",
+      "44–45"
+    ],
+    "count": 2,
+    "numbers": [
+      43,
+      44,
+      45
+    ],
+    "topic": "consecutive-pair:millionaire:43-44_44-45"
+  },
+  "prose": {
+    "intro": "The Millionaire for Life machine drew neighbors twice over this time: 43–44 and 44–45, 2 consecutive pairs in one line.",
+    "fact": "A single consecutive pair turns up in a healthy share of draws. Two or more in the same line pushes the result into the tail of the shape distribution.",
+    "context": "Standard caveat — every draw is random and independent. Records like this one describe where the data has been, never where it is going. Treat it as a curiosity, not a signal.",
+    "outro": "That's the entry. For the standing frequency and overdue tables, see our regular posts — or carry them around in the free AI Lottery Hub app, which also checks your saved tickets automatically."
+  },
+  "latest": {
+    "date": "2026-10-11",
+    "white": [
+      35,
+      43,
+      44,
+      45,
+      49
+    ],
+    "special": 4
+  },
+  "sumSeries": [
+    131,
+    113,
+    87,
+    151,
+    165,
+    161,
+    94,
+    158,
+    127,
+    149,
+    118,
+    180,
+    85,
+    130,
+    155,
+    176,
+    205,
+    116,
+    124,
+    216
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 41,
+        "count": 8
+      },
+      {
+        "num": 2,
+        "count": 7
+      },
+      {
+        "num": 7,
+        "count": 7
+      },
+      {
+        "num": 25,
+        "count": 7
+      },
+      {
+        "num": 40,
+        "count": 7
+      },
+      {
+        "num": 45,
+        "count": 7
+      },
+      {
+        "num": 51,
+        "count": 7
+      }
+    ],
+    "overdue": [
+      {
+        "num": 48,
+        "gap": 50
+      },
+      {
+        "num": 10,
+        "gap": 38
+      },
+      {
+        "num": 54,
+        "gap": 32
+      },
+      {
+        "num": 6,
+        "gap": 26
+      },
+      {
+        "num": 36,
+        "gap": 26
+      },
+      {
+        "num": 31,
+        "gap": 24
+      },
+      {
+        "num": 37,
+        "gap": 21
+      }
+    ],
+    "sum": {
+      "avg": 149,
+      "min": 85,
+      "max": 229,
+      "p25": 126,
+      "p75": 174
+    },
+    "consecutivePct": 36,
+    "repeatPct": 35,
+    "oddSplit": {
+      "best": 3,
+      "pct": 36,
+      "avgOdd": 2.6
+    }
+  }
+}
