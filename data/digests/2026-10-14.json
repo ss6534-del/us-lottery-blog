@@ -240,6 +240,33 @@
             "specialHit": false
           }
         ]
+      },
+      "outcome": {
+        "white": [
+          4,
+          8,
+          22,
+          31,
+          37
+        ],
+        "special": null,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 1,
+            "specialHit": false
+          }
+        ]
       }
     },
     "take5_eve": {
@@ -471,6 +498,33 @@
           {
             "label": "Balanced Mix",
             "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
+            "specialHit": false
+          }
+        ]
+      },
+      "outcome": {
+        "white": [
+          2,
+          5,
+          18,
+          22,
+          35
+        ],
+        "special": null,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 1,
             "specialHit": false
           },
           {
@@ -733,6 +787,33 @@
       ],
       "scorecard": {
         "forDate": "2026-10-14",
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
+            "specialHit": false
+          }
+        ]
+      },
+      "outcome": {
+        "white": [
+          14,
+          16,
+          21,
+          51,
+          53
+        ],
+        "special": 1,
         "sets": [
           {
             "label": "Hot Streak",
