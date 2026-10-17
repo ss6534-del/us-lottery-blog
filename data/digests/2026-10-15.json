@@ -240,6 +240,33 @@
             "specialHit": false
           }
         ]
+      },
+      "outcome": {
+        "white": [
+          8,
+          26,
+          29,
+          30,
+          32
+        ],
+        "special": null,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
+            "specialHit": false
+          }
+        ]
       }
     },
     "take5_eve": {
@@ -462,6 +489,33 @@
       ],
       "scorecard": {
         "forDate": "2026-10-15",
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
+            "specialHit": false
+          }
+        ]
+      },
+      "outcome": {
+        "white": [
+          5,
+          9,
+          14,
+          18,
+          24
+        ],
+        "special": null,
         "sets": [
           {
             "label": "Hot Streak",
@@ -737,6 +791,33 @@
           {
             "label": "Hot Streak",
             "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
+            "specialHit": false
+          }
+        ]
+      },
+      "outcome": {
+        "white": [
+          2,
+          3,
+          32,
+          44,
+          56
+        ],
+        "special": 5,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 0,
             "specialHit": false
           },
           {
