@@ -1,0 +1,368 @@
+{
+  "gameId": "nylotto",
+  "title": "NY Lotto Predictions for October 21, 2026 — Hot & Cold Numbers, AI Picks",
+  "resultDate": "2026-10-17",
+  "targetDate": "2026-10-21",
+  "publishedDate": "2026-10-17",
+  "prose": {
+    "intro": "Another NY Lotto draw is behind us — time to reset the charts and look forward. Below is our data-driven preview of the October 21, 2026 drawing.",
+    "recap": "Before looking ahead, here is the latest result at a glance:",
+    "hot": "These are the workhorses of the last 50 drawings — the numbers the machine keeps spitting out:",
+    "cold": "Cold does not mean dead — it means overdue, at least in theory. The longest droughts right now:",
+    "patterns": "Structure matters as much as individual numbers. Here is how recent draws have been shaped:",
+    "predictionsLead": "Our model blended the stats above into the following candidate lines for October 21, 2026:",
+    "outro": "Want fresh sets like these on your phone the moment results drop? The free AI Lottery Hub app runs this same engine for every NY game, checks your saved tickets automatically, and pings you when you win.",
+    "insight": "This was a top-heavy draw — the line summed to 219, well above the recent average of 174. Watch the carry-over: 21 & 56 appeared in back-to-back draws. The draw also produced a consecutive pair (20–21), a pattern that shows up more often than most players expect."
+  },
+  "stats": {
+    "window": 50,
+    "latest": {
+      "date": "2026-10-17",
+      "white": [
+        20,
+        21,
+        32,
+        44,
+        46,
+        56
+      ],
+      "special": 18
+    },
+    "previous": {
+      "date": "2026-10-14",
+      "white": [
+        8,
+        21,
+        35,
+        36,
+        55,
+        56
+      ],
+      "special": 1
+    },
+    "freq": [
+      6,
+      3,
+      4,
+      7,
+      2,
+      7,
+      4,
+      8,
+      4,
+      7,
+      5,
+      2,
+      9,
+      8,
+      8,
+      3,
+      8,
+      4,
+      4,
+      4,
+      6,
+      9,
+      4,
+      3,
+      1,
+      5,
+      8,
+      6,
+      5,
+      7,
+      8,
+      8,
+      2,
+      7,
+      7,
+      5,
+      6,
+      4,
+      3,
+      4,
+      5,
+      5,
+      3,
+      3,
+      2,
+      7,
+      1,
+      3,
+      7,
+      5,
+      5,
+      2,
+      7,
+      7,
+      2,
+      8,
+      6,
+      5,
+      2
+    ],
+    "maxFreq": 9,
+    "hot": [
+      {
+        "num": 13,
+        "count": 9
+      },
+      {
+        "num": 22,
+        "count": 9
+      },
+      {
+        "num": 8,
+        "count": 8
+      },
+      {
+        "num": 14,
+        "count": 8
+      },
+      {
+        "num": 15,
+        "count": 8
+      },
+      {
+        "num": 17,
+        "count": 8
+      },
+      {
+        "num": 27,
+        "count": 8
+      }
+    ],
+    "cold": [
+      {
+        "num": 25,
+        "count": 1
+      },
+      {
+        "num": 47,
+        "count": 1
+      },
+      {
+        "num": 5,
+        "count": 2
+      },
+      {
+        "num": 12,
+        "count": 2
+      },
+      {
+        "num": 33,
+        "count": 2
+      },
+      {
+        "num": 45,
+        "count": 2
+      },
+      {
+        "num": 52,
+        "count": 2
+      }
+    ],
+    "overdue": [
+      {
+        "num": 51,
+        "gap": 28
+      },
+      {
+        "num": 2,
+        "gap": 20
+      },
+      {
+        "num": 24,
+        "gap": 20
+      },
+      {
+        "num": 43,
+        "gap": 19
+      },
+      {
+        "num": 25,
+        "gap": 18
+      },
+      {
+        "num": 52,
+        "gap": 17
+      },
+      {
+        "num": 29,
+        "gap": 16
+      }
+    ],
+    "oddSplit": {
+      "best": 3,
+      "pct": 30,
+      "avgOdd": 2.9
+    },
+    "lowSplit": {
+      "best": 3,
+      "pct": 30,
+      "lowMax": 29
+    },
+    "sum": {
+      "avg": 174,
+      "min": 104,
+      "max": 252,
+      "p25": 156,
+      "p75": 208
+    },
+    "consecutivePct": 38,
+    "repeatPct": 53,
+    "specialHot": [
+      {
+        "num": 6,
+        "count": 2
+      },
+      {
+        "num": 12,
+        "count": 2
+      },
+      {
+        "num": 16,
+        "count": 2
+      }
+    ]
+  },
+  "hot10": [
+    {
+      "num": 13,
+      "count": 9
+    },
+    {
+      "num": 22,
+      "count": 9
+    },
+    {
+      "num": 8,
+      "count": 8
+    },
+    {
+      "num": 14,
+      "count": 8
+    },
+    {
+      "num": 15,
+      "count": 8
+    },
+    {
+      "num": 17,
+      "count": 8
+    },
+    {
+      "num": 27,
+      "count": 8
+    },
+    {
+      "num": 31,
+      "count": 8
+    },
+    {
+      "num": 32,
+      "count": 8
+    },
+    {
+      "num": 56,
+      "count": 8
+    }
+  ],
+  "sets": [
+    {
+      "label": "Hot Streak",
+      "description": "Weighted toward the most frequent numbers of the last 50 draws.",
+      "white": [
+        7,
+        17,
+        24,
+        26,
+        41,
+        56
+      ],
+      "special": 24
+    },
+    {
+      "label": "Balanced Mix",
+      "description": "Follows the dominant odd/even and low/high pattern with a typical sum range.",
+      "white": [
+        5,
+        11,
+        17,
+        36,
+        40,
+        48
+      ],
+      "special": 38
+    },
+    {
+      "label": "Overdue Watch",
+      "description": "Blends the longest-absent numbers with a hot-number core.",
+      "white": [
+        2,
+        13,
+        15,
+        30,
+        49,
+        52
+      ],
+      "special": 7
+    },
+    {
+      "label": "Pattern Play",
+      "description": "Mirrors recent structural trends (consecutive pairs, repeats).",
+      "white": [
+        10,
+        11,
+        20,
+        31,
+        33,
+        53
+      ],
+      "special": 12
+    },
+    {
+      "label": "Wildcard",
+      "description": "A pure random spread across the full number pool.",
+      "white": [
+        5,
+        8,
+        32,
+        33,
+        37,
+        39
+      ],
+      "special": 4
+    }
+  ],
+  "scorecard": {
+    "forDate": "2026-10-17",
+    "sets": [
+      {
+        "label": "Hot Streak",
+        "matches": 1,
+        "specialHit": false
+      },
+      {
+        "label": "Balanced Mix",
+        "matches": 0,
+        "specialHit": false
+      },
+      {
+        "label": "Overdue Watch",
+        "matches": 1,
+        "specialHit": false
+      },
+      {
+        "label": "Pattern Play",
+        "matches": 0,
+        "specialHit": false
+      },
+      {
+        "label": "Wildcard",
+        "matches": 2,
+        "specialHit": false
+      }
+    ]
+  }
+}
