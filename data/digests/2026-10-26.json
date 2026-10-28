@@ -240,6 +240,33 @@
             "specialHit": false
           }
         ]
+      },
+      "outcome": {
+        "white": [
+          1,
+          23,
+          24,
+          30,
+          36
+        ],
+        "special": null,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
+            "specialHit": false
+          }
+        ]
       }
     },
     "take5_eve": {
@@ -476,6 +503,33 @@
           {
             "label": "Overdue Watch",
             "matches": 2,
+            "specialHit": false
+          }
+        ]
+      },
+      "outcome": {
+        "white": [
+          3,
+          4,
+          25,
+          26,
+          38
+        ],
+        "special": null,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 2,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
             "specialHit": false
           }
         ]
@@ -742,6 +796,33 @@
           {
             "label": "Balanced Mix",
             "matches": 2,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 1,
+            "specialHit": false
+          }
+        ]
+      },
+      "outcome": {
+        "white": [
+          13,
+          21,
+          22,
+          23,
+          33
+        ],
+        "special": 3,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 1,
             "specialHit": false
           },
           {
