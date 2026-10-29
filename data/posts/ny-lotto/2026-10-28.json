@@ -364,5 +364,43 @@
         "specialHit": false
       }
     ]
+  },
+  "outcome": {
+    "white": [
+      28,
+      31,
+      36,
+      40,
+      51,
+      59
+    ],
+    "special": 33,
+    "sets": [
+      {
+        "label": "Hot Streak",
+        "matches": 0,
+        "specialHit": false
+      },
+      {
+        "label": "Balanced Mix",
+        "matches": 0,
+        "specialHit": false
+      },
+      {
+        "label": "Overdue Watch",
+        "matches": 1,
+        "specialHit": false
+      },
+      {
+        "label": "Pattern Play",
+        "matches": 1,
+        "specialHit": false
+      },
+      {
+        "label": "Wildcard",
+        "matches": 1,
+        "specialHit": false
+      }
+    ]
   }
 }
