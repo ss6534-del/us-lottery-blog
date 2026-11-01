@@ -1,0 +1,142 @@
+{
+  "kind": "news",
+  "newsType": "parity-extreme",
+  "gameId": "powerball",
+  "gameSlug": "powerball",
+  "gameName": "Powerball",
+  "date": "2026-10-31",
+  "resultDate": "2026-10-31",
+  "targetDate": "2026-11-02",
+  "publishedDate": "2026-10-31",
+  "drawTimeEt": "10:59 PM ET",
+  "title": "Powerball Number Watch — An All-Even Line Just Landed",
+  "headline": "An All-Even Line Just Landed",
+  "facts": {
+    "parity": "even",
+    "c": 5,
+    "numbers": [
+      2,
+      4,
+      18,
+      50,
+      56
+    ],
+    "topic": "parity-extreme:powerball:even-2026-10-31"
+  },
+  "prose": {
+    "intro": "The Powerball machine skipped half the pool this draw. All 5 numbers came in even.",
+    "fact": "Across recent Powerball draws the split clusters around the halfway mark. A line with all 5 numbers even is the far edge of the range.",
+    "context": "Worth saying plainly: none of this makes anything \"due\". Every drawing starts from scratch, and no gap or pattern carries over. This entry documents an extreme in the dataset — that's all it is.",
+    "outro": "That's the entry. For the standing frequency and overdue tables, see our regular posts — or carry them around in the free AI Lottery Hub app, which also checks your saved tickets automatically."
+  },
+  "latest": {
+    "date": "2026-10-31",
+    "white": [
+      2,
+      4,
+      18,
+      50,
+      56
+    ],
+    "special": 20
+  },
+  "sumSeries": [
+    136,
+    202,
+    93,
+    105,
+    218,
+    158,
+    110,
+    204,
+    161,
+    124,
+    108,
+    208,
+    162,
+    116,
+    161,
+    173,
+    98,
+    197,
+    147,
+    130
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 4,
+        "count": 8
+      },
+      {
+        "num": 50,
+        "count": 7
+      },
+      {
+        "num": 58,
+        "count": 7
+      },
+      {
+        "num": 5,
+        "count": 6
+      },
+      {
+        "num": 14,
+        "count": 6
+      },
+      {
+        "num": 29,
+        "count": 6
+      },
+      {
+        "num": 42,
+        "count": 6
+      }
+    ],
+    "overdue": [
+      {
+        "num": 43,
+        "gap": 49
+      },
+      {
+        "num": 66,
+        "gap": 34
+      },
+      {
+        "num": 27,
+        "gap": 33
+      },
+      {
+        "num": 63,
+        "gap": 33
+      },
+      {
+        "num": 62,
+        "gap": 27
+      },
+      {
+        "num": 10,
+        "gap": 25
+      },
+      {
+        "num": 53,
+        "gap": 24
+      }
+    ],
+    "sum": {
+      "avg": 167,
+      "min": 93,
+      "max": 268,
+      "p25": 136,
+      "p75": 204
+    },
+    "consecutivePct": 26,
+    "repeatPct": 18,
+    "oddSplit": {
+      "best": 2,
+      "pct": 42,
+      "avgOdd": 2.4
+    }
+  }
+}
