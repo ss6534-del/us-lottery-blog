@@ -1,0 +1,141 @@
+{
+  "kind": "news",
+  "newsType": "long-absence",
+  "gameId": "mega",
+  "gameSlug": "mega-millions",
+  "gameName": "Mega Millions",
+  "date": "2026-11-06",
+  "resultDate": "2026-11-06",
+  "targetDate": "2026-11-10",
+  "publishedDate": "2026-11-06",
+  "drawTimeEt": "11:00 PM ET",
+  "title": "Mega Millions Number Watch — Number 69 Has Gone Quiet for 50+ Draws",
+  "headline": "Number 69 Has Gone Quiet for 50+ Draws",
+  "facts": {
+    "num": 69,
+    "gap": 50,
+    "gapText": "50+",
+    "capped": true,
+    "record": 37,
+    "numbers": [
+      69
+    ],
+    "topic": "long-absence:mega:69"
+  },
+  "prose": {
+    "intro": "Every so often a number simply stops showing up. In Mega Millions, that number is 69, and it has now missed 50+ consecutive draws.",
+    "fact": "Before this run, no gap in the 50-draw sample had stretched beyond 37 drawings. Number 69 just moved the ceiling to 50+.",
+    "context": "Worth saying plainly: none of this makes anything \"due\". Every drawing starts from scratch, and no gap or pattern carries over. This entry documents an extreme in the dataset — that's all it is.",
+    "outro": "The regular draw-by-draw analysis continues as always. Want the charts and fresh sets on your phone the moment results drop? The free AI Lottery Hub app runs the same engine for every New York game."
+  },
+  "latest": {
+    "date": "2026-11-06",
+    "white": [
+      27,
+      34,
+      44,
+      53,
+      64
+    ],
+    "special": 1
+  },
+  "sumSeries": [
+    198,
+    186,
+    214,
+    181,
+    221,
+    161,
+    151,
+    275,
+    132,
+    179,
+    205,
+    158,
+    144,
+    157,
+    157,
+    156,
+    166,
+    170,
+    191,
+    222
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 26,
+        "count": 8
+      },
+      {
+        "num": 48,
+        "count": 8
+      },
+      {
+        "num": 51,
+        "count": 8
+      },
+      {
+        "num": 30,
+        "count": 7
+      },
+      {
+        "num": 34,
+        "count": 7
+      },
+      {
+        "num": 68,
+        "count": 7
+      },
+      {
+        "num": 2,
+        "count": 6
+      }
+    ],
+    "overdue": [
+      {
+        "num": 69,
+        "gap": 50
+      },
+      {
+        "num": 52,
+        "gap": 38
+      },
+      {
+        "num": 39,
+        "gap": 34
+      },
+      {
+        "num": 18,
+        "gap": 28
+      },
+      {
+        "num": 65,
+        "gap": 27
+      },
+      {
+        "num": 20,
+        "gap": 25
+      },
+      {
+        "num": 23,
+        "gap": 24
+      }
+    ],
+    "sum": {
+      "avg": 181,
+      "min": 120,
+      "max": 288,
+      "p25": 153,
+      "p75": 205
+    },
+    "consecutivePct": 16,
+    "repeatPct": 33,
+    "oddSplit": {
+      "best": 2,
+      "pct": 36,
+      "avgOdd": 2.4
+    }
+  }
+}
