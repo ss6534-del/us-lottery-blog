@@ -1,0 +1,144 @@
+{
+  "kind": "news",
+  "newsType": "sum-extreme",
+  "gameId": "take5_mid",
+  "gameSlug": "take-5-midday",
+  "gameName": "Take 5 Midday",
+  "date": "2026-11-08",
+  "resultDate": "2026-11-08",
+  "targetDate": "2026-11-09",
+  "publishedDate": "2026-11-08",
+  "drawTimeEt": "2:30 PM ET",
+  "title": "Take 5 Midday Number Watch — The Smallest Line Total We've Logged",
+  "headline": "The Smallest Line Total We've Logged",
+  "facts": {
+    "sum": 46,
+    "dir": "lowest",
+    "prevExtreme": 60,
+    "avg": 102,
+    "numbers": [
+      1,
+      3,
+      5,
+      18,
+      19
+    ],
+    "topic": "sum-extreme:take5_mid:lowest-46"
+  },
+  "prose": {
+    "intro": "Line totals usually cluster in a comfortable band. The newest Take 5 Midday draw broke out of it with a lowest-ever 46.",
+    "fact": "Recent Take 5 Midday lines have averaged 102, and the previous lowest total in the window was 60. This draw's 46 extends the range outright.",
+    "context": "Standard caveat — every draw is random and independent. Records like this one describe where the data has been, never where it is going. Treat it as a curiosity, not a signal.",
+    "outro": "That's the entry. For the standing frequency and overdue tables, see our regular posts — or carry them around in the free AI Lottery Hub app, which also checks your saved tickets automatically."
+  },
+  "latest": {
+    "date": "2026-11-08",
+    "white": [
+      1,
+      3,
+      5,
+      18,
+      19
+    ],
+    "special": null
+  },
+  "sumSeries": [
+    95,
+    116,
+    82,
+    130,
+    104,
+    99,
+    88,
+    114,
+    112,
+    101,
+    85,
+    117,
+    84,
+    88,
+    101,
+    84,
+    72,
+    126,
+    109,
+    46
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 36,
+        "count": 12
+      },
+      {
+        "num": 28,
+        "count": 11
+      },
+      {
+        "num": 3,
+        "count": 10
+      },
+      {
+        "num": 14,
+        "count": 10
+      },
+      {
+        "num": 9,
+        "count": 9
+      },
+      {
+        "num": 16,
+        "count": 9
+      },
+      {
+        "num": 20,
+        "count": 9
+      }
+    ],
+    "overdue": [
+      {
+        "num": 25,
+        "gap": 32
+      },
+      {
+        "num": 15,
+        "gap": 17
+      },
+      {
+        "num": 37,
+        "gap": 17
+      },
+      {
+        "num": 26,
+        "gap": 15
+      },
+      {
+        "num": 2,
+        "gap": 13
+      },
+      {
+        "num": 12,
+        "gap": 11
+      },
+      {
+        "num": 36,
+        "gap": 11
+      }
+    ],
+    "sum": {
+      "avg": 102,
+      "min": 46,
+      "max": 149,
+      "p25": 88,
+      "p75": 113
+    },
+    "consecutivePct": 32,
+    "repeatPct": 49,
+    "oddSplit": {
+      "best": 2,
+      "pct": 32,
+      "avgOdd": 2.5
+    }
+  }
+}
