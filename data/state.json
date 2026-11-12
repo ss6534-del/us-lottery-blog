@@ -1,16 +1,16 @@
 {
-  "powerball": "2026-11-09",
+  "powerball": "2026-11-11",
   "mega": "2026-11-10",
-  "nylotto": "2026-11-07",
-  "take5_mid": "2026-11-10",
-  "take5_eve": "2026-11-10",
-  "millionaire": "2026-11-10",
+  "nylotto": "2026-11-11",
+  "take5_mid": "2026-11-11",
+  "take5_eve": "2026-11-11",
+  "millionaire": "2026-11-11",
   "recap_powerball": "2026-10",
   "recap_mega": "2026-10",
   "recap_nylotto": "2026-10",
   "analysis_powerball": "2026-11-09",
   "analysis_mega": "2026-11-09",
-  "analysis_nylotto": "2026-11-02",
+  "analysis_nylotto": "2026-11-09",
   "_social": {
     "date": "2026-07-25",
     "count": 0,
@@ -127,8 +127,8 @@
     ]
   },
   "_news": {
-    "date": "2026-11-10",
-    "topic": "long-absence:millionaire:31"
+    "date": "2026-11-11",
+    "topic": "repeat-number:take5_mid:20-38"
   },
   "_promo": {
     "week": "2026-W30",
