@@ -240,6 +240,33 @@
             "specialHit": false
           }
         ]
+      },
+      "outcome": {
+        "white": [
+          4,
+          22,
+          26,
+          33,
+          34
+        ],
+        "special": null,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 1,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 1,
+            "specialHit": false
+          }
+        ]
       }
     },
     "take5_eve": {
@@ -466,6 +493,33 @@
           {
             "label": "Hot Streak",
             "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
+            "specialHit": false
+          }
+        ]
+      },
+      "outcome": {
+        "white": [
+          9,
+          13,
+          14,
+          21,
+          33
+        ],
+        "special": null,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 1,
             "specialHit": false
           },
           {
@@ -748,6 +802,33 @@
             "label": "Overdue Watch",
             "matches": 0,
             "specialHit": false
+          }
+        ]
+      },
+      "outcome": {
+        "white": [
+          6,
+          22,
+          27,
+          29,
+          39
+        ],
+        "special": 5,
+        "sets": [
+          {
+            "label": "Hot Streak",
+            "matches": 0,
+            "specialHit": false
+          },
+          {
+            "label": "Balanced Mix",
+            "matches": 0,
+            "specialHit": true
+          },
+          {
+            "label": "Overdue Watch",
+            "matches": 0,
+            "specialHit": true
           }
         ]
       }
