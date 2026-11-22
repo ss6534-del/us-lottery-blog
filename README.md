@@ -12,9 +12,10 @@ and a handful of algorithmically generated number sets for the upcoming draw.
 
 ## How it works
 
-A scheduled GitHub Actions workflow checks for results at 20 minutes past each hour.
-`scripts/update.js` updates the US archive. `scripts/update-uk.js` reads the same
-public results cache as the UK Android app, sourced from Lottery.co.uk.
+GitHub Actions runs `scripts/update.js` for US results at 20 minutes past each hour.
+On Tuesdays, Wednesdays, Fridays and Saturdays, it runs `scripts/update-uk.js` at
+22:30 and 23:45 London time (GMT or BST). The UK script reads the same public
+results cache as the UK Android app, sourced from Lottery.co.uk.
 The workflow commits new or corrected records and builds both sections into
 `dist/` for a single GitHub Pages deployment.
 

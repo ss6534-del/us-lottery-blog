@@ -1,4 +1,4 @@
-# 매시간 새 회차를 확인하고, 새 글이 생기면 커밋 + 사이트 재빌드 + Pages 배포.
+# 각 나라의 일정에 따라 결과를 확인하고, 변경된 글을 GitHub Pages에 배포한다.
 # (앱 서버의 Cloud Functions 스케줄 감지와 같은 패턴을 GitHub Actions로 옮긴 것)
 name: Auto-publish lottery analysis
 
@@ -11,9 +11,12 @@ on:
       - "assets/uk.css"
       - "assets/uk-lottery-balls.webp"
   schedule:
-    # 매시간 20분 — NY 오픈데이터 반영 지연을 흡수하며 하루 24회 확인.
-    # 새 회차가 없으면 1분 내로 끝나므로 비용 부담 없음(공개 저장소는 무료).
+    # 미국은 매시 20분, 영국은 추첨일에 앱의 결과 캐시가 갱신된 뒤 두 번 확인한다.
     - cron: "20 * * * *"
+    - cron: "30 22 * * 2,3,5,6"
+      timezone: Europe/London
+    - cron: "45 23 * * 2,3,5,6"
+      timezone: Europe/London
   workflow_dispatch: # 수동 실행 (첫 배포/디버깅용)
     inputs:
       social_dry_run:
@@ -76,7 +79,10 @@ jobs:
 
       - name: Check UK draws and generate posts
         id: uk
-        if: ${{ github.event_name != 'push' && !inputs.social_media_test }}
+        if: >-
+          (github.event_name == 'workflow_dispatch' && !inputs.social_media_test) ||
+          github.event.schedule == '30 22 * * 2,3,5,6' ||
+          github.event.schedule == '45 23 * * 2,3,5,6'
         continue-on-error: true
         run: timeout 3m node scripts/update-uk.js
 
@@ -84,7 +90,7 @@ jobs:
       # 트윗 상태(state._social)는 아래 커밋 단계에서 저장돼야 재트윗이 막힌다.
       - name: Check US draws and generate posts
         id: update
-        if: github.event_name != 'push'
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '20 * * * *'
         continue-on-error: true
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
