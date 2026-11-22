@@ -1,0 +1,29 @@
+{
+  "game": "lotto",
+  "date": "2026-11-21",
+  "numbers": [
+    9,
+    29,
+    30,
+    42,
+    45,
+    46
+  ],
+  "special": [
+    3
+  ],
+  "round2": {
+    "numbers": [
+      6,
+      20,
+      45,
+      56,
+      58,
+      59
+    ],
+    "special": [
+      12
+    ]
+  },
+  "sourceUrl": "https://www.lottery.co.uk/lotto/results-21-11-2026"
+}

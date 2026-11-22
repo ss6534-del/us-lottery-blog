@@ -11,6 +11,7 @@ import {
   sectionHead, ctaButton, playBadge, generatorWidget, ticketChecker, setNavCounts,
 } from "../lib/html.js";
 import { STATIC_PAGES } from "../content/pages.js";
+import { buildUkSection } from "../lib/uk-render.js";
 import { renderOgImage, renderIndexImage, saveManifest, loadOgPool, OG_INDEX_FILE } from "../lib/og.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -565,6 +566,11 @@ ${stickyNote("Stop checking by hand", "Save your numbers once — the app checks
       content: `<div class="page">${page.body}</div>`,
     }));
     urls.push({ path: urlPath });
+  }
+
+  const uk = await buildUkSection({ dataDir: path.join(DATA, "uk"), distDir: DIST, baseUrl: SITE.baseUrl });
+  for (const { path: urlPath, lastmod } of uk.urls) {
+    urls.push({ path: urlPath, date: lastmod });
   }
 
   // ── assets / robots / sitemap / rss / 404 ──

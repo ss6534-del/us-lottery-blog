@@ -3,6 +3,13 @@
 name: Auto-publish lottery analysis
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "lib/uk-*.js"
+      - "scripts/update-uk.js"
+      - "assets/uk.css"
+      - "assets/uk-lottery-balls.webp"
   schedule:
     # 매시간 20분 — NY 오픈데이터 반영 지연을 흡수하며 하루 24회 확인.
     # 새 회차가 없으면 1분 내로 끝나므로 비용 부담 없음(공개 저장소는 무료).
@@ -34,14 +41,17 @@ permissions:
 jobs:
   prepare:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 24
     concurrency:
       group: publish-prepare
       cancel-in-progress: false
     outputs:
-      changed: ${{ steps.update.outputs.changed || 'false' }}
+      pages_artifact: ${{ steps.upload.outcome == 'success' && format('github-pages-{0}', github.run_attempt) || '' }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # 대기열에 쌓였거나 재실행된 작업도 마지막으로 저장한 글과 트윗 이력에서 시작한다.
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
@@ -64,10 +74,18 @@ jobs:
           key: og-cache-${{ hashFiles('assets/og-images/**', 'lib/og.js') }}-${{ github.run_id }}
           restore-keys: og-cache-${{ hashFiles('assets/og-images/**', 'lib/og.js') }}-
 
+      - name: Check UK draws and generate posts
+        id: uk
+        if: ${{ github.event_name != 'push' && !inputs.social_media_test }}
+        continue-on-error: true
+        run: timeout 3m node scripts/update-uk.js
+
       # 새 글 생성 + 트윗 발사(ET 9시/19시, 하루 2건)가 이 단계에서 일어난다.
       # 트윗 상태(state._social)는 아래 커밋 단계에서 저장돼야 재트윗이 막힌다.
-      - name: Check for new draws & generate posts
+      - name: Check US draws and generate posts
         id: update
+        if: github.event_name != 'push'
+        continue-on-error: true
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
@@ -79,17 +97,36 @@ jobs:
           SOCIAL_PROMO_FORCE: ${{ inputs.promo_force && '1' || '' }}
         run: node scripts/update.js
 
+      - name: Collect completed archive updates
+        id: archives
+        env:
+          US_CHANGED: ${{ steps.update.outcome == 'success' && steps.update.outputs.changed == 'true' }}
+          UK_CHANGED: ${{ steps.uk.outcome == 'success' && steps.uk.outputs.changed == 'true' }}
+          REBUILD: ${{ github.event_name != 'schedule' || github.run_attempt > 1 }}
+        run: |
+          if [[ "$US_CHANGED" == true ]]; then git add -A -- data ':(exclude)data/uk'; fi
+          if [[ "$UK_CHANGED" == true ]]; then git add -A -- data/uk; fi
+
+          # 실패한 수집기가 남긴 중간 파일은 리베이스와 사이트 빌드에서 제외한다.
+          # 인덱스에는 성공한 쪽의 글과 상태가 이미 함께 들어 있다.
+          git restore --worktree -- data
+          git clean -fd -- data
+          if git diff --cached --quiet; then
+            echo "build=$REBUILD" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          fi
+
       # ⚠️ 이 단계가 실패하면 state.json(트윗 이력 postedSlugs·firedSlots 포함)이 저장되지 않는다.
       # 트윗은 앞 단계에서 이미 X로 나간 뒤라 되돌릴 수 없으므로, 다음 실행이 같은 글을 재트윗한다.
       # 그래서 bare `git push`로 두면 안 된다 — 그 사이 누가 main에 푸시하면 non-fast-forward로 실패한다.
       # pull --rebase + 재시도로 흡수한다(봇은 data/만 건드리므로 충돌 가능성은 거의 없다).
       - name: Commit new posts
-        if: steps.update.outputs.changed == 'true'
+        if: steps.archives.outputs.changed == 'true'
         run: |
           git config user.name "lottery-blog-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data
-          git diff --cached --quiet && { echo "nothing to commit"; exit 0; }
           git commit -m "post: auto-update $(date -u +'%Y-%m-%d %H:%M UTC')"
           for i in 1 2 3; do
             if git pull --rebase origin main && git push origin main; then
@@ -103,23 +140,29 @@ jobs:
           exit 1
 
       - name: Build site
-        if: steps.update.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        if: steps.archives.outputs.build == 'true'
         run: node scripts/build.js
 
       - name: Upload Pages artifact
-        if: steps.update.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        id: upload
+        if: steps.archives.outputs.build == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
+          name: github-pages-${{ github.run_attempt }}
           path: dist
+
+      - name: Report draw update failures
+        if: ${{ !cancelled() && (steps.update.outcome == 'failure' || steps.uk.outcome == 'failure') }}
+        env:
+          US_RESULT: ${{ steps.update.outcome }}
+          UK_RESULT: ${{ steps.uk.outcome }}
+        run: |
+          echo "::error::Draw updates finished with US=$US_RESULT and UK=$UK_RESULT. See the corresponding step log."
+          exit 1
 
   deploy-pages:
     needs: prepare
-    if: >-
-      ${{
-        always() &&
-        needs.prepare.result == 'success' &&
-        (needs.prepare.outputs.changed == 'true' || github.event_name == 'workflow_dispatch')
-      }}
+    if: ${{ !cancelled() && needs.prepare.outputs.pages_artifact != '' }}
     runs-on: ubuntu-latest
     concurrency:
       group: publish-pages
@@ -131,3 +174,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: ${{ needs.prepare.outputs.pages_artifact }}

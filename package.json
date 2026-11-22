@@ -10,8 +10,9 @@
   "scripts": {
     "test": "node --test",
     "update": "node scripts/update.js",
+    "update:uk": "node scripts/update-uk.js",
     "build": "node scripts/build.js",
-    "publish-local": "node scripts/update.js && node scripts/build.js"
+    "publish-local": "node scripts/update.js && node scripts/update-uk.js && node scripts/build.js"
   },
   "dependencies": {
     "sharp": "^0.35.3"

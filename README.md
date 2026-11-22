@@ -1,10 +1,10 @@
 # AI Lottery Hub — Lottery Analysis Blog
 
-Source for [ssgpost.org](https://ssgpost.org/),
-a static blog covering six New York–drawn lottery games: Powerball, Mega Millions,
-NY Lotto, Take 5 (midday & evening) and Millionaire for Life.
+Source for [ssgpost.org](https://ssgpost.org/). The home page covers Powerball,
+Mega Millions, NY Lotto, Take 5 (midday & evening) and Millionaire for Life.
+The [UK section](https://ssgpost.org/uk/) covers Lotto, EuroMillions and Thunderball.
 
-Articles are generated automatically after each drawing from the official results
+US articles are generated automatically after each drawing from the official results
 datasets on the [NY Open Data portal](https://data.ny.gov). Each post includes the
 latest winning numbers, frequency charts, hot / cold / overdue numbers, pattern
 breakdowns (odd–even and low–high splits, sum ranges, consecutive pairs, repeats)
@@ -12,19 +12,26 @@ and a handful of algorithmically generated number sets for the upcoming draw.
 
 ## How it works
 
-A scheduled GitHub Actions workflow checks the official datasets every hour.
-When a new drawing shows up, `scripts/update.js` runs the statistics, writes the
-article data as JSON under `data/`, and commits it. `scripts/build.js` then renders
-the whole site as plain HTML into `dist/`, which is deployed to GitHub Pages.
+A scheduled GitHub Actions workflow checks for results at 20 minutes past each hour.
+`scripts/update.js` updates the US archive. `scripts/update-uk.js` reads the same
+public results cache as the UK Android app, sourced from Lottery.co.uk.
+The workflow commits new or corrected records and builds both sections into
+`dist/` for a single GitHub Pages deployment.
 
-Everything is plain Node.js with zero dependencies — no framework, no build tools.
-Charts are generated as inline SVG at build time, and the generated number sets are
+The site is rendered with Node.js. Charts are generated as inline SVG at build time, and the US number sets are
 seeded per draw, so rebuilding the site never changes a published article.
+
+Each UK archive starts with the most recent confirmed draw. Later checks fill
+missing dates within the source history and correct existing records in place.
+UK articles explain the draw, link to its source and promote the UK app on Google
+Play. Game archives and the [UK RSS feed](https://ssgpost.org/uk/feed.xml) share
+the site's existing domain.
 
 ```
 site.config.js      site + game configuration
 lib/                data fetching, statistics, set generation, templates
 scripts/update.js   detect new draws, generate article data
+scripts/update-uk.js  update UK records under data/uk/<game>/<date>.json
 scripts/build.js    render data/ into dist/
 scripts/serve.js    local preview server
 data/               generated articles (the archive lives in git)
@@ -33,9 +40,11 @@ data/               generated articles (the archive lives in git)
 ## Development
 
 ```bash
-node scripts/update.js   # fetch results and generate article data
+npm ci                   # install the image-rendering dependency
+node scripts/update.js   # update US results
+node scripts/update-uk.js # update UK results
 node scripts/build.js    # render the site into dist/
-node scripts/serve.js    # preview at http://localhost:8080
+node scripts/serve.js    # preview US at / and UK at /uk/ on http://localhost:8080
 ```
 
 Note: open the preview through `serve.js` rather than the files directly —
