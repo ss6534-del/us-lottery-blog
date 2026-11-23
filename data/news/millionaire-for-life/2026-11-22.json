@@ -1,0 +1,144 @@
+{
+  "kind": "news",
+  "newsType": "consecutive-pair",
+  "gameId": "millionaire",
+  "gameSlug": "millionaire-for-life",
+  "gameName": "Millionaire for Life",
+  "date": "2026-11-22",
+  "resultDate": "2026-11-22",
+  "targetDate": "2026-11-23",
+  "publishedDate": "2026-11-22",
+  "drawTimeEt": "11:15 PM ET",
+  "title": "Millionaire for Life Number Watch — 2 Consecutive Pairs in a Single Draw",
+  "headline": "2 Consecutive Pairs in a Single Draw",
+  "facts": {
+    "pairs": [
+      "11–12",
+      "43–44"
+    ],
+    "count": 2,
+    "numbers": [
+      11,
+      12,
+      43,
+      44
+    ],
+    "topic": "consecutive-pair:millionaire:11-12_43-44"
+  },
+  "prose": {
+    "intro": "The Millionaire for Life machine drew neighbors twice over this time: 11–12 and 43–44, 2 consecutive pairs in one line.",
+    "fact": "A single consecutive pair turns up in a healthy share of draws. Two or more in the same line pushes the result into the tail of the shape distribution.",
+    "context": "Standard caveat — every draw is random and independent. Records like this one describe where the data has been, never where it is going. Treat it as a curiosity, not a signal.",
+    "outro": "The regular draw-by-draw analysis continues as always. Want the charts and fresh sets on your phone the moment results drop? The free AI Lottery Hub app runs the same engine for every New York game."
+  },
+  "latest": {
+    "date": "2026-11-22",
+    "white": [
+      11,
+      12,
+      37,
+      43,
+      44
+    ],
+    "special": 2
+  },
+  "sumSeries": [
+    172,
+    164,
+    116,
+    133,
+    108,
+    173,
+    79,
+    109,
+    139,
+    123,
+    219,
+    119,
+    95,
+    120,
+    133,
+    176,
+    112,
+    77,
+    99,
+    147
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 41,
+        "count": 10
+      },
+      {
+        "num": 33,
+        "count": 9
+      },
+      {
+        "num": 15,
+        "count": 8
+      },
+      {
+        "num": 27,
+        "count": 8
+      },
+      {
+        "num": 37,
+        "count": 8
+      },
+      {
+        "num": 16,
+        "count": 7
+      },
+      {
+        "num": 28,
+        "count": 7
+      }
+    ],
+    "overdue": [
+      {
+        "num": 4,
+        "gap": 49
+      },
+      {
+        "num": 49,
+        "gap": 42
+      },
+      {
+        "num": 55,
+        "gap": 36
+      },
+      {
+        "num": 42,
+        "gap": 30
+      },
+      {
+        "num": 53,
+        "gap": 29
+      },
+      {
+        "num": 13,
+        "gap": 26
+      },
+      {
+        "num": 21,
+        "gap": 26
+      }
+    ],
+    "sum": {
+      "avg": 147,
+      "min": 77,
+      "max": 219,
+      "p25": 120,
+      "p75": 173
+    },
+    "consecutivePct": 28,
+    "repeatPct": 33,
+    "oddSplit": {
+      "best": 3,
+      "pct": 34,
+      "avgOdd": 2.7
+    }
+  }
+}
