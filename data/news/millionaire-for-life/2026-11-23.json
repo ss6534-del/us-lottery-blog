@@ -1,0 +1,144 @@
+{
+  "kind": "news",
+  "newsType": "sum-extreme",
+  "gameId": "millionaire",
+  "gameSlug": "millionaire-for-life",
+  "gameName": "Millionaire for Life",
+  "date": "2026-11-23",
+  "resultDate": "2026-11-23",
+  "targetDate": "2026-11-24",
+  "publishedDate": "2026-11-23",
+  "drawTimeEt": "11:15 PM ET",
+  "title": "Millionaire for Life Number Watch — The Smallest Line Total We've Logged",
+  "headline": "The Smallest Line Total We've Logged",
+  "facts": {
+    "sum": 75,
+    "dir": "lowest",
+    "prevExtreme": 77,
+    "avg": 147,
+    "numbers": [
+      5,
+      8,
+      10,
+      20,
+      32
+    ],
+    "topic": "sum-extreme:millionaire:lowest-75"
+  },
+  "prose": {
+    "intro": "Add up the latest Millionaire for Life line and you get 75 — the lowest total anywhere in our 50-draw window.",
+    "fact": "Totals in this window average 147. The prior lowest extreme was 77 — until this 75 landed.",
+    "context": "Worth saying plainly: none of this makes anything \"due\". Every drawing starts from scratch, and no gap or pattern carries over. This entry documents an extreme in the dataset — that's all it is.",
+    "outro": "Filed and logged. AI Lottery Hub keeps live results, pattern views and automatic ticket checking within reach — free on Google Play."
+  },
+  "latest": {
+    "date": "2026-11-23",
+    "white": [
+      5,
+      8,
+      10,
+      20,
+      32
+    ],
+    "special": 5
+  },
+  "sumSeries": [
+    164,
+    116,
+    133,
+    108,
+    173,
+    79,
+    109,
+    139,
+    123,
+    219,
+    119,
+    95,
+    120,
+    133,
+    176,
+    112,
+    77,
+    99,
+    147,
+    75
+  ],
+  "newsStats": {
+    "window": 50,
+    "hot": [
+      {
+        "num": 41,
+        "count": 10
+      },
+      {
+        "num": 33,
+        "count": 9
+      },
+      {
+        "num": 15,
+        "count": 8
+      },
+      {
+        "num": 27,
+        "count": 8
+      },
+      {
+        "num": 37,
+        "count": 8
+      },
+      {
+        "num": 10,
+        "count": 7
+      },
+      {
+        "num": 16,
+        "count": 7
+      }
+    ],
+    "overdue": [
+      {
+        "num": 4,
+        "gap": 50
+      },
+      {
+        "num": 49,
+        "gap": 43
+      },
+      {
+        "num": 55,
+        "gap": 37
+      },
+      {
+        "num": 42,
+        "gap": 31
+      },
+      {
+        "num": 53,
+        "gap": 30
+      },
+      {
+        "num": 13,
+        "gap": 27
+      },
+      {
+        "num": 21,
+        "gap": 27
+      }
+    ],
+    "sum": {
+      "avg": 147,
+      "min": 75,
+      "max": 219,
+      "p25": 120,
+      "p75": 173
+    },
+    "consecutivePct": 26,
+    "repeatPct": 33,
+    "oddSplit": {
+      "best": 3,
+      "pct": 34,
+      "avgOdd": 2.7
+    }
+  }
+}
