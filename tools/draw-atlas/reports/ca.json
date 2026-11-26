@@ -1,0 +1,194 @@
+{
+  "key": "ca",
+  "game": "Lotto 6/49",
+  "title": "Lotto 6/49 on November 21: 38 and 39 land side by side",
+  "language": "en-CA",
+  "date": "2026-11-21",
+  "labels": [
+    "CA",
+    "Lotto 6/49"
+  ],
+  "introEmphasis": "the consecutive numbers 38 and 39",
+  "intro": "The Saturday Classic Draw ended with the consecutive numbers 38 and 39. None of its six main numbers appeared in Wednesday’s main line. Two earlier November draws give Saturday’s line a more interesting connection.",
+  "sections": [
+    {
+      "heading": "Three numbers from November 7",
+      "emphasis": "9, 20 and 23 appeared together",
+      "text": "The main numbers 9, 20 and 23 appeared together on November 7 and again on November 21. Saturday’s 38 had a different partner on November 14: it appeared with 9 that day too."
+    },
+    {
+      "heading": "Where to look for 47",
+      "emphasis": "47 belongs in the bonus column",
+      "text": "Saturday’s 47 belongs in the bonus column. It also appeared on November 14, but then it was one of the six main numbers. Only the six main numbers contribute to the frequency count below."
+    },
+    {
+      "heading": "Eight Classic Draws at a glance",
+      "text": "From October 28 to November 21, number 1 appeared in four of the eight draws. Numbers 3, 9 and 21 each appeared three times. The Gold Ball Draw has its own winning identifier and is counted separately by the lottery."
+    }
+  ],
+  "chart": {
+    "rows": [
+      {
+        "label": "21 Nov 2026",
+        "main": [
+          9,
+          11,
+          20,
+          23,
+          38,
+          39
+        ],
+        "extra": [
+          47
+        ]
+      },
+      {
+        "label": "18 Nov 2026",
+        "main": [
+          10,
+          25,
+          28,
+          37,
+          42,
+          49
+        ],
+        "extra": [
+          32
+        ]
+      }
+    ],
+    "mainLabel": "Classic Draw main numbers",
+    "extraLabel": "Bonus",
+    "history": {
+      "count": 8,
+      "from": "2026-10-28",
+      "to": "2026-11-21",
+      "label": "Most frequent Classic Draw main numbers in eight draws",
+      "hits": [
+        {
+          "number": 1,
+          "count": 4
+        },
+        {
+          "number": 3,
+          "count": 3
+        },
+        {
+          "number": 9,
+          "count": 3
+        },
+        {
+          "number": 21,
+          "count": 3
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Western Canada Lottery Corporation · Lotto 6/49 results",
+      "url": "https://www.wclc.com/winning-numbers/lotto-649-extra.htm"
+    },
+    {
+      "label": "WCLC · November 21 prize breakdown",
+      "url": "https://www.wclc.com/lotto-649-prize-details.htm?drawNumber=4470"
+    }
+  ],
+  "fr": {
+    "key": "ca",
+    "game": "Lotto 6/49",
+    "title": "Lotto 6/49 du 21 novembre : le 38 et le 39 se suivent",
+    "language": "fr-CA",
+    "date": "2026-11-21",
+    "labels": [
+      "CA",
+      "Lotto 6/49"
+    ],
+    "introEmphasis": "Le 38 et le 39 se suivent",
+    "intro": "Le 38 et le 39 se suivent sur la ligne du tirage classique du samedi 21 novembre. Aucun des six numéros principaux du mercredi précédent n’est ressorti samedi. En remontant de quelques tirages, on retrouve pourtant plusieurs numéros tirés ensemble.",
+    "sections": [
+      {
+        "heading": "Trois numéros déjà sortis le 7 novembre",
+        "emphasis": "Le 9, le 20 et le 23 sont sortis ensemble",
+        "text": "Le 9, le 20 et le 23 sont sortis ensemble le 7 novembre, puis de nouveau le 21. Le 9 et le 38 avaient aussi été tirés ensemble le 14 novembre."
+      },
+      {
+        "heading": "Le 47 change de colonne",
+        "emphasis": "le 47 est le numéro complémentaire",
+        "text": "Le 21 novembre, le 47 est le numéro complémentaire. Il faisait partie des six numéros principaux le 14 novembre. Pour compter les fréquences ci-dessous, nous avons retenu uniquement les six numéros principaux de chaque tirage."
+      },
+      {
+        "heading": "Huit tirages classiques en chiffres",
+        "text": "Du 28 octobre au 21 novembre, le 1 est sorti quatre fois en huit tirages. Le 3, le 9 et le 21 sont sortis trois fois chacun. Le tirage Boule d’or possède son propre numéro gagnant et se vérifie séparément."
+      }
+    ],
+    "chart": {
+      "rows": [
+        {
+          "label": "21 nov. 2026",
+          "main": [
+            9,
+            11,
+            20,
+            23,
+            38,
+            39
+          ],
+          "extra": [
+            47
+          ]
+        },
+        {
+          "label": "18 nov. 2026",
+          "main": [
+            10,
+            25,
+            28,
+            37,
+            42,
+            49
+          ],
+          "extra": [
+            32
+          ]
+        }
+      ],
+      "mainLabel": "Numéros principaux du tirage classique",
+      "extraLabel": "Complémentaire",
+      "history": {
+        "count": 8,
+        "from": "2026-10-28",
+        "to": "2026-11-21",
+        "label": "Numéros principaux les plus fréquents en huit tirages classiques",
+        "hits": [
+          {
+            "number": 1,
+            "count": 4
+          },
+          {
+            "number": 3,
+            "count": 3
+          },
+          {
+            "number": 9,
+            "count": 3
+          },
+          {
+            "number": 21,
+            "count": 3
+          }
+        ]
+      }
+    },
+    "sources": [
+      {
+        "label": "Société des loteries de l’Ouest canadien · Résultats du Lotto 6/49",
+        "url": "https://www.wclc.com/winning-numbers/lotto-649-extra.htm"
+      },
+      {
+        "label": "WCLC · Détail des lots du 21 novembre",
+        "url": "https://www.wclc.com/lotto-649-prize-details.htm?drawNumber=4470"
+      }
+    ]
+  }
+}

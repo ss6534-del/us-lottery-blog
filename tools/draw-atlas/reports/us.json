@@ -1,0 +1,119 @@
+{
+  "key": "us",
+  "game": "Powerball",
+  "title": "Powerball on November 23: the September trio that turned up again",
+  "language": "en-US",
+  "date": "2026-11-23",
+  "labels": [
+    "US",
+    "Powerball"
+  ],
+  "introEmphasis": "no white balls in common",
+  "intro": "Monday’s Powerball draw had no white balls in common with Saturday’s. Look back to September 21, though, and three numbers on Monday’s line turn up together: 7, 9 and 58.",
+  "sections": [
+    {
+      "heading": "Two draws, ten different white balls",
+      "text": "Saturday’s lowest white ball was 5 and its highest was 45. On Monday the line ran from 7 to 58, with three odd numbers and two even. The red Powerball changed from 22 to 19."
+    },
+    {
+      "heading": "The other time 7, 9 and 58 appeared together",
+      "emphasis": "the trio of 7, 9 and 58",
+      "text": "On September 21 the white balls were 2, 7, 9, 17 and 58. The November 23 draw kept the trio of 7, 9 and 58, with 27 and 40 in the other two places."
+    },
+    {
+      "heading": "A wider look at 30 draws",
+      "emphasis": "4, 42 and 51 each appeared five times",
+      "text": "From September 16 through November 23, 4, 42 and 51 each appeared five times as white balls. All three missed Monday’s line. The count covers the five white balls in each draw and excludes the red Powerball."
+    }
+  ],
+  "chart": {
+    "rows": [
+      {
+        "label": "Nov 23, 2026",
+        "main": [
+          7,
+          9,
+          27,
+          40,
+          58
+        ],
+        "extra": [
+          19
+        ]
+      },
+      {
+        "label": "Nov 21, 2026",
+        "main": [
+          5,
+          29,
+          33,
+          36,
+          45
+        ],
+        "extra": [
+          22
+        ]
+      }
+    ],
+    "mainLabel": "White balls",
+    "extraLabel": "Red Powerball",
+    "history": {
+      "count": 30,
+      "from": "2026-09-16",
+      "to": "2026-11-23",
+      "label": "Most frequent white balls in 30 draws",
+      "hits": [
+        {
+          "number": 4,
+          "count": 5
+        },
+        {
+          "number": 42,
+          "count": 5
+        },
+        {
+          "number": 51,
+          "count": 5
+        },
+        {
+          "number": 13,
+          "count": 4
+        },
+        {
+          "number": 18,
+          "count": 4
+        },
+        {
+          "number": 21,
+          "count": 4
+        },
+        {
+          "number": 29,
+          "count": 4
+        },
+        {
+          "number": 44,
+          "count": 4
+        },
+        {
+          "number": 45,
+          "count": 4
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Powerball · November 23 result",
+      "url": "https://www.powerball.com/draw-result?date=2026-11-23&gc=powerball"
+    },
+    {
+      "label": "Powerball · September 21 result",
+      "url": "https://www.powerball.com/draw-result?date=2026-09-21&gc=powerball"
+    },
+    {
+      "label": "New York State Open Data · Powerball winning numbers",
+      "url": "https://data.ny.gov/d/d6yy-54nr"
+    }
+  ]
+}

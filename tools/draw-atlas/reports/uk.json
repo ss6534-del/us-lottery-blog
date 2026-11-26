@@ -1,0 +1,137 @@
+{
+  "key": "uk",
+  "game": "Lotto",
+  "title": "Lotto draw 3227: 3 and 9 swap places in Round 1",
+  "language": "en-GB",
+  "date": "2026-11-25",
+  "labels": [
+    "UK",
+    "Lotto"
+  ],
+  "introEmphasis": "3 and 9",
+  "intro": "If you checked the Lotto results on both Saturday and Wednesday, you might have recognised 3 and 9. Both appeared in Round 1 on each date, but the two balls exchanged roles.",
+  "sections": [
+    {
+      "heading": "The bonus ball becomes a main number",
+      "text": "On 21 November, 9 was one of Saturday’s six Round 1 main numbers and 3 was the bonus. On 25 November, 3 joined the main line and 9 was the bonus. Comparing just the six main numbers, there were no repeats between the two dates."
+    },
+    {
+      "heading": "Round 2 has its own result",
+      "emphasis": "11 appeared in both rounds",
+      "text": "Wednesday’s 11 appeared in both rounds. The Round 2 main numbers were 1, 11, 13, 24, 35 and 43, with bonus ball 10. The table keeps both rounds separate so you can check a complete line against each one."
+    },
+    {
+      "heading": "Round 1 across 30 draw dates",
+      "emphasis": "32 and 48 appeared seven times apiece",
+      "text": "Counting the six Round 1 main numbers from 15 August to 25 November, 32 and 48 appeared seven times apiece. Their nearest group, on six appearances each, was 28, 30, 42 and 51. The count excludes Round 2 and both rounds’ bonus balls."
+    }
+  ],
+  "chart": {
+    "rows": [
+      {
+        "label": "25 Nov · Round 1",
+        "main": [
+          3,
+          11,
+          28,
+          44,
+          52,
+          54
+        ],
+        "extra": [
+          9
+        ]
+      },
+      {
+        "label": "25 Nov · Round 2",
+        "main": [
+          1,
+          11,
+          13,
+          24,
+          35,
+          43
+        ],
+        "extra": [
+          10
+        ]
+      },
+      {
+        "label": "21 Nov · Round 1",
+        "main": [
+          9,
+          29,
+          30,
+          42,
+          45,
+          46
+        ],
+        "extra": [
+          3
+        ]
+      },
+      {
+        "label": "21 Nov · Round 2",
+        "main": [
+          6,
+          20,
+          45,
+          56,
+          58,
+          59
+        ],
+        "extra": [
+          12
+        ]
+      }
+    ],
+    "mainLabel": "Six main numbers",
+    "extraLabel": "Bonus ball",
+    "history": {
+      "count": 30,
+      "from": "2026-08-15",
+      "to": "2026-11-25",
+      "label": "Most frequent Round 1 main numbers in 30 draws",
+      "hits": [
+        {
+          "number": 32,
+          "count": 7
+        },
+        {
+          "number": 48,
+          "count": 7
+        },
+        {
+          "number": 28,
+          "count": 6
+        },
+        {
+          "number": 30,
+          "count": 6
+        },
+        {
+          "number": 42,
+          "count": 6
+        },
+        {
+          "number": 51,
+          "count": 6
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "The National Lottery · Draw 3227",
+      "url": "https://www.national-lottery.co.uk/results/lotto/draw-details?drawNo=3227"
+    },
+    {
+      "label": "The National Lottery · Draw 3226",
+      "url": "https://www.national-lottery.co.uk/results/lotto/draw-details?drawNo=3226"
+    },
+    {
+      "label": "The National Lottery · Lotto draw history",
+      "url": "https://www.national-lottery.co.uk/results/lotto/draw-history"
+    }
+  ]
+}

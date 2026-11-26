@@ -1,0 +1,49 @@
+{
+  "blogId": "3280204798052215871",
+  "blogUrl": "https://goldnum.blogspot.com",
+  "editions": {
+    "us": {"language":"en-US","timeZone":"America/New_York"},
+    "ca": {"language":"en-CA","also":"fr-CA","timeZone":"America/Toronto"},
+    "uk": {"language":"en-GB","timeZone":"Europe/London"},
+    "au": {"language":"en-AU","timeZone":"Australia/Sydney"},
+    "in": {"language":"ml","timeZone":"Asia/Kolkata"},
+    "kr": {"language":"ko","timeZone":"Asia/Seoul"},
+    "jp": {"language":"ja","timeZone":"Asia/Tokyo","articleOnly":true}
+  },
+  "archives": {
+    "ny":"https://data.ny.gov/resource/{dataset}.json?$order=draw_date%20DESC",
+    "wclc":"https://www.wclc.com/winning-numbers/{archive}.htm",
+    "nationalLottery":"https://www.national-lottery.co.uk/results/{archive}/draw-history",
+    "lotterywest":"https://api.lotterywest.wa.gov.au/api/v1/games",
+    "kerala":"https://www.lotteryagent.kerala.gov.in/result/public/",
+    "dhlottery":"https://www.dhlottery.co.kr/lt645/result",
+    "rakutenBank":"https://takarakuji.rakuten.co.jp/backnumber/{archive}/{YYYYMM}/"
+  },
+  "games": [
+    {"country":"us","gameKey":"powerball","name":"Powerball","after":"2026-11-23","source":"ny","dataset":"d6yy-54nr","alternate":"https://www.powerball.com/previous-results?gc=powerball"},
+    {"country":"us","gameKey":"mega-millions","name":"Mega Millions","after":"2026-11-24","source":"ny","dataset":"5xaw-6ayf"},
+    {"country":"us","gameKey":"ny-lotto","name":"New York Lotto","after":"2026-11-21","source":"ny","dataset":"6nbc-h7bj"},
+    {"country":"us","gameKey":"millionaire-for-life","name":"Millionaire for Life","after":"2026-11-24","source":"ny","dataset":"a4w9-a3tp"},
+    {"country":"us","gameKey":"take-5","name":"New York Take 5","after":"2026-11-25","afterSlot":"midday","slots":["midday","evening"],"source":"ny","dataset":"dg63-4siq","alternate":"https://nylottery.ny.gov/drupal-api/api/all/draw_games_fallback?_format=json"},
+    {"country":"ca","gameKey":"lotto-649","name":"Lotto 6/49 Classic Draw","after":"2026-11-21","source":"wclc","archive":"lotto-649-extra"},
+    {"country":"ca","gameKey":"lotto-max","name":"Lotto Max","after":"2026-11-24","source":"wclc","archive":"lottomax-extra"},
+    {"country":"ca","gameKey":"daily-grand","name":"Daily Grand","after":"2026-11-23","source":"wclc","archive":"daily-grand-extra"},
+    {"country":"uk","gameKey":"lotto","name":"Lotto","after":"2026-11-25","source":"nationalLottery","archive":"lotto"},
+    {"country":"uk","gameKey":"euromillions","name":"EuroMillions","after":"2026-11-24","source":"nationalLottery","archive":"euromillions"},
+    {"country":"uk","gameKey":"thunderball","name":"Thunderball","after":"2026-11-25","source":"nationalLottery","archive":"thunderball"},
+    {"country":"au","gameKey":"saturday-lotto","name":"Saturday Lotto","after":"2026-11-21","source":"lotterywest","archive":"5127"},
+    {"country":"au","gameKey":"powerball","name":"Australian Powerball","after":"2026-11-19","source":"lotterywest","archive":"5132"},
+    {"country":"au","gameKey":"weekday-windfall","name":"Weekday Windfall / Millionaire Medley","after":"2026-11-25","source":"lotterywest","archive":"5303"},
+    {"country":"in","gameKey":"bhagyathara","name":"Bhagyathara","after":"2026-11-23","source":"kerala","archive":"BT"},
+    {"country":"in","gameKey":"sthree-sakthi","name":"Sthree Sakthi","after":"2026-11-24","source":"kerala","archive":"SS"},
+    {"country":"in","gameKey":"dhanalekshmi","name":"Dhanalekshmi","after":"2026-11-25","source":"kerala","archive":"DL"},
+    {"country":"in","gameKey":"karunya-plus","name":"Karunya Plus","after":"2026-11-19","source":"kerala","archive":"KN"},
+    {"country":"in","gameKey":"suvarna-keralam","name":"Suvarna Keralam","after":"2026-11-20","source":"kerala","archive":"SK"},
+    {"country":"in","gameKey":"karunya","name":"Karunya","after":"2026-11-21","source":"kerala","archive":"KR"},
+    {"country":"in","gameKey":"samrudhi","name":"Samrudhi","after":"2026-11-22","source":"kerala","archive":"SM"},
+    {"country":"kr","gameKey":"lotto-645","name":"로또 6/45","after":"2026-11-21","source":"dhlottery"},
+    {"country":"jp","gameKey":"loto6","name":"ロト6","after":"2026-11-23","source":"rakutenBank","archive":"loto6"},
+    {"country":"jp","gameKey":"loto7","name":"ロト7","after":"2026-11-20","source":"rakutenBank","archive":"loto7"},
+    {"country":"jp","gameKey":"mini-loto","name":"ミニロト","after":"2026-11-24","source":"rakutenBank","archive":"mini"}
+  ]
+}

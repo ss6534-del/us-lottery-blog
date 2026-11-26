@@ -1,0 +1,99 @@
+{
+  "key": "au",
+  "game": "Saturday Lotto",
+  "title": "Saturday Lotto draw 4731: 25 and 35 trade places",
+  "language": "en-AU",
+  "date": "2026-11-21",
+  "labels": [
+    "AU",
+    "Saturday Lotto"
+  ],
+  "introEmphasis": "35 moved into the six winning numbers",
+  "intro": "On 21 November, 35 moved into the six winning numbers after coming out as a supplementary the week before. Number 25 went the other way. These were the only two numbers that appeared anywhere in both results.",
+  "sections": [
+    {
+      "heading": "Same numbers, different columns",
+      "emphasis": "All six winning numbers changed",
+      "text": "In draw 4729, 25 was a winning number and 35 a supplementary. In draw 4731, 35 was a winning number and 25 a supplementary. All six winning numbers changed between the two Saturdays when compared within their own column."
+    },
+    {
+      "heading": "A consecutive pair on Saturday’s line",
+      "text": "Read the six winning numbers in ascending order and 10 sits beside 11. The other four winning numbers were 7, 16, 35 and 39. The two supplementaries, 25 and 37, have their own column in the table."
+    },
+    {
+      "heading": "Ten Saturdays from September to November",
+      "emphasis": "four appearances apiece",
+      "text": "Over the ten draws from 19 September to 21 November, 32 and 39 led the winning-number count with four appearances apiece. Numbers 1 and 40 followed with three each. Only the six winning numbers from each Saturday enter this count."
+    }
+  ],
+  "chart": {
+    "rows": [
+      {
+        "label": "21 Nov · Draw 4731",
+        "main": [
+          7,
+          10,
+          11,
+          16,
+          35,
+          39
+        ],
+        "extra": [
+          25,
+          37
+        ]
+      },
+      {
+        "label": "14 Nov · Draw 4729",
+        "main": [
+          1,
+          9,
+          24,
+          25,
+          43,
+          45
+        ],
+        "extra": [
+          26,
+          35
+        ]
+      }
+    ],
+    "mainLabel": "Winning numbers",
+    "extraLabel": "Supplementaries",
+    "history": {
+      "count": 10,
+      "from": "2026-09-19",
+      "to": "2026-11-21",
+      "label": "Most frequent winning numbers in ten draws",
+      "hits": [
+        {
+          "number": 32,
+          "count": 4
+        },
+        {
+          "number": 39,
+          "count": 4
+        },
+        {
+          "number": 1,
+          "count": 3
+        },
+        {
+          "number": 40,
+          "count": 3
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Lotterywest · Saturday Lotto results",
+      "url": "https://www.lotterywest.wa.gov.au/results/saturday-lotto"
+    },
+    {
+      "label": "Lotterywest · Official draw data",
+      "url": "https://api.lotterywest.wa.gov.au/api/v1/games"
+    }
+  ]
+}
