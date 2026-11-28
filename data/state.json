@@ -1,10 +1,10 @@
 {
   "powerball": "2026-11-25",
-  "mega": "2026-11-24",
+  "mega": "2026-11-27",
   "nylotto": "2026-11-25",
-  "take5_mid": "2026-11-26",
-  "take5_eve": "2026-11-26",
-  "millionaire": "2026-11-26",
+  "take5_mid": "2026-11-27",
+  "take5_eve": "2026-11-27",
+  "millionaire": "2026-11-27",
   "recap_powerball": "2026-10",
   "recap_mega": "2026-10",
   "recap_nylotto": "2026-10",
@@ -127,8 +127,8 @@
     ]
   },
   "_news": {
-    "date": "2026-11-26",
-    "topic": "repeat-number:take5_mid:11-36"
+    "date": "2026-11-27",
+    "topic": "long-absence:millionaire:4"
   },
   "_promo": {
     "week": "2026-W30",
