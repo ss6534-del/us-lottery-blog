@@ -1,9 +1,11 @@
 """Publish a Draw Atlas report through Blogger v3 from a serialized workflow."""
 
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from importlib import import_module
 import json
 import os
-from time import monotonic
+from time import monotonic, sleep
 from urllib.error import HTTPError
 from urllib.parse import urlencode, urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
@@ -15,10 +17,19 @@ POSTS = f'https://blogger.googleapis.com/v3/blogs/{feed.BLOG_ID}/posts'
 TOKEN = 'https://oauth2.googleapis.com/token'
 STATUSES = ('LIVE', 'DRAFT', 'SCHEDULED')
 FIELDS = 'id,blog/id,title,url,content,status'
+PUBLISH_BATCH_SIZE = 3
+PUBLISH_BATCH_GAP = 150
+MAX_RATE_LIMIT_WAIT = 600
 
 
 class BloggerError(RuntimeError):
     """Safe to display in the workflow log."""
+
+
+class BloggerRateLimitError(BloggerError):
+    def __init__(self, message, retry_after=None):
+        super().__init__(message)
+        self.retry_after = retry_after
 
 
 class _NoRedirects(HTTPRedirectHandler):
@@ -26,12 +37,29 @@ class _NoRedirects(HTTPRedirectHandler):
         return None  # Never forward credentials to a redirected endpoint.
 
 
+def _retry_after_seconds(value):
+    value = (value or '').strip()
+    try:
+        if value.isascii() and value.isdigit():
+            return int(value)
+        until = parsedate_to_datetime(value)
+        if until.tzinfo is None:
+            until = until.replace(tzinfo=timezone.utc)
+        return max(0, (until - datetime.now(timezone.utc)).total_seconds())
+    except (ValueError, OverflowError):
+        return None
+
+
 def _json(request, operation):
     try:
         with build_opener(_NoRedirects()).open(request, timeout=40) as response:
             result = json.load(response)
     except HTTPError as error:
+        rate_limited = error.code == 429 and operation == 'Blogger posts API'
+        retry_after = _retry_after_seconds(error.headers.get('Retry-After')) if rate_limited and error.headers else None
         error.close()
+        if rate_limited:
+            raise BloggerRateLimitError(f'{operation} returned HTTP 429', retry_after) from None
         raise BloggerError(f'{operation} returned HTTP {error.code}') from None
     except (OSError, HTTPException, ValueError) as error:
         raise BloggerError(f'{operation} failed ({type(error).__name__})') from None
@@ -51,16 +79,20 @@ def _markers(body):
 
 
 class BloggerClient:
-    def __init__(self, credentials):
+    def __init__(self, credentials, *, paced_publishing=False):
         self._credentials = credentials
         self._token = ''
         self._expires = 0
         self._posts = None
         self._uncertain = set()
         self._aliases = feed.seed_aliases()
+        self._paced_publishing = paced_publishing
+        self._batch_attempts = 0
+        self._next_batch_at = 0
+        self._defer_writes = False
 
     @classmethod
-    def from_env(cls):
+    def from_env(cls, *, paced_publishing=False):
         credentials = {}
         for field in ('client_id', 'client_secret', 'refresh_token'):
             name = 'BLOGGER_' + field.upper()
@@ -68,7 +100,7 @@ class BloggerClient:
             if not value:
                 raise BloggerError(f'Missing GitHub Actions secret {name}')
             credentials[field] = value
-        return cls(credentials)
+        return cls(credentials, paced_publishing=paced_publishing)
 
     def _request(self, url, post=None):
         if monotonic() >= self._expires:
@@ -146,14 +178,74 @@ class BloggerClient:
         self._posts = posts
         return dict(posts)
 
+    def _insert(self, payload):
+        url = POSTS + '?isDraft=false&fields=id'
+        if not self._paced_publishing:
+            return self._request(url, payload)
+        if self._batch_attempts == PUBLISH_BATCH_SIZE:
+            delay = self._next_batch_at - monotonic()
+            if delay > 0:
+                print(f'Blogger: waiting {delay:.0f}s before the next publication batch', flush=True)
+                sleep(delay)
+            self._batch_attempts = 0
+            self._next_batch_at = 0
+        try:
+            return self._request(url, payload)
+        finally:
+            # Count attempted writes too, since a failed response can follow a write.
+            self._batch_attempts += 1
+            if self._batch_attempts == PUBLISH_BATCH_SIZE:
+                self._next_batch_at = monotonic() + PUBLISH_BATCH_GAP
+
+    def _wait_for_rate_limit(self, error):
+        delay = PUBLISH_BATCH_GAP if error.retry_after is None else error.retry_after
+        if delay > MAX_RATE_LIMIT_WAIT:
+            self._defer_writes = True
+            raise BloggerError('Blogger HTTP 429 requires a longer wait; remaining publications deferred') from None
+        delay = max(delay, self._next_batch_at - monotonic())
+        print(f'Blogger HTTP 429: waiting {delay:.0f}s before checking for the post', flush=True)
+        if delay > 0:
+            sleep(delay)
+        if self._next_batch_at or delay >= PUBLISH_BATCH_GAP:
+            self._batch_attempts = 0
+            self._next_batch_at = 0
+
+    def _find_after_failure(self, key, error):
+        throttled = self._paced_publishing and isinstance(error, BloggerRateLimitError)
+        if throttled:
+            self._wait_for_rate_limit(error)
+        try:
+            return self.inventory().get(key)
+        except BloggerError as inventory_error:
+            if self._paced_publishing and (throttled or isinstance(inventory_error, BloggerRateLimitError)):
+                self._defer_writes = True
+            raise
+
+    def _insert_or_find(self, key, payload):
+        try:
+            return self._insert(payload), None
+        except BloggerRateLimitError as error:
+            if not self._paced_publishing:
+                raise
+            row = self._find_after_failure(key, error)
+            if row is not None:
+                return None, row
+            try:
+                return self._insert(payload), None
+            except BloggerRateLimitError:
+                self._defer_writes = True
+                raise
+
     def publish_once(self, key, title, labels, html):
-        """Insert once; verify the saved post; reconcile ambiguous responses using reads."""
+        """Verify the saved post and reconcile failures before any allowed retry."""
         if not isinstance(key, str) or not feed.DRAW_ID.fullmatch(key) or _markers(html) != {key}:
             raise BloggerError('Report body does not identify the expected draw')
         if (not isinstance(title, str) or not title.strip() or not isinstance(labels, list)
                 or not all(isinstance(label, str) and label.strip() for label in labels)
                 or not labels or labels[0] != key.split('-')[1].upper()):
             raise BloggerError('Invalid title or country label for draw')
+        if self._defer_writes:
+            raise BloggerError('Blogger HTTP 429 deferred remaining publications to a later run')
         if self._posts is None:
             self.inventory()
         if key in self._posts:
@@ -163,20 +255,22 @@ class BloggerClient:
         self._uncertain.add(key)
         try:
             payload = {'kind': 'blogger#post', 'title': title, 'labels': labels, 'content': html}
-            created = self._request(POSTS + '?isDraft=false&fields=id', payload)
-            post_id = created.get('id')
-            if not isinstance(post_id, str) or not post_id.isascii() or not post_id.isdigit():
-                raise BloggerError('Blogger did not return a valid new post ID')
-            params = urlencode({'view': 'ADMIN', 'fields': FIELDS})
-            saved_key, row = self._entry(self._request(f'{POSTS}/{post_id}?{params}'))
-            if saved_key != key or row['id'] != post_id or row['status'] != 'LIVE':
-                raise BloggerError('Could not verify the new live post')
+            created, row = self._insert_or_find(key, payload)
+            if row is None:
+                post_id = created.get('id')
+                if not isinstance(post_id, str) or not post_id.isascii() or not post_id.isdigit():
+                    raise BloggerError('Blogger did not return a valid new post ID')
+                params = urlencode({'view': 'ADMIN', 'fields': FIELDS})
+                saved_key, row = self._entry(self._request(f'{POSTS}/{post_id}?{params}'))
+                if saved_key != key or row['id'] != post_id or row['status'] != 'LIVE':
+                    raise BloggerError('Could not verify the new live post')
         except BloggerError as error:
-            # A timeout, quota response or malformed insert response can follow a
-            # successful write. Never repeat the insert to discover what happened.
-            row = self.inventory().get(key)
+            if self._defer_writes:
+                raise
+            # Ambiguous writes and verification failures can be reconciled by reading.
+            row = self._find_after_failure(key, error)
             if row is None or row['status'] != 'LIVE':
                 raise BloggerError(f'Publication unconfirmed for {key} ({error}); inspect Blogger before retry') from None
         self._uncertain.discard(key)
         self._posts[key] = row
-        return {'outcome': 'published', **row}
+        return {'outcome': 'published' if row['status'] == 'LIVE' else 'existing', **row}

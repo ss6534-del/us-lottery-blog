@@ -99,7 +99,7 @@ def process_game(game, edition, existing, client, summary):
 
 def run(publish):
     config = json.loads((HERE / "games.json").read_text(encoding="utf-8"))
-    client = BloggerClient.from_env() if publish else None
+    client = BloggerClient.from_env(paced_publishing=True) if publish else None
     existing = set(client.inventory() if client else FEED.inventory(None)[0])
     summary = {"preview": [], "published": [], "existing": [], "errors": []}
     for game in config["games"]:
