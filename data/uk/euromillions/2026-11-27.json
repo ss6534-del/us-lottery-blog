@@ -1,0 +1,16 @@
+{
+  "game": "euromillions",
+  "date": "2026-11-27",
+  "numbers": [
+    12,
+    17,
+    26,
+    34,
+    38
+  ],
+  "special": [
+    5,
+    9
+  ],
+  "sourceUrl": "https://www.lottery.co.uk/euromillions/results-27-11-2026"
+}
